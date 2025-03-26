@@ -69,12 +69,12 @@ margin-top: 2rem;
  text-align: center;
  margin-top: 0;
  font-size: 3.125rem;
+ font-weight: 800;
 }
 
 .title-animation-subheader {
   font-size: 1.6875rem;
   line-height: 1.1;
-  font-family: var(--header-font);
   font-weight: 300;
   margin: 0.625rem 0 0;
   margin-bottom: 1.25rem;
@@ -91,10 +91,10 @@ margin-top: 2rem;
 
 .reveal-to-right {
   transform: translateX(-100%);
-  animation: reveal-to-right 1.2s 1.8s forwards;
+  animation: title-reveal-to-right 1.2s 1.8s forwards;
 }
 
-@keyframes reveal-to-right {
+@keyframes title-reveal-to-right {
   from {
     transform: translateX(-100%);
   }
@@ -105,10 +105,10 @@ margin-top: 2rem;
 
 .reveal-to-left {
   transform: translateX(100%);
-  animation: reveal-to-left 1s 1s forwards;
+  animation: title-reveal-to-left 1s 1s forwards;
 }
 
-@keyframes reveal-to-left {
+@keyframes title-reveal-to-left {
   from {
     transform: translateX(100%);
   }
@@ -120,10 +120,10 @@ margin-top: 2rem;
 .border-left {
   height: 32px;
   border-left: 5px solid black;
-  animation: grow 5s forwards;
+  animation: title-grow 5s forwards;
 }
 
-@keyframes grow {
+@keyframes title-grow {
   0% {
     height: 0;
   }
@@ -139,10 +139,10 @@ margin-top: 2rem;
 
 .reveal-to-bottom {
   transform: translateY(-100%);
-  animation: reveal-to-bottom 1s 3.3s forwards;
+  animation: title-reveal-to-bottom 1s 3.3s forwards;
 }
 
-@keyframes reveal-to-bottom {
+@keyframes title-reveal-to-bottom {
   from {
     transform: translateY(-100%);
   }
