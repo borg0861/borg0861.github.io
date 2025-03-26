@@ -47,7 +47,7 @@ Any abilities, enhancements, or features that grant access to light weapons and 
         - [Stamina](/rules/combat/stamina)
         - [Object Stamina](/rules/combat/object-stamina)
         - [Cover](/rules/combat/cover)
-        - Space Combat
+        - [Space Combat](/rules/combat/space-combat)
     - Downtime Projects
     - Rewards
 
