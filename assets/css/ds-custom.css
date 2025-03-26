@@ -116,14 +116,6 @@ bottom: -2rem;
   }
 }
 
-.title-divider {
-  text-align: center;
-  margin-top: 0;
-  font-size: 4rem;
-  font-weight: 100;
-  border: none;
-}
-
 .reveal-to-bottom {
   transform: translateY(-100%);
   animation: title-reveal-to-bottom 1s 3.3s forwards;
