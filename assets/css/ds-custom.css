@@ -9,11 +9,12 @@ layout: null
       --transparentThemeColor: rgba(29, 51, 98, 0.7);
       --primaryContrastColor: #ffffff;
       --secondaryThemeColor: #ff8800;
+      --transparentSecondaryThemeColor: rgb(255, 136, 0.7);
 
       --honeycombColor: #121f3b;
       --honeycombBorderColor: #1d3362;
-      --honeycombColorLight: hsl(210, 53%, 95%);
-      --honeycombBorderColorLight: hsl(221, 54%, 80%);
+      --honeycombColorLight: hsl(210, 53%, 98%);
+      --honeycombBorderColorLight: hsl(221, 54%, 90%);
       --honeycombSize: 15px;
 
       --honeycombBG: radial-gradient(circle farthest-side at 0% 50%, var(--honeycombColor) 23.5%, transparent 0)calc(var(--honeycombSize)*0.7) var(--honeycombSize),
@@ -135,13 +136,17 @@ bottom: -2rem;
   }
 }
 
+table tr th {
+  background-color: var(--primaryThemeColor);
+}
+
 
 
 /* --- Custom Script --- */
 
 .ds-ability {
     margin: 1rem 0;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
     background: var(--honeycombBGLight);
     background-size: var(--honeycombBGSize);
     --aug-border-bg: var(--primaryThemeColor);
@@ -152,16 +157,16 @@ bottom: -2rem;
     background-color: var(--primaryThemeColor);
     color: var(--primaryContrastColor);
     margin: 0;
-    padding: 0.5rem 0 0.5rem 4rem;
+    padding: 0.5rem 4rem;
     font-size: 1.25rem;
   }
   
   .ds-ability > blockquote {
     margin: 0;
     width: 100%;
-    background-color: var(--transparentThemeColor);
+    background-color: var(--transparentSecondaryThemeColor);
     color: var(--primaryContrastColor);
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 0.5rem;
   }
   
   .ds-ability > blockquote > p {
@@ -170,7 +175,7 @@ bottom: -2rem;
   
   .ds-ability table {
     width: 100%;
-    margin: 0 2rem 1rem;
+    margin: 0 0.5rem 1rem;
   }
   
   .ds-ability > table, .ds-ability > table tr, .ds-ability > table td {
@@ -181,7 +186,7 @@ bottom: -2rem;
   
   .ds-ability > p {
     margin: 0;
-    padding: 0 3rem;
+    padding: 0 0.5rem;
   }
   
   .ds-ability > ul {
