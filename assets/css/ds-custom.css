@@ -6,7 +6,7 @@ layout: null
 
 :root {
       --primaryThemeColor: #1d3362;
-      --transparentThemeColor: rgba(29, 51, 98, 0.7);
+      --transparentPrimaryThemeColor: rgba(29, 51, 98, 0.7);
       --primaryContrastColor: #ffffff;
       --secondaryThemeColor: #ff8800;
       --transparentSecondaryThemeColor: rgba(255, 136, 0, 0.7);
@@ -166,7 +166,7 @@ table tr th {
   .ds-ability > blockquote {
     margin: 0;
     width: 100%;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     background-color: var(--transparentPrimaryThemeColor);
     color: var(--primaryContrastColor);
     padding: 0.25rem 1rem;
