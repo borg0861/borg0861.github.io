@@ -42,7 +42,7 @@ layout: null
 }
 
 .navbar-custom .avatar-container {
-margin-top: 2rem;
+bottom: -2rem;
 }
 
 .navbar-custom .navbar-nav .nav-item a:hover,
@@ -121,6 +121,7 @@ margin-top: 2rem;
   border-left: 5px solid var(--secondaryThemeColor);
   margin: .25rem 0;
   animation: title-grow 5s forwards;
+  content: " ";
 }
 
 @keyframes title-grow {
