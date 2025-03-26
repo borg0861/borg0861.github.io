@@ -5,11 +5,11 @@ layout: null
 
 
 :root {
-      --primaryThemeColor: hsl(221, 54%, 15%);
+      --primaryThemeColor: hsl(221, 54%, 25%);
 
 
-      --honeycombColor: hsl(221, 54%, 5%);
-      --honeycombBorderColor: hsl(221, 54%, 15%);
+      --honeycombColor: hsl(221, 54%, 15%);
+      --honeycombBorderColor: hsl(221, 54%, 25%);
       --honeycombSize: 15px;
 
       --honeycombBG: radial-gradient(circle farthest-side at 0% 50%, var(--honeycombColor) 23.5%, transparent 0)calc(var(--honeycombSize)*0.7) var(--honeycombSize),
