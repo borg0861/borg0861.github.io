@@ -29,7 +29,7 @@ Any abilities, enhancements, or features that grant access to light weapons and 
 ## Table of Contents
 
 - Rules
-    - Conditions
+    - [Conditions](/rules/conditions)
     - Ancestries
     - Languages
     - Classes
