@@ -21,9 +21,6 @@ author: Brent L
 
 navbar-links:
   Home: "index.html"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
   Draw Steel: "https://www.mcdmproductions.com/draw-steel-creator-license"
   About Me: "aboutme"
 
@@ -142,7 +139,6 @@ link-col: "#1d3362"
 hover-col: "#121f3b"
 navbar-col: "#121f3b"
 navbar-text-col: "#ffffff"
-navbar-border-col: "#1d3362"
 footer-col: "#EAEAEA"
 footer-text-col: "#777777"
 footer-link-col: "#404040"

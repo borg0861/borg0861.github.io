@@ -36,7 +36,8 @@ layout: null
 .navbar-custom {
   background: var(--honeycombBG);
   background-size: var(--honeycombBGSize);
-  border-bottom: 3px solid var(--primaryThemeColor);
+  border-bottom: 3px solid var(--primaryThemeColor) !important;
+  box-shadow: 0 5px 3px;
 }
 
 .navbar-custom .avatar-container {
@@ -49,10 +50,6 @@ layout: null
 }
 .page-heading {
   color: var(--primaryThemeColor);
-}
-
-h1, h3 {
-  border-bottom: 2px solid var(--text-col);
 }
 
 /* --- Custom Script --- */

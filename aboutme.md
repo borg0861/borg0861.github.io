@@ -1,16 +1,17 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Who is behind Science Fantasy for Draw Steel?
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Brent, and I'm a huge nerd. I live near Kansas City with my wife and two kids.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+As much as I enjoy fantasy, regardless of the flavor, science fiction has always been the genre I connect with most. As a result, I'm always looking for great RPGs which can delivery on the fantasies I love most.
 
-What else do you need?
+There are some great games out there. [The Expanse RPG](https://greenroninstore.com/collections/the-expanse-rpg) is a stand-out in this area for me. It offers fantastic action and cool stunts. Unfortunately, the level scaling really breaks down after about level 8.
 
-### My story
+There are also superb community maintained resources for settings that I want to emulate. [Mass Effect 5e](https://www.n7.world/) is a key example of this. I love how detailed and fully featured this mod for D&D5e is! Unfortunately, I just don't think that D&D5e really delivers on the fantasy of Mass Effect.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+All of this is why I was so excited when I first played *DRAW STEEL*. It felt heroic. It felt cinematic. It was tactical. And it could deliver on the fantasy of Mass Effect and other media like that really, really well.
+
+But that takes work. Which is why this exists!
