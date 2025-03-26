@@ -1,13 +1,43 @@
 ---
 layout: null
 ---
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+      --honeycombColor: rgb(18, 31, 60);
+      --honeycombBorderColor: hsl(221, 54%, 30%);
+      --honeycombSize: 15px;
+
+      --honeycombBG: radial-gradient(circle farthest-side at 0% 50%, var(--honeycombColor) 23.5%, transparent 0)calc(var(--honeycombSize)*0.7) var(--honeycombSize),
+          radial-gradient(circle farthest-side at 0% 50%, var(--honeycombBorderColor) 24%, transparent 0)calc(var(--honeycombSize)*19/30) var(--honeycombSize),
+          linear-gradient(var(--honeycombColor) 14%, transparent 0, transparent 85%, var(--honeycombColor) 0)0 0,
+          linear-gradient(150deg, var(--honeycombColor) 24%, var(--honeycombBorderColor) 0, var(--honeycombBorderColor) 26%, transparent 0, transparent 74%, var(--honeycombBorderColor) 0, var(--honeycombBorderColor) 76%, var(--honeycombColor) 0)0 0,
+          linear-gradient(30deg, var(--honeycombColor) 24%, var(--honeycombBorderColor) 0, var(--honeycombBorderColor) 26%, transparent 0, transparent 74%, var(--honeycombBorderColor) 0, var(--honeycombBorderColor) 76%, var(--honeycombColor) 0)0 0,
+          linear-gradient(90deg, var(--honeycombBorderColor) 2%, var(--honeycombColor) 0, var(--honeycombColor) 98%, var(--honeycombBorderColor) 0%)0 0 var(--honeycombColor);
+      --honeycombBGLight: radial-gradient(circle farthest-side at 0% 50%, var(--honeycombColorLight) 23.5%, transparent 0)calc(var(--honeycombSize)*0.7) var(--honeycombSize),
+          radial-gradient(circle farthest-side at 0% 50%, var(--honeycombBorderColorLight) 24%, transparent 0)calc(var(--honeycombSize)*19/30) var(--honeycombSize),
+          linear-gradient(var(--honeycombColorLight) 14%, transparent 0, transparent 85%, var(--honeycombColorLight) 0)0 0,
+          linear-gradient(150deg, var(--honeycombColorLight) 24%, var(--honeycombBorderColorLight) 0, var(--honeycombBorderColorLight) 26%, transparent 0, transparent 74%, var(--honeycombBorderColorLight) 0, var(--honeycombBorderColorLight) 76%, var(--honeycombColorLight) 0)0 0,
+          linear-gradient(30deg, var(--honeycombColorLight) 24%, var(--honeycombBorderColorLight) 0, var(--honeycombBorderColorLight) 26%, transparent 0, transparent 74%, var(--honeycombBorderColorLight) 0, var(--honeycombBorderColorLight) 76%, var(--honeycombColorLight) 0)0 0,
+          linear-gradient(90deg, var(--honeycombBorderColorLight) 2%, var(--honeycombColorLight) 0, var(--honeycombColorLight) 98%, var(--honeycombBorderColorLight) 0%)0 0 var(--honeycombColorLight);
+          --honeycombBGSize: calc(var(--honeycombSize)*4/3) calc(var(--honeycombSize)*2);
+      --header-font: 'Orbitron', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
 
 .avatar-img {
-  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  -webkit-filter: drop-shadow( 0 3px 1px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 0 3px 1px rgba(0, 0, 0, .7));
 }
 
+.navbar-custom {
+  background: var(--honeycombBG);
+  background-size: var(--honeycombBGSize);
+}
 
+.navbar-custom .avatar-container {
+ bottom: 0;
+}
 
 
 /* --- Custom Script --- */
