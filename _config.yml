@@ -159,6 +159,7 @@ site-css:
 #  - "/assets/css/custom-styles.css"
 # - href = "https://unpkg.com/augmented-ui@2/augmented-ui.min.css">
  - "/assets/css/ds-custom.css"
+ - "https://unpkg.com/augmented-ui@2/augmented-ui.min.css"
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
 

@@ -6,6 +6,7 @@ layout: null
 
 :root {
       --primaryThemeColor: #1d3362;
+      --transparentThemeColor: rgba(29, 51, 98, 0.7);
       --primaryContrastColor: #ffffff;
       --secondaryThemeColor: #ff8800;
 
@@ -53,7 +54,9 @@ bottom: -2rem;
   color: var(--primaryThemeColor);
 }
 
-
+.post-preview .post-title {
+  font-size: 1.5rem;
+}
 /* SITE NAME ANIMATION */
 
 .title-flex-container {
@@ -156,7 +159,7 @@ bottom: -2rem;
     margin: 0;
     width: 100%;
     background-color: var(--transparentThemeColor);
-    color: var(--primaryThemeColor);
+    color: var(--primaryContrastColor);
     padding: 0.5rem 2rem;
   }
   
