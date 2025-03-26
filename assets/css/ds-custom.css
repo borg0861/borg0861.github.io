@@ -116,11 +116,12 @@ bottom: -2rem;
   }
 }
 
-.border-left {
+.title-divider {
   text-align: center;
   margin-top: 0;
-  font-size: 3.5rem;
-  font-weight: 400;
+  font-size: 4rem;
+  font-weight: 100;
+  border: none;
 }
 
 .reveal-to-bottom {
