@@ -7,6 +7,7 @@ layout: null
 :root {
       --primaryThemeColor: #1d3362;
       --primaryContrastColor: #ffffff;
+      --secondaryThemeColor: #ff8800;
 
       --honeycombColor: #121f3b;
       --honeycombBorderColor: #1d3362;
@@ -36,12 +37,12 @@ layout: null
 .navbar-custom {
   background: var(--honeycombBG);
   background-size: var(--honeycombBGSize);
-  border-bottom: 3px solid var(--primaryThemeColor) !important;
-  box-shadow: 0 5px 3px;
+  border-bottom: 1px solid var(--secondaryThemeColor) !important;
+  box-shadow: 0 3px 3px;
 }
 
 .navbar-custom .avatar-container {
- bottom: 0;
+margin-top: 2rem;
 }
 
 .navbar-custom .navbar-nav .nav-item a:hover,
@@ -51,6 +52,106 @@ layout: null
 .page-heading {
   color: var(--primaryThemeColor);
 }
+
+
+/* SITE NAME ANIMATION */
+
+.title-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: var(--header-font);
+}
+
+.title-animation-header {
+ text-align: center;
+ margin-top: 0;
+ font-size: 3.125rem;
+}
+
+.title-animation-subheader {
+  font-size: 1.6875rem;
+  line-height: 1.1;
+  font-family: var(--header-font);
+  font-weight: 300;
+  margin: 0.625rem 0 0;
+  margin-bottom: 1.25rem;
+}
+
+.mask {
+  overflow: hidden;
+}
+
+.full-width {
+  width: 100%;
+  text-align: center;
+}
+
+.reveal-to-right {
+  transform: translateX(-100%);
+  animation: reveal-to-right 1.2s 1.8s forwards;
+}
+
+@keyframes reveal-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.reveal-to-left {
+  transform: translateX(100%);
+  animation: reveal-to-left 1s 1s forwards;
+}
+
+@keyframes reveal-to-left {
+  from {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.border-left {
+  height: 32px;
+  border-left: 5px solid black;
+  animation: grow 5s forwards;
+}
+
+@keyframes grow {
+  0% {
+    height: 0;
+  }
+  20%, 90% {
+    height: 48px;
+    opacity: 1;
+  }
+  
+  100% {
+    height: 48px;
+  }
+}
+
+.reveal-to-bottom {
+  transform: translateY(-100%);
+  animation: reveal-to-bottom 1s 3.3s forwards;
+}
+
+@keyframes reveal-to-bottom {
+  from {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 
 /* --- Custom Script --- */
 
