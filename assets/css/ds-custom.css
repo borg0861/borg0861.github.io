@@ -76,6 +76,7 @@ bottom: -2rem;
  margin-top: 0;
  font-size: 3.5rem;
  font-weight: 800;
+ color: var(--primaryThemeColor);
 }
 
 .title-animation-subheader {
@@ -165,9 +166,10 @@ table tr th {
   .ds-ability > blockquote {
     margin: 0;
     width: 100%;
-    background-color: var(--transparentSecondaryThemeColor);
+    font-size: 0.7rem;
+    background-color: var(--transparentPrimaryThemeColor);
     color: var(--primaryContrastColor);
-    padding: 1rem 1rem;
+    padding: 0.25rem 1rem;
   }
   
   .ds-ability > blockquote > p {

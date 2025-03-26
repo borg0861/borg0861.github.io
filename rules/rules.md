@@ -1,7 +1,7 @@
 ---
 layout: page
-title: rules
-subtitle: These are the rules you're looking for.
+title: Rules
+subtitle: These are the rules you're looking for
 ---
 
 Science Fantasy for Draw Steel is a fan supplment for *DRAW STEEL* which is meant to help evoke the feeling of some excellent Science Fantasy video games, like Mass Effect, Destiny, Control, Anthem, and more.
@@ -39,12 +39,12 @@ Any abilities, enhancements, or features that grant access to light weapons and 
         - Pilot
         - Steel Specter
         - Techweaver
-        - [Voidcaller](/rules/classes/voidcaller.md)
+        - [Voidcaller](/rules/classes/voidcaller)
     - Kits
     - Perks
     - Skill Groups
     - Combat
-        - Stamina
+        - [Stamina](/rules/combat/stamina)
         - Object Stamina
         - Cover
         - Space Combat
