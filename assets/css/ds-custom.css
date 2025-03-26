@@ -5,8 +5,11 @@ layout: null
 
 
 :root {
-      --honeycombColor: rgb(18, 31, 60);
-      --honeycombBorderColor: hsl(221, 54%, 30%);
+      --primaryThemeColor: hsl(221, 54%, 15%);
+
+
+      --honeycombColor: hsl(221, 54%, 5%);
+      --honeycombBorderColor: hsl(221, 54%, 15%);
       --honeycombSize: 15px;
 
       --honeycombBG: radial-gradient(circle farthest-side at 0% 50%, var(--honeycombColor) 23.5%, transparent 0)calc(var(--honeycombSize)*0.7) var(--honeycombSize),
@@ -26,8 +29,8 @@ layout: null
   }
 
 .avatar-img {
-  -webkit-filter: drop-shadow( 0 3px 1px rgba(0, 0, 0, .7));
-  filter: drop-shadow( 0 3px 1px rgba(0, 0, 0, .7));
+  -webkit-filter: drop-shadow( 0 0 3px 2px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 0 0 3px 2px rgba(0, 0, 0, .7));
 }
 
 .navbar-custom {
@@ -39,6 +42,9 @@ layout: null
  bottom: 0;
 }
 
+.page-heading {
+  color: var(--primaryThemeColor);
+}
 
 /* --- Custom Script --- */
 
