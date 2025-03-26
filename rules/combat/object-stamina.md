@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stamina
+title: Object Stamina
 ---
 
 Mundane objects in the game have Stamina based on the material they’re made of. When an object’s Stamina is reduced to 0 in a single turn the object is destroyed. Objects have damage immunity all to poison and psychic damage. Objects made of common materials have stamina as follows:
