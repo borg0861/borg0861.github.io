@@ -118,8 +118,9 @@ margin-top: 2rem;
 }
 
 .border-left {
-  height: 32px;
-  border-left: 5px solid black;
+  height: 1.25rem;
+  border-left: 5px solid var(--secondaryThemeColor);
+  margin: .25rem 0;
   animation: title-grow 5s forwards;
 }
 
