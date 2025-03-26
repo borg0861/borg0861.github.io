@@ -5,11 +5,11 @@ layout: null
 
 
 :root {
-      --primaryThemeColor: hsl(221, 54%, 25%);
+      --primaryThemeColor: #1d3362;
+      --primaryContrastColor: #ffffff;
 
-
-      --honeycombColor: hsl(221, 54%, 15%);
-      --honeycombBorderColor: hsl(221, 54%, 25%);
+      --honeycombColor: #121f3b;
+      --honeycombBorderColor: #1d3362;
       --honeycombSize: 15px;
 
       --honeycombBG: radial-gradient(circle farthest-side at 0% 50%, var(--honeycombColor) 23.5%, transparent 0)calc(var(--honeycombSize)*0.7) var(--honeycombSize),
@@ -29,8 +29,8 @@ layout: null
   }
 
 .avatar-img {
-  -webkit-filter: drop-shadow( 0 0 3px 2px rgba(0, 0, 0, .7));
-  filter: drop-shadow( 0 0 3px 2px rgba(0, 0, 0, .7));
+  -webkit-filter: drop-shadow( 0 0 2px 5px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 0 0 2px 5px rgba(0, 0, 0, .7));
 }
 
 .navbar-custom {
@@ -42,6 +42,10 @@ layout: null
  bottom: 0;
 }
 
+.navbar-custom .navbar-nav .nav-link a:hover,
+.navbar-custom .navbar-nav .nav-link a:focus {
+  color: var(--primaryContrastColor);
+}
 .page-heading {
   color: var(--primaryThemeColor);
 }
