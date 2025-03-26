@@ -1,0 +1,78 @@
+---
+layout: null
+---
+
+/* --- Custom Script --- */
+
+.ds-ability {
+    margin: 1rem 0;
+    padding-bottom: 2rem;
+    background: var(--honeycombBG);
+    background-size: var(--honeycombBGSize);
+    color: #fff;
+    --aug-border-bg: var(--primaryThemeColor);
+    --aug-border-all: 3px;
+  }
+  
+  .ds-ability > h6 {
+    width: 100%;
+    background-color: var(--primaryThemeColor);
+    margin: 0;
+    padding: 0.5rem 0 0.5rem 4rem;
+    font-size: 1.25rem;
+  }
+  
+  .ds-ability > blockquote {
+    margin: 0;
+    width: 100%;
+    background-color: var(--transparentThemeColor);
+    color: var(--primaryThemeColor);
+    padding: 0.5rem 2rem;
+  }
+  
+  .ds-ability > blockquote > p {
+    margin: 0 !important;
+  }
+  
+  .ds-ability > strong {
+    color: var(--primaryThemeColor);
+  }
+  
+  .ds-ability table {
+    width: 100%;
+    margin: 0 2rem 1rem;
+  }
+  
+  .ds-ability > table, .ds-ability > table tr, .ds-ability > table td {
+    border: 0px transparent !important;
+    background: transparent !important;
+    font-size: 0.9rem;
+  }
+  
+  .ds-ability > p {
+    margin: 0 !important;
+    padding: 0 3rem;
+  }
+  
+  .ds-ability > ul {
+    margin: 0 !important;
+    line-height: normal;
+    padding: 0 3rem 0;
+  }
+  
+  .ds-power-roll > ul {
+    margin-bottom: 1rem;
+  }
+  
+  .ds-power-roll > ul > li:nth-of-type(1):before {
+    content: "11 or lower: ";
+    font-weight: 800;
+  }
+  .ds-power-roll > ul > li:nth-of-type(2):before {
+    content: "12 to 16: ";
+    font-weight: 800;
+  }
+  .ds-power-roll > ul > li:nth-of-type(3):before {
+    content: "17+: ";
+    font-weight: 800;
+  }
