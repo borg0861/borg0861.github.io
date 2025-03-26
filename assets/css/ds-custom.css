@@ -144,12 +144,9 @@ bottom: -2rem;
     padding-bottom: 2rem;
     background: var(--honeycombBGLight);
     background-size: var(--honeycombBGSize);
+    --aug-border-bg: var(--primaryThemeColor);
   }
   
-  .ds-ability::after{
-    background-color: var(--primaryThemeColor);
-  }
-
   .ds-ability > h6 {
     width: 100%;
     background-color: var(--primaryThemeColor);
