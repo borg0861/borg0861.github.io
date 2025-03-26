@@ -12,6 +12,8 @@ layout: null
 
       --honeycombColor: #121f3b;
       --honeycombBorderColor: #1d3362;
+      --honeycombColorLight: hsl(210, 53%, 75%);
+      --honeycombBorderColorLight: hsl(221, 54%, 60%);
       --honeycombSize: 15px;
 
       --honeycombBG: radial-gradient(circle farthest-side at 0% 50%, var(--honeycombColor) 23.5%, transparent 0)calc(var(--honeycombSize)*0.7) var(--honeycombSize),
@@ -140,16 +142,18 @@ bottom: -2rem;
 .ds-ability {
     margin: 1rem 0;
     padding-bottom: 2rem;
-    background: var(--honeycombBG);
+    background: var(--honeycombBGLight);
     background-size: var(--honeycombBGSize);
-    color: #fff;
-    --aug-border-bg: var(--primaryThemeColor);
-    --aug-border-all: 3px;
   }
   
+  .ds-ability::after{
+    background-color: var(--primaryThemeColor);
+  }
+
   .ds-ability > h6 {
     width: 100%;
     background-color: var(--primaryThemeColor);
+    color: var(--primaryContrastColor);
     margin: 0;
     padding: 0.5rem 0 0.5rem 4rem;
     font-size: 1.25rem;
@@ -167,28 +171,24 @@ bottom: -2rem;
     margin: 0 !important;
   }
   
-  .ds-ability > strong {
-    color: var(--primaryThemeColor);
-  }
-  
   .ds-ability table {
     width: 100%;
     margin: 0 2rem 1rem;
   }
   
   .ds-ability > table, .ds-ability > table tr, .ds-ability > table td {
-    border: 0px transparent !important;
-    background: transparent !important;
+    border: 0px transparent;
+    background: transparent;
     font-size: 0.9rem;
   }
   
   .ds-ability > p {
-    margin: 0 !important;
+    margin: 0;
     padding: 0 3rem;
   }
   
   .ds-ability > ul {
-    margin: 0 !important;
+    margin: 0;
     line-height: normal;
     padding: 0 3rem 0;
   }
