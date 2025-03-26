@@ -21,6 +21,7 @@ author: Brent L
 
 navbar-links:
   Home: "index.html"
+  Rules: "/rules/rules"
   Draw Steel: "https://www.mcdmproductions.com/draw-steel-creator-license"
   About Me: "aboutme"
 
