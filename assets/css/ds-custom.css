@@ -12,8 +12,8 @@ layout: null
 
       --honeycombColor: #121f3b;
       --honeycombBorderColor: #1d3362;
-      --honeycombColorLight: hsl(210, 53%, 75%);
-      --honeycombBorderColorLight: hsl(221, 54%, 60%);
+      --honeycombColorLight: hsl(210, 53%, 95%);
+      --honeycombBorderColorLight: hsl(221, 54%, 80%);
       --honeycombSize: 15px;
 
       --honeycombBG: radial-gradient(circle farthest-side at 0% 50%, var(--honeycombColor) 23.5%, transparent 0)calc(var(--honeycombSize)*0.7) var(--honeycombSize),
