@@ -2,7 +2,7 @@
 layout: null
 ---
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Redacted');
 
 :root {
       --primaryThemeColor: #1d3362;
@@ -24,6 +24,10 @@ layout: null
   border-bottom: 1px solid var(--secondaryThemeColor) !important;
   box-shadow: 0 3px 3px;
 }
+
+.redacted {
+  font-family: 'Redacted';
+  }
 
 .navbar-custom .avatar-container {
 bottom: -2rem;

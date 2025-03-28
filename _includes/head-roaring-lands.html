@@ -8,13 +8,13 @@
     {%- elsif page.title -%}
       {{ page.title | strip_html | xml_escape  }}
     {%- else -%}
-      {{ site.title | strip_html | xml_escape }}
+      {{ site.title-roaring-lands | strip_html | xml_escape }}
     {%- endif -%}
   {% endcapture %}
 
   {% capture title %}
-    {%- if site.title and site.title-on-all-pages and (site.title != pagetitle) -%}
-      {{ pagetitle }} | {{ site.title }}
+    {%- if site.title-roaring-lands and site.title-on-all-pages and (site.title-roaring-lands != pagetitle) -%}
+      {{ pagetitle }} | {{ site.title-roaring-lands }}
     {%- else -%}
       {{ pagetitle }}
     {%- endif -%}

@@ -11,6 +11,7 @@
 
 # Name of website
 title: Science Fantasy for Draw Steel
+title-roaring-lands: Roaring Lands
 
 # Your name to show in the footer
 author: Brent L
@@ -25,6 +26,8 @@ navbar-links:
   Draw Steel: "https://www.mcdmproductions.com/draw-steel-creator-license"
   About Me: "aboutme"
 
+navbar-links-roaring-lands:
+  Home: "/roaring-lands/home"
 ################
 # --- Logo --- #
 ################
@@ -32,6 +35,7 @@ navbar-links:
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/assets/img/SFDS_White.svg"
+avatar-roaring-lands: "/assets/img/roaring-lands.svg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: false
@@ -39,6 +43,7 @@ round-avatar: false
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 title-img: "/assets/img/SFDS_White.svg"
+title-img-roaring-lands: "/assets/img/roaring-lands.svg"
 
 #####################################
 # --- Footer social media links --- #
