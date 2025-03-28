@@ -76,11 +76,11 @@
     {% endfor %}
   {% endif %}
 
-  {% if site.site-css-primary %}
-    {% for css in site.site-css-primary %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
-    {% endfor %}
-  {% endif %}
+  {% if site.site-css-roaring-lands %}
+  {% for css in site.site-css-roaring-lands %}
+    <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
+{% endif %}
 
   {% if page.ext-css %}
     {% for css in page.ext-css %}
