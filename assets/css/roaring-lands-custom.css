@@ -15,6 +15,7 @@ layout: null
   }
 
 .avatar-img {
+  object-fit: fill;
   -webkit-filter: drop-shadow( 0 5px 2px rgba(0, 0, 0, .7));
   filter: drop-shadow( 0 5px 2px rgba(0, 0, 0, .7));
 }
