@@ -15,7 +15,7 @@ layout: null
 }
 
 
-/*REVEAL ANIMATION*/
+/*REVEAL ANIMATION*
 .reveal-to-right {
   transform: translateX(-100%);
   animation: title-reveal-to-right 1.2s 1.8s forwards;
@@ -57,7 +57,7 @@ layout: null
     transform: translateY(0);
   }
 }
-
+*/
 /*HORROR ANIMATION*/
 
 @red: 136;
@@ -151,6 +151,11 @@ layout: null
 table tr th {
   background-color: var(--primaryThemeColor);
   color: var(--primaryContrastColor);
+}
+
+summary .codex-category{
+  font-size: 1.5rem;
+  font-family: var(--header-font);
 }
 
 /* SITE NAME ANIMATION */
