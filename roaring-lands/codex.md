@@ -7,16 +7,19 @@ subtitle: Learn about the world
 The codex is where you can learn more about the Roaring Lands.
 
 ## Table of Contents
+- [Basic Lore](#basic-lore)
+- [Regions & Places](#regions)
+- [Organizations](#organizations)
+- [Items & Technologies](#items)
+- [Allies & Enemies](#characters)
 
-<details markdown="1">
-<summary>Basic Lore</summary>
+### Basic Lore {#basic-lore}
 - [The Awakened](/roaring-lands/codex/the-awakened)
 - [Tiers of Awakening](/roaring-lands/codex/tiers-of-awakening)
 - [The Rite of Awakening](/roaring-lands/codex/the-rite-of-awakening)
 - [The Rabid](/roaring-lands/codex/the-rabid)
-</details>
 
-### Regions
+### Regions & Places {#regions}
 - <span class="redacted" markdown="1">[Arajaale Tropics](/roaring-lands/codex/regions/arajaale-tropics)
     - <span class="redacted" markdown="1">[Shadowcrest Vale](/roaring-lands/codex/regions/shadowcrest-vale)
         - <span class="redacted" markdown="1">[Upper Ward](/roaring-lands/codex/regions/upper-ward)
@@ -45,11 +48,11 @@ The codex is where you can learn more about the Roaring Lands.
     - <span class="redacted" markdown="1">[Summershield Village](/roaring-lands/codex/regions/summershield-village)
     - <span class="redacted" markdown="1">[Forgotten Obelisk](/roaring-lands/codex/regions/forgotten-obelisk)
 
-### Organizations
+### Organizations {#organizations}
 - <span class="redacted" markdown="1">[Global Mercenaries Guild](/roaring-lands/codex/global-mercenaries-guild)
 - <span class="redacted" markdown="1">[Slognoth Eldritch Supplies](/roaring-lands/codex/slognoth-eldritch-supplies)
 
-### Tehcnologies & Items
+### Items & Technologies {#items}
 - <span class="redacted" markdown="1">[Eldtritch Gateway](/roaring-lands/codex/items/eldritch-gateway)
 - <span class="redacted" markdown="1">[Nullifying Shackles](/roaring-lands/codex/items/nullifying-shackles)
 - <span class="redacted" markdown="1">[Normal Aether](/roaring-lands/codex/items/aether-normal)
@@ -60,3 +63,5 @@ The codex is where you can learn more about the Roaring Lands.
 - <span class="redacted" markdown="1">[Transcendant Aether](/roaring-lands/codex/items/aether-transcendant)
 - <span class="redacted" markdown="1">[Awakening Stone](/roaring-lands/codex/items/awakening-stone)
 - <span class="redacted" markdown="1">[Healing Salve](/roaring-lands/codex/items/healing-salve)
+
+### Allies & Enemies {#characters}
