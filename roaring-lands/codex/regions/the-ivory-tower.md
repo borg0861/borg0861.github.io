@@ -1,5 +1,5 @@
 ---
-template: page
+layout: page-roaring-lands
 title: The Ivory Tower
 subtitle: The intellectual heart of Shadowcrest Vale
 ---

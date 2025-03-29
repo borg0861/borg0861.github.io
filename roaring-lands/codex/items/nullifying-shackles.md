@@ -1,5 +1,5 @@
 ---
-template: page
+layout: page-roaring-lands
 title: Nullifying Shackles
 ---
 

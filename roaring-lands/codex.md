@@ -1,5 +1,5 @@
 ---
-template: page-roaring-lands
+layout: page-roaring-lands
 title: Codex
 subtitle: Learn about the world
 ---

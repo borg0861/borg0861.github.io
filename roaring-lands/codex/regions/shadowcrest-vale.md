@@ -3,11 +3,15 @@ layout: page-roaring-lands
 title: Shadowcrest Vale
 ---
 
+![Shadowcrest Vale](/assets/img/regions/shadowcrest_vale_portrait.jpg){: .mx-auto.d-block :}
+
 Shadowcrest Vale, a city-state nestled within the heart of a the Arajaale Tropics teeming with magic, stands as a testament to nature’s resilience and the ingenuity of its inhabitants. At its center lies the eponymous capital city, Shadowcrest Vale, a thriving metropolis where civilization harmonizes with the wild forces that surround it.
 
 The city’s defining feature is its location within the enchanted jungle, suffused with potent magic that invigorates every living thing within its borders. Here, the laws of nature bend to the will of natural magic energies, ensuring that any wood or plant life severed from its source quickly regenerates, perpetually renewing the lush greenery that blankets the land. As a consequence, the cityscape of Shadowcrest Vale is a vibrant tapestry of verdant foliage, where even the most modern structures are enshrouded in a cloak of living vines and emerald leaves.
 
 Divided by a mighty river that has carved a deep furrow through the landscape, Shadowcrest Vale’s urban sprawl is a study in contrast. On either side of the waterway, the city rises and falls with the natural contours of the land, its buildings perched atop craggy outcroppings and verdant hillsides alike. This division lends a sense of stratification to the city, with districts of varying elevation each possessing its own unique character and atmosphere.
+
+![Shadowcrest Vale Wards](/assets/img/regions/shadowcrest-vale-map-legend.jpeg){: .mx-auto.d-block :}
 
 Within the embrace of Shadowcrest Vale’s seven wards, each district boasts its own distinctive ambiance and architectural style, reflecting the diverse heritage and culture of its inhabitants. From the bustling markets of Market Town to the opulent estates of the Upper Ward, every corner of the city pulsates with life and energy, united by the shared bond of living amidst the magic of the jungle.
 

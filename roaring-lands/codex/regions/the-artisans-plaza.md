@@ -1,5 +1,5 @@
 ---
-template: page
+layout: page-roaring-lands
 title: The Artisan's Plaza
 subtitle: A home for craftsmen and artisans
 ---

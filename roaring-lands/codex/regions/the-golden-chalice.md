@@ -1,5 +1,5 @@
 ---
-template: page
+layout: page-roaring-lands
 title: The Golden Chalice
 subtitle: Beacon of refinement and indulgence
 ---
