@@ -60,9 +60,10 @@ layout: null
 
 /*HORROR ANIMATION*/
 
-@red: 255;
-@green: 255;
-@blue: 255;
+@red: 136;
+@green: 18;
+@blue: 0;
+@dark-gray: #ffffff;
 
 @-webkit-keyframes horror-animation {.mixi-frames;}
 @-moz-keyframes horror-animation {.mixi-frames;}

@@ -9,10 +9,7 @@ The codex is where you can learn more about the Roaring Lands.
 ## Table of Contents
 
 <details markdown="1">
-<summary>
-
-### Basic Lore
-</summary>
+<summary markdown="1">### Basic Lore</summary>
 - [The Awakened](/roaring-lands/codex/the-awakened)
 - [Tiers of Awakening](/roaring-lands/codex/tiers-of-awakening)
 - [The Rite of Awakening](/roaring-lands/codex/the-rite-of-awakening)
