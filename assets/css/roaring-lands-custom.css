@@ -77,7 +77,7 @@ summary .codex-category{
   text-align: center;
   font-family: var(--header-font);
   margin-top: 0;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 800;
   color: var(--secondaryThemeColor);
  
@@ -90,8 +90,8 @@ summary .codex-category{
   animation: horror-animation 5s infinite;
 }
 
-.title-animation-subtitle {
-  font-size: 1.6875rem;
+.roaring-lands-subtitle {
+  font-size: 0.7rem;
   line-height: 1.1;
   font-weight: 400;
   margin-bottom: 1.25rem;
