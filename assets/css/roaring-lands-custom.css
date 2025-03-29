@@ -201,11 +201,11 @@ table tr th {
   display: inline-block;  /* For IE11/ MS Edge bug */
   pointer-events: none;
   text-decoration: none;
+  color: #000000;
 }
 
 .redacted::after {
   content: "[Undiscovered]";
-  font-family: var(--header-font);
   font-size: 0.8rem;
   color: var(--PrimaryThemeColor);
   margin-left: 1rem;
