@@ -2,16 +2,8 @@
 layout: home-roaring-lands
 ---
 
-<div class="title-flex-container">
-    <div class="mask">
-      <div class="title-animation-header reveal-to-left">Roaring&nbsp;</div>
-    </div>
-    <div class="mask">
-      <div class="title-animation-header reveal-to-right">Lands</div>
-    </div>
-    <div class="mask full-width">
-      <div class="title-animation-subheader reveal-to-bottom">a DRAW STEEL campaign</div>
-    </div>
+<div class="roaring-lands-title">
+     Roaring Lands<br><span class="roaring-lands-subtitle">a DRAW STEEL campaign</span>
 </div>
 
 Welcome to the Roaring Lands, where Bands take up arms to protect civilization and earn fabulous wealth and glory while doing so. In this *DRAW STEEL* campaign, players will emerge from obscurity to take on incredible power, form a mercenary band, and perhaps even rise to worldwide acclaim.
