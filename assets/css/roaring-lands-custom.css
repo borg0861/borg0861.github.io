@@ -218,13 +218,13 @@ summary .codex-category{
   word-break: break-word;  
 }
 
-.pill--ally {
+.pill-ally {
   background: #b4eda0; }
-.pill--neutral {
+.pill-neutral {
   background: #ffd664; }
-.pill--enemy {
+.pill-enemy {
   background: #ff948b; }
-.pill--dead {
+.pill-dead {
   background: #000000;
   color: #ffffff;
  }
