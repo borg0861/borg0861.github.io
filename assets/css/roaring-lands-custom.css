@@ -80,7 +80,15 @@ summary .codex-category{
   font-size: 4rem;
   font-weight: 800;
   color: var(--secondaryThemeColor);
- 
+}
+
+.roaring-lands-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  color: var(--primaryThemeColor);
+
   color: transparent;
   text-shadow: 0 0 5px rgba(0,0,0,0.5);
 
@@ -90,20 +98,9 @@ summary .codex-category{
   animation: horror-animation 5s infinite;
 }
 
-.roaring-lands-subtitle {
-  font-size: 0.7rem;
-  line-height: 1.1;
-  font-weight: 400;
-  margin-bottom: 1.25rem;
-  color: var(--primaryThemeColor);
-}
-
 /* HIDDEN INFORMATION */
 
 .redacted {
-  font-family: 'Redacted';
-  cursor: not-allowed;
-  color: #000000;
 }
 
 .redacted > a {
@@ -111,6 +108,8 @@ summary .codex-category{
   pointer-events: none;
   text-decoration: none;
   color: #000000;
+  font-family: 'Redacted';
+  cursor: not-allowed;
 }
 
 .redacted::after {
