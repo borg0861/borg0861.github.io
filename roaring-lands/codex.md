@@ -20,7 +20,7 @@ The codex is where you can learn more about the Roaring Lands.
 - [The Rabid](/roaring-lands/codex/the-rabid)
 
 ### Regions & Places {#regions}
-- <span class="redacted" markdown="1">[Arajaale Tropics](/roaring-lands/codex/regions/arajaale-tropics)</span><span class="c-pill c-pill--success">Ally</span>
+- <span class="redacted" markdown="1">[Arajaale Tropics](/roaring-lands/codex/regions/arajaale-tropics)</span><span class="c-pill c-pill--success">Allied NPC</span><span class="c-pill c-pill--success">Dead</span>
     - <span class="redacted" markdown="1">[Shadowcrest Vale](/roaring-lands/codex/regions/shadowcrest-vale)</span>
         - <span class="redacted" markdown="1">[Upper Ward](/roaring-lands/codex/regions/upper-ward)</span>
             - <span class="redacted" markdown="1">[The Emerald Gardens](/roaring-lands/codex/regions/the-emerald-gardens)</span>
