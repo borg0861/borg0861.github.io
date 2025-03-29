@@ -9,5 +9,5 @@ These rites, when performed change a creature from a mundane creature with only 
 
 All Awakened, like the Rabid, exist along a spectrum of power which determines just how powerful they are, and how much of their being is composed of magic.
 
-{: .box-info}
+{: .box-note}
 The Awakened, Rite of Awakening, and more were all inspired heavily by **He Who Fights with Monsters**.

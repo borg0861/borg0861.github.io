@@ -1,18 +1,17 @@
 ---
 layout: null
 ---
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Redacted');
 
 :root {
-      --primaryThemeColor: #1d3362;
-      --transparentPrimaryThemeColor: rgba(29, 51, 98, 0.7);
+      --primaryThemeColor: #881200;
+      --transparentPrimaryThemeColor: rgba(136, 18, 0,0.7);
       --primaryContrastColor: #ffffff;
-      --secondaryThemeColor: #ff8800;
-      --transparentSecondaryThemeColor: rgba(255, 136, 0, 0.7);
+      --secondaryThemeColor: #f7ea00;
+      --transparentSecondaryThemeColor: rgba(247, 234, 0,0.7);
 
-      --header-font: 'Orbitron', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
+      --header-font: "Grenze Gotisch", serif;
 
 .avatar-img {
   object-fit: fill;
@@ -22,34 +21,24 @@ layout: null
 
 .navbar-custom {
   background: var(--primaryThemeColor);
-  border-bottom: 1px solid var(--secondaryThemeColor) !important;
   box-shadow: 0 3px 3px;
-}
 
-.redacted {
-  font-family: 'Redacted';
-  cursor: not-allowed;
-}
-
-.redacted > a {
-  display: inline-block;  /* For IE11/ MS Edge bug */
-  pointer-events: none;
-  text-decoration: none;
-}
-
-.redacted::after {
-  content: "[Undiscovered]";
-  font-family: var(--header-font);
-  font-size: 0.8rem;
-  color: var(--secondaryThemeColor);
-}
-
-.hidden {
-  display: none;
-}
-
-.navbar-custom .avatar-container {
-bottom: -2rem;
+  &:before, &:after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    -webkit-clip-path: polygon(0% 0%, 5%  100%, 10% 0%, 15%  100%, 20% 0%, 25% 100%, 30% 0%, 35%  100%, 40% 0%, 45%  100%, 50% 0%, 55%  100%, 60% 0%, 65%  100%, 70% 0%, 75%  100%, 80% 0%, 85%  100%, 90% 0%, 95%  100%, 100% 0%);
+  }
+  &:before {
+    background-color: var(--page-col);
+    top: 0;
+  }
+  &:after {
+    background-color: var(--primaryThemeColor);
+    bottom: -2px;
+  }
 }
 
 .navbar-custom .navbar-nav .nav-item a:hover,
@@ -63,6 +52,7 @@ bottom: -2rem;
 .post-preview .post-title {
   font-size: 1.5rem;
 }
+
 /* SITE NAME ANIMATION */
 
 .title-flex-container {
@@ -72,6 +62,11 @@ bottom: -2rem;
   align-items: center;
   align-content: center;
   font-family: var(--header-font);
+
+  -webkit-animation: horror-animation 5s infinite;
+  -moz-animation: horror-animation 5s infinite;
+  -o-animation: horror-animation 5s infinite;
+  animation: horror-animation 5s infinite;
 }
 
 .title-animation-header {
@@ -98,47 +93,6 @@ bottom: -2rem;
   text-align: center;
 }
 
-.reveal-to-right {
-  transform: translateX(-100%);
-  animation: title-reveal-to-right 1.2s 1.8s forwards;
-}
-
-@keyframes title-reveal-to-right {
-  from {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.reveal-to-left {
-  transform: translateX(100%);
-  animation: title-reveal-to-left 1s 1s forwards;
-}
-
-@keyframes title-reveal-to-left {
-  from {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.reveal-to-bottom {
-  transform: translateY(-100%);
-  animation: title-reveal-to-bottom 1s 3.3s forwards;
-}
-
-@keyframes title-reveal-to-bottom {
-  from {
-    transform: translateY(-125%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 
 table tr th {
   background-color: var(--primaryThemeColor);
@@ -147,7 +101,32 @@ table tr th {
 
 
 
-/* --- Custom Script --- */
+/* HIDDEN INFORMATION */
+
+.redacted {
+  font-family: 'Redacted';
+  cursor: not-allowed;
+}
+
+.redacted > a {
+  display: inline-block;  /* For IE11/ MS Edge bug */
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.redacted::after {
+  content: "[Undiscovered]";
+  font-family: var(--header-font);
+  font-size: 0.8rem;
+  color: var(--secondaryThemeColor);
+  margin-left: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* DS ABILITIES */
 
 .ds-ability {
     margin: 1rem 0;
@@ -216,3 +195,91 @@ table tr th {
     content: "17+: ";
     font-weight: 800;
   }
+
+/*REVEAL ANIMATION*/
+.reveal-to-right {
+  transform: translateX(-100%);
+  animation: title-reveal-to-right 1.2s 1.8s forwards;
+}
+
+@keyframes title-reveal-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.reveal-to-left {
+  transform: translateX(100%);
+  animation: title-reveal-to-left 1s 1s forwards;
+}
+
+@keyframes title-reveal-to-left {
+  from {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.reveal-to-bottom {
+  transform: translateY(-100%);
+  animation: title-reveal-to-bottom 1s 3.3s forwards;
+}
+
+@keyframes title-reveal-to-bottom {
+  from {
+    transform: translateY(-125%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*HORROR ANIMATION*/
+
+@red: 255;
+@green: 255;
+@blue: 255;
+
+@-webkit-keyframes horror-animation {.mixi-frames;}
+@-moz-keyframes horror-animation {.mixi-frames;}
+@-o-keyframes horror-animation {.mixi-frames;}
+@keyframes horror-animation {.mixi-frames;}
+
+.mixi-frames () {
+	0% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.1); left: 51%; top: 36%;}
+	5% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.2); left: 50%; top: 35%;}
+  10% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.3); left: 49%; top: 34%;}
+	15% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.4); left: 50%; top: 35%;}
+  16% {text-shadow: 0 0 5px @dark-gray; left: 50%}
+  17% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.4); left: 50%;}
+	20% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.5); left: 49%}
+  25% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.6); left: 49%}
+ 	30% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.7); left: 50%}
+	35% {text-shadow: 0 0 5px rgba(@red,@green,@blue,0.8); left: 50%}
+  36% {text-shadow: 0 0 5px @dark-gray; left: 50%}
+  37% {text-shadow: 0 0 5px rgba(@red,@green,@blue,0.8); left: 50%}
+  40% {text-shadow: 0 0 5px rgba(@red,@green,@blue,0.9); left: 51%}
+	45% {text-shadow: 0 0 5px rgba(@red,@green,@blue,0.8); left: 51%}
+	50% {text-shadow: 0 0 5px rgba(@red,@green,@blue,0.7); left: 51%}
+	55% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.6); left: 50%}
+  56% {text-shadow: 0 0 5px @dark-gray; left: 50%}
+  57% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.6); left: 52%}
+  60% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.5); left: 50%}
+	65% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.4); left: 50%}
+	70% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.3); left: 49%}
+  75% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.2); left: 49%}
+  76% {text-shadow: 0 0 5px @dark-gray; left: 50%}
+  77% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.2); left: 49%}
+ 	80% {text-shadow: 0 0 5px rgba(@red,@green,@blue,0.1); left: 49%}
+	85% {text-shadow: 0 0 5px rgba(@red,@green,@blue,0.2); left: 51%}
+  86% {text-shadow: 0 0 5px @dark-gray; left: 50%}
+  87% {text-shadow: 0 0 5px rgba(@red,@green,@blue,0.2); left: 51%}
+  90% {text-shadow: 0 0 5px rgba(@red,@green,@blue,0.3); left: 51%}
+	95% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.4); left: 51%} 
+ 	100% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.5); left: 50%} 
+}

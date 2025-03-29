@@ -151,6 +151,16 @@ footer-text-col: "#777777"
 footer-link-col: "#404040"
 footer-hover-col: "#0085A1"
 
+page-col-roaring-lands: "#FFFFFF"
+text-col-roaring-lands: "#404040"
+link-col-roaring-lands: "#1d3362"
+hover-col-roaring-lands: "#121f3b"
+navbar-col-roaring-lands: "#121f3b"
+navbar-text-col-roaring-lands: "#ffffff"
+footer-col-roaring-lands: "#EAEAEA"
+footer-text-col-roaring-lands: "#777777"
+footer-link-col-roaring-lands: "#404040"
+footer-hover-col-roaring-lands: "#0085A1"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
