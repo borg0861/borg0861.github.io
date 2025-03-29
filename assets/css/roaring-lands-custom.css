@@ -96,13 +96,18 @@ summary .codex-category{
   color: var(--primaryThemeColor);
 }
 
-.redacted > a {
+.redacted a {
   display: inline-block;  /* For IE11/ MS Edge bug */
   pointer-events: none;
   text-decoration: none;
   color: #000000;
   font-family: 'Redacted';
   cursor: not-allowed;
+}
+
+.redacted p {
+  font-family: 'Redacted';
+  color: #000000;
 }
 
 .redacted::after {
