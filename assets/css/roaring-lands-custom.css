@@ -6,195 +6,14 @@ layout: null
 
 :root {
       --primaryThemeColor: #881200;
-      --transparentPrimaryThemeColor: rgba(136, 18, 0,0.7);
+      --transparentPrimaryThemeColor: rgba(136, 18, 0, 0.7);
       --primaryContrastColor: #ffffff;
-      --secondaryThemeColor: #f7ea00;
-      --transparentSecondaryThemeColor: rgba(247, 234, 0,0.7);
+      --secondaryThemeColor: #000000;
+      --transparentSecondaryThemeColor: rgba(0, 0, 0, 0.7);
 
       --header-font: "Grenze Gotisch", serif;
-
-.avatar-img {
-  object-fit: fill;
-  -webkit-filter: drop-shadow( 0 5px 2px rgba(0, 0, 0, .7));
-  filter: drop-shadow( 0 5px 2px rgba(0, 0, 0, .7));
 }
 
-.navbar-custom {
-  background: var(--primaryThemeColor);
-  box-shadow: 0 3px 3px;
-
-  &:before, &:after {
-    content: "";
-    height: 2px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    -webkit-clip-path: polygon(0% 0%, 5%  100%, 10% 0%, 15%  100%, 20% 0%, 25% 100%, 30% 0%, 35%  100%, 40% 0%, 45%  100%, 50% 0%, 55%  100%, 60% 0%, 65%  100%, 70% 0%, 75%  100%, 80% 0%, 85%  100%, 90% 0%, 95%  100%, 100% 0%);
-  }
-  &:before {
-    background-color: var(--page-col);
-    top: 0;
-  }
-  &:after {
-    background-color: var(--primaryThemeColor);
-    bottom: -2px;
-  }
-}
-
-.navbar-custom .navbar-nav .nav-item a:hover,
-.navbar-custom .navbar-nav .nav-item a:focus {
-  color: var(--primaryContrastColor);
-}
-.page-heading {
-  color: var(--primaryThemeColor);
-}
-
-.post-preview .post-title {
-  font-size: 1.5rem;
-}
-
-/* SITE NAME ANIMATION */
-
-.title-flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  font-family: var(--header-font);
-
-  -webkit-animation: horror-animation 5s infinite;
-  -moz-animation: horror-animation 5s infinite;
-  -o-animation: horror-animation 5s infinite;
-  animation: horror-animation 5s infinite;
-}
-
-.title-animation-header {
- text-align: center;
- margin-top: 0;
- font-size: 3.5rem;
- font-weight: 800;
- color: var(--primaryThemeColor);
-}
-
-.title-animation-subheader {
-  font-size: 1.6875rem;
-  line-height: 1.1;
-  font-weight: 400;
-  margin-bottom: 1.25rem;
-}
-
-.mask {
-  overflow: hidden;
-}
-
-.full-width {
-  width: 100%;
-  text-align: center;
-}
-
-
-table tr th {
-  background-color: var(--primaryThemeColor);
-  color: var(--primaryContrastColor);
-}
-
-
-
-/* HIDDEN INFORMATION */
-
-.redacted {
-  font-family: 'Redacted';
-  cursor: not-allowed;
-}
-
-.redacted > a {
-  display: inline-block;  /* For IE11/ MS Edge bug */
-  pointer-events: none;
-  text-decoration: none;
-}
-
-.redacted::after {
-  content: "[Undiscovered]";
-  font-family: var(--header-font);
-  font-size: 0.8rem;
-  color: var(--secondaryThemeColor);
-  margin-left: 1rem;
-}
-
-.hidden {
-  display: none;
-}
-
-/* DS ABILITIES */
-
-.ds-ability {
-    margin: 1rem 0;
-    padding-bottom: 1.5rem;
-    background: var(--primaryThemeColor);
-    --aug-border-bg: var(--primaryThemeColor);
-  }
-  
-  .ds-ability > h6 {
-    width: 100%;
-    background-color: var(--primaryThemeColor);
-    color: var(--primaryContrastColor);
-    margin: 0;
-    padding: 0.5rem 4rem;
-    font-size: 1.25rem;
-  }
-  
-  .ds-ability > blockquote {
-    margin: 0;
-    width: 100%;
-    font-size: 0.85rem;
-    background-color: var(--transparentPrimaryThemeColor);
-    color: var(--primaryContrastColor);
-    padding: 0.25rem 1rem;
-  }
-  
-  .ds-ability > blockquote > p {
-    margin: 0 !important;
-  }
-  
-  .ds-ability table {
-    width: 100%;
-    margin: 0 1rem 1rem;
-  }
-  
-  .ds-ability > table, .ds-ability > table tr, .ds-ability > table td {
-    border: 0px transparent;
-    background: transparent;
-    font-size: 0.9rem;
-  }
-  
-  .ds-ability > p {
-    margin: 0;
-    padding: 0 1rem;
-  }
-  
-  .ds-ability > ul {
-    margin: 0;
-    line-height: normal;
-    padding: 0 3rem 0;
-  }
-  
-  .ds-power-roll > ul {
-    margin-bottom: 1rem;
-  }
-  
-  .ds-power-roll > ul > li:nth-of-type(1):before {
-    content: "11 or lower: ";
-    font-weight: 800;
-  }
-  .ds-power-roll > ul > li:nth-of-type(2):before {
-    content: "12 to 16: ";
-    font-weight: 800;
-  }
-  .ds-power-roll > ul > li:nth-of-type(3):before {
-    content: "17+: ";
-    font-weight: 800;
-  }
 
 /*REVEAL ANIMATION*/
 .reveal-to-right {
@@ -283,3 +102,185 @@ table tr th {
 	95% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.4); left: 51%} 
  	100% {text-shadow: 0 0 10px rgba(@red,@green,@blue,0.5); left: 50%} 
 }
+
+/* OVERRIDE STYLES */
+
+.avatar-img {
+  object-fit: fill;
+  -webkit-filter: drop-shadow( 0 5px 2px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 0 5px 2px rgba(0, 0, 0, .7));
+}
+
+.page-heading {
+  color: var(--secondaryThemeColor);
+}
+
+
+
+.navbar-custom {
+  background: var(--primaryThemeColor);
+  box-shadow: 0 3px 3px;
+
+}
+
+
+.navbar-custom .navbar-nav .nav-item {
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.navbar-custom .navbar-nav .nav-item a:hover,
+.navbar-custom .navbar-nav .nav-item a:focus {
+  color: var(--primaryContrastColor);
+}
+
+.page-heading {
+  color: var(--primaryThemeColor);
+}
+
+.post-preview .post-title {
+  font-size: 1.5rem;
+}
+
+.full-width {
+  width: 100%;
+  text-align: center;
+}
+
+table tr th {
+  background-color: var(--primaryThemeColor);
+  color: var(--primaryContrastColor);
+}
+
+/* SITE NAME ANIMATION */
+
+.title-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: var(--header-font);
+
+  -webkit-animation: horror-animation 5s infinite;
+  -moz-animation: horror-animation 5s infinite;
+  -o-animation: horror-animation 5s infinite;
+  animation: horror-animation 5s infinite;
+}
+
+.title-animation-header {
+ text-align: center;
+ margin-top: 0;
+ font-size: 3.5rem;
+ font-weight: 800;
+ color: var(--primaryThemeColor);
+}
+
+.title-animation-subheader {
+  font-size: 1.6875rem;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+}
+
+.mask {
+  overflow: hidden;
+}
+
+
+
+/* HIDDEN INFORMATION */
+
+.redacted {
+  font-family: 'Redacted';
+  cursor: not-allowed;
+  color: #000000;
+}
+
+.redacted > a {
+  display: inline-block;  /* For IE11/ MS Edge bug */
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.redacted::after {
+  content: "[Undiscovered]";
+  font-family: var(--header-font);
+  font-size: 0.8rem;
+  color: var(--PrimaryThemeColor);
+  margin-left: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* DS ABILITIES */
+
+.ds-ability {
+    margin: 1rem 0;
+    padding-bottom: 1.5rem;
+    background: var(--primaryThemeColor);
+    --aug-border-bg: var(--primaryThemeColor);
+  }
+  
+  .ds-ability > h6 {
+    width: 100%;
+    background-color: var(--primaryThemeColor);
+    color: var(--primaryContrastColor);
+    margin: 0;
+    padding: 0.5rem 4rem;
+    font-size: 1.25rem;
+  }
+  
+  .ds-ability > blockquote {
+    margin: 0;
+    width: 100%;
+    font-size: 0.85rem;
+    background-color: var(--transparentPrimaryThemeColor);
+    color: var(--primaryContrastColor);
+    padding: 0.25rem 1rem;
+  }
+  
+  .ds-ability > blockquote > p {
+    margin: 0 !important;
+  }
+  
+  .ds-ability table {
+    width: 100%;
+    margin: 0 1rem 1rem;
+  }
+  
+  .ds-ability > table, .ds-ability > table tr, .ds-ability > table td {
+    border: 0px transparent;
+    background: transparent;
+    font-size: 0.9rem;
+  }
+  
+  .ds-ability > p {
+    margin: 0;
+    padding: 0 1rem;
+  }
+  
+  .ds-ability > ul {
+    margin: 0;
+    line-height: normal;
+    padding: 0 3rem 0;
+  }
+  
+  .ds-power-roll > ul {
+    margin-bottom: 1rem;
+  }
+  
+  .ds-power-roll > ul > li:nth-of-type(1):before {
+    content: "11 or lower: ";
+    font-weight: 800;
+  }
+  .ds-power-roll > ul > li:nth-of-type(2):before {
+    content: "12 to 16: ";
+    font-weight: 800;
+  }
+  .ds-power-roll > ul > li:nth-of-type(3):before {
+    content: "17+: ";
+    font-weight: 800;
+  }
