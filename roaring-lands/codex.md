@@ -65,3 +65,17 @@ The codex is where you can learn more about the Roaring Lands.
 - <span class="redacted" markdown="1">[Healing Salve](/roaring-lands/codex/items/healing-salve)
 
 ### Allies & Enemies {#characters}
+- <span class="redacted" markdown="1">[Eredos Yon](/roaring-lands/codex/characters/eredos-yon)</span>
+- <span class="redacted" markdown="1">[Finnian Ironhide](/roaring-lands/codex/characters/finnian-ironhide)</span>
+- <span class="redacted" markdown="1">[Gavin Shadowblade](/roaring-lands/codex/characters/gavin-shadowblade)</span>
+- <span class="redacted" markdown="1">[Kaela Frostheart](/roaring-lands/codex/characters/kaela-frostheard)</span>
+- <span class="redacted" markdown="1">[Kaiser Kirk](/roaring-lands/codex/characters/kaiser-kirk.md)</span>
+- <span class="redacted" markdown="1">[Kassoum Yaro](/roaring-lands/codex/characters/kassoum-yaro)</span>
+- <span class="redacted" markdown="1">[Melantha Yaro](/roaring-lands/codex/characters/melantha-yaro)</span>
+- <span class="redacted" markdown="1">[Rhannon Stormcaller](/roaring-lands/codex/characters/rhannon-stormcaller)</span>
+- <span class="redacted" markdown="1">[Rur Ifom](/roaring-lands/codex/characters/rur-ifom)</span>
+- <span class="redacted" markdown="1">[Talia Trask](/roaring-lands/codex/characters/talia-trask)</span>
+- <span class="redacted" markdown="1">[Thal'kor the Bone Lord](/roaring-lands/codex/characters/thalkor-the-bone-lord)</span>
+- <span class="redacted" markdown="1">[Trisileth Erebor](/roaring-lands/codex/characters/trisileth-erebor)</span>
+- <span class="redacted" markdown="1">[Vaneiros Oakenpetal](/roaring-lands/codex/characters/vaneiros-oakenpetal)</span>
+- <span class="redacted" markdown="1">[Zalthorax the Deathbringer](/roaring-lands/codex/characters/zalthorax-the-deathbringer)</span>
