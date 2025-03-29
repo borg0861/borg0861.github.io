@@ -29,11 +29,23 @@ layout: null
   font-family: 'Redacted';
   cursor: not-allowed;
 }
-  .redacted > a {
-    display: inline-block;  /* For IE11/ MS Edge bug */
-    pointer-events: none;
-    text-decoration: none;
-  }
+
+.redacted > a {
+  display: inline-block;  /* For IE11/ MS Edge bug */
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.redacted::after {
+  content: "[Undiscovered]";
+  font-family: var(--header-font);
+  font-size: 0.8rem;
+  color: var(--secondaryThemeColor);
+}
+
+.hidden {
+  display: none;
+}
 
 .navbar-custom .avatar-container {
 bottom: -2rem;

@@ -4,6 +4,8 @@ title: The Upper Ward
 subtitle: A ward in Shadowcrest Vale
 ---
 
+![The Upper Ward](/assets/img/regions/upper-ward.jpg){: .mx-auto.d-block :}
+
 The Upper Ward of Shadowcrest Vale is a realm of opulence and privilege, where the elite of society dwell amidst the splendor of the Duke’s fortress and the lavish estates that dot the landscape. Perched atop a towering natural outcropping, the Duke’s stronghold commands a commanding view of the city below, its formidable walls of polished green marble standing as a testament to both its power and prestige.
 
 Unlike the rest of the city, where nature’s embrace is omnipresent, the Upper Ward bears the mark of human intervention. The gleaming walls of the palace have been imbued with powerful enchantments, warding off the relentless encroachment of the magical jungle that surrounds it. Here, the verdant tendrils that cling to every surface elsewhere in Shadowcrest Vale find no purchase, halted by the resilient barrier of enchanted stone.
