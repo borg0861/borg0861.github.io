@@ -8,7 +8,7 @@ Your hero’s survivability is represented by your Stamina. Think of Stamina as 
 After any damage you take is reduced by damage immunity or other effects, your Stamina is reduced by an amount equal to the remaining damage. Some effects can also reduce your Stamina maximum, limiting the amount of Stamina you can regain.
 
 <div class="box-note" markdown="1">#### Why Not Have Separate Shields and Barriers?
-Stamina is balanced really well already by Draw Steel’s core mechanisms, and it represents everything we want it to represent. There are also already enough pools and different effects to track, and we don’t think that adding more would enhance the fantasy. 
+Stamina is already balanced well by Draw Steel’s core mechanisms and represents everything we want it to represent. There are also already enough pools and different effects to track, and we don’t think that adding more would enhance the fantasy. 
 
 If you really want to think of shields or barriers as separate from your health in some mechanical way, you can use the following guidelines:
 
