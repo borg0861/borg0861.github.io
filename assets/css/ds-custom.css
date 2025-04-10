@@ -289,13 +289,14 @@ table tr th {
   border: 1px solid var(--secondaryThemeColor);
   background: var(--honeycombBG);
   background-size: var(--honeycombBGSize);
-  border-radius: 0 .5rem 0.5rem 0;
+  border-radius: 1rem 0 0 1rem;
   padding: 0.5rem;
   position: fixed;
   top: 150px;
   right: 0;
   max-width: 500px;
   color: var(--primaryContrastColor);
+  box-shadow: -3px 0 3px;
 }
 
 .toc-box h4 {
