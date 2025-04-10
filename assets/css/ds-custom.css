@@ -270,6 +270,28 @@ table tr th {
 .pill-new {
   background: #b4eda0; }
 .pill-change {
-  background: #64aaff; }
+  background: #a4cdff; }
 .pill-pending {
   background: #ffd664; }
+
+
+  /*changed text*/
+.changed-text::before,
+.changed-text::after {
+  position: absolute;
+  width: auto;
+  height: 0.5rem;
+  content: "";
+}
+.changed-text::before {
+  left: 0;
+  bottom: 0;
+  border-left: 2px solid #4c9dff;
+  border-bottom: 2px solid #4c9dff;
+ }
+ .changed-text::after {
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid #4c9dff;
+  border-bottom: 2px solid #4c9dff;
+ }
