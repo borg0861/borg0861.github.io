@@ -227,9 +227,10 @@ table tr th {
   z-index: 99;
   border: none;
   outline: none;
-  border: 1px solid var(--secondaryThemeColor);
-  color: var(--secondaryThemeColor);
-  background-color: var(--primaryContrastColor);
+  border: 1px solid var(--primaryThemeColor);
+  color: var(--primaryThemeColor);
+  background: var(--honeycombBGLight);
+  background-size: var(--honeycombBGSize);
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -237,6 +238,6 @@ table tr th {
 }
 
 #back-to-top:hover {
-  background-color: var(--primaryThemeColor);
-  color: var(--primaryContrastColor);
+  border-color: var(--secondaryThemeColor);
+  color: var(--secondaryThemeColor);
 }
