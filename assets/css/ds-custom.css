@@ -295,6 +295,7 @@ table tr th {
   top: 150px;
   right: 0;
   max-width: 500px;
+  color: var(--primaryContrastColor);
 }
 
 .toc-box h4 {
