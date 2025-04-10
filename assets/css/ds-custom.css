@@ -286,8 +286,11 @@ table tr th {
 
 /*table of contents box*/
 .toc-box {
-border: 1px solid var(--primaryThemeColor);
-border-radius: .25rem;
+  border: 1px solid var(--primaryThemeColor);
+  border-radius: .25rem;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0;
 }
 
 .toc-box h4 {
@@ -295,5 +298,5 @@ border-radius: .25rem;
 }
 
 .toc-box ul {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
