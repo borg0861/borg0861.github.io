@@ -42,7 +42,7 @@ layout: null
   background: var(--honeycombBG);
   background-size: var(--honeycombBGSize);
   border-bottom: 1px solid var(--secondaryThemeColor) !important;
-  box-shadow: 0 3px 3px;
+  box-shadow: 0 3px 3px black;
 }
 
 .navbar-custom .avatar-container {
@@ -287,16 +287,18 @@ table tr th {
 /*table of contents box*/
 .toc-box {
   border: 1px solid var(--secondaryThemeColor);
-  background: var(--honeycombBG);
+  border-right: none;
+  background: var(--honeycombBGLight);
   background-size: var(--honeycombBGSize);
   border-radius: 1rem 0 0 1rem;
   padding: 0.5rem;
+  padding-right: 1rem;
   position: fixed;
   top: 150px;
   right: 0;
   max-width: 500px;
-  color: var(--primaryContrastColor);
-  box-shadow: -3px 0 3px;
+  color: var(--primaryThemeColor);
+  box-shadow: -3px 0px 3px black;
 }
 
 .toc-box h4 {
