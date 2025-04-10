@@ -214,3 +214,29 @@ table tr th {
     content: "17+: ";
     font-weight: 800;
   }
+
+
+
+/*back to top button*/
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  border: 1px solid var(--secondaryThemeColor);
+  color: var(--secondaryThemeColor);
+  background-color: var(--primaryContrastColor);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+#back-to-top:hover {
+  background-color: var(--primaryThemeColor);
+  color: var(--primaryContrastColor);
+}
