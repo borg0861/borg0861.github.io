@@ -289,8 +289,9 @@ table tr th {
   border: 1px solid var(--primaryThemeColor);
   border-radius: .25rem;
   padding: 0.5rem;
-  position: absolute;
+  position: sticky;
   right: 0;
+  max-width: 500px;
 }
 
 .toc-box h4 {
