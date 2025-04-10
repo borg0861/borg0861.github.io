@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Voidcaller
+before-content: toc.html
 footer-extra-script: footer-toc-2.html
 ---
 
