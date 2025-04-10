@@ -15,7 +15,7 @@ If you leave the space in which you were Lifted, whether by teleporting or as a 
 ### Primed <span class="pill pill-new">NEW</span>
 While you are Primed, any ability with a Detonator keyword will deal additional damage equal to the highest characteristic of the creature using the Detonator ability to all creatures and objects in Burst 1. This damage is of the same type as the triggering ability. You are no longer Primed after taking this damage.
 
-### Prone <span class="pill pill-new">NEW</span>
+### Prone <span class="pill pill-change">CHANGE</span>
 While you are prone, you are flat on the ground, <span class="changed-text">melee</span> strikes you make take a bane, and melee abilities made against you gain an edge. You must crawl to move along the ground, which costs you 1 additional square of movement for every square you crawl. You can’t climb, jump, swim, or fly while prone. If you are climbing, flying, or jumping while you are knocked prone, you fall.
 
 While prone, you can stand up as a maneuver (see Maneuvers in Combat), unless the ability or effect that imposed the condition says otherwise. You can use a maneuver to make an adjacent prone creature stand up.

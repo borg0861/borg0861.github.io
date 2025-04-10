@@ -166,6 +166,7 @@ site-css-primary:
 # If you have common JavaScript files that should be included in every page, list them here
 site-js:
   - "/assets/js/ds-custom.js"
+  - "/assets/js/table-of-contents.js"
 #################################
 # --- Web Analytics Section --- #
 #################################
