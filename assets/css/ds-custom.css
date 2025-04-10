@@ -286,11 +286,13 @@ table tr th {
 
 /*table of contents box*/
 .toc-box {
-  border: 1px solid var(--primaryThemeColor);
-  border-radius: .25rem;
+  border: 1px solid var(--secondaryThemeColor);
+  background: var(--honeycombBG);
+  background-size: var(--honeycombBGSize);
+  border-radius: 0 .5rem 0 0.5rem;
   padding: 0.5rem;
   position: fixed;
-  top: 100px;
+  top: 150px;
   right: 0;
   max-width: 500px;
 }
