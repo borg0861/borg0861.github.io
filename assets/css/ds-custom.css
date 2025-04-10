@@ -42,7 +42,7 @@ layout: null
   background: var(--honeycombBG);
   background-size: var(--honeycombBGSize);
   border-bottom: 1px solid var(--secondaryThemeColor) !important;
-  box-shadow: 0 3px 3px black;
+  box-shadow: 0 3px 3px;
 }
 
 .navbar-custom .avatar-container {
@@ -298,7 +298,7 @@ table tr th {
   right: 0;
   max-width: 500px;
   color: var(--primaryThemeColor);
-  box-shadow: inset 3px 0px 3px black;
+  box-shadow: inset 2px 2px 2px;
 }
 
 .toc-box h4 {
