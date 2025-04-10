@@ -278,7 +278,7 @@ table tr th {
   /*changed text*/
 .changed-text::before,
 .changed-text::after {
-  position: absolute;
+  position: relative;
   width: auto;
   height: 0.5rem;
   content: "";
