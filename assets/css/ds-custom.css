@@ -282,3 +282,18 @@ table tr th {
   border-bottom: 2px solid #4c9dff;
   background: #d3e7ff;
 }
+
+
+/*table of contents box*/
+.toc-box {
+border: 1px solid var(--primaryThemeColor);
+border-radius: .25rem;
+}
+
+.toc-box h4 {
+
+}
+
+.toc-box ul {
+  font-size: 0.8rem;
+}
