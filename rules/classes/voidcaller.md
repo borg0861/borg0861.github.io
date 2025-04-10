@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Voidcaller
-footer-extra: footer-toc-2.html
+footer-extra-script: footer-toc-2.html
 ---
 
 You are a Voidcaller, a master of gravitic energy manipulation. The hum of latent power resonates within you as you channel your abilities, lifting enemies into the air or flinging them aside with a gesture. The world around you becomes your canvas, painted with flashes of light and rippling distortions. Allies look on in awe, while enemies cower, knowing there is no escape from your reach.

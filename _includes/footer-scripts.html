@@ -36,3 +36,7 @@
     <script src="{{ js | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+{% for file in page.footer-extra-script %}
+            {% include {{ file }} %}
+{% endfor %}
