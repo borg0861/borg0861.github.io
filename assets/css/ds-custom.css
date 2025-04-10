@@ -289,7 +289,7 @@ table tr th {
   border: 1px solid var(--secondaryThemeColor);
   background: var(--honeycombBG);
   background-size: var(--honeycombBGSize);
-  border-radius: 0 .5rem 0 0.5rem;
+  border-radius: 0 .5rem 0.5rem 0;
   padding: 0.5rem;
   position: fixed;
   top: 150px;
@@ -304,4 +304,8 @@ table tr th {
 
 .toc-box ul {
   font-size: 0.9rem;
+}
+
+.toc-box ul li a {
+  color: var(--primaryContrastColor);
 }
