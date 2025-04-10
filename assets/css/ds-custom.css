@@ -298,7 +298,7 @@ table tr th {
   right: 0;
   max-width: 500px;
   color: var(--primaryThemeColor);
-  box-shadow: inset -3px 0px 3px black;
+  box-shadow: inset 3px 0px 3px black;
 }
 
 .toc-box h4 {
