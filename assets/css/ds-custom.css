@@ -286,7 +286,7 @@ table tr th {
 
 /*table of contents box*/
 .toc-box {
-  border: 1px solid var(--secondaryThemeColor);
+  border: 1px solid var(--primaryThemeColor);
   border-right: none;
   background: var(--honeycombBGLight);
   background-size: var(--honeycombBGSize);
@@ -298,7 +298,7 @@ table tr th {
   right: 0;
   max-width: 500px;
   color: var(--primaryThemeColor);
-  box-shadow: inset 2px 2px 2px;
+  box-shadow: 0px 0px 3px 5px;
 }
 
 .toc-box h4 {
