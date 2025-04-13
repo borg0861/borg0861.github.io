@@ -284,10 +284,43 @@ table tr th {
 }
 
 /*table of contents box*/
+
+.toc-button {
+  height: 2em;
+  content: 'Show Table of Contents';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--honeycombBGLight);
+  background-size: var(--honeycombBGSize);
+  color: var(--primaryThemeColor);
+  z-index: 999;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.toc-button-active, .toc-button:hover {
+  background-color: #ccc;
+}
+
+.toc-button:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  float: right;
+  margin-left: 5px;
+}
+
+.toc-button-active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 .toc-box {
   background: var(--honeycombBGLight);
   background-size: var(--honeycombBGSize);
-  padding: 1 rem 0.5rem;
+  padding: 1rem 0.5rem;
   color: var(--primaryThemeColor);
   max-height: 80vh;
   overflow: scroll;
@@ -304,12 +337,6 @@ table tr th {
 .toc-box ul li a {
   color: var(--primaryThemeColor);
 }
-
-
-.toc-button {
-
-}
-
 
 @media (min-width: 1200px) {
   .toc-button {
@@ -329,18 +356,6 @@ table tr th {
 }
 
 @media (max-width: 1199px) {
-  .toc-button {
-   height: 2em;
-   content: 'Show Table of Contents';
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   width: 100%;
-   background: var(--honeycombBGLight);
-   background-size: var(--honeycombBGSize);
-  color: var(--primaryThemeColor);
-  }
-
 
   .toc-box {
     border: none;
