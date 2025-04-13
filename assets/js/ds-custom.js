@@ -25,7 +25,7 @@ function topFunction() {
 var tocacc = document.getElementsByClassName("toc-button");
 var iacc;
 
-for (iacc = 0; iacc < acc.length; iacc++) {
+for (iacc = 0; iacc < tocacc.length; iacc++) {
   tocacc[iacc].addEventListener("click", function() {
     this.classList.toggle("toc-button-active");
     var tocbox = document.getElementsByClassName("toc-box");
