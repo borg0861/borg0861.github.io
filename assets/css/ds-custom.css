@@ -303,9 +303,12 @@ table tr th {
   transition: 0.4s;
 }
 
-.toc-button-active, .toc-button:hover {
-  background-color: #ccc;
+.toc-button input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
+
 
 .toc-button:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -342,6 +345,18 @@ table tr th {
   height: 80vh;
 }
 
+.toc-button-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+.toc-button input:checked + .toc-button-label::after {
+  transform: rotate(270deg);
+}
+
 @media (min-width: 1200px) {
   .toc-button {
     display: none;
@@ -368,6 +383,11 @@ table tr th {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0;
+    max-height: 0;
+    transition: all 0.35s;
   }
+
+.toc-button input:checked ~ .toc-box {
+  max-height: 10rem;
+}
 }
