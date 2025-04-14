@@ -28,7 +28,7 @@ var iacc;
 for (iacc = 0; iacc < tocacc.length; iacc++) {
   tocacc[iacc].addEventListener("click", function() {
     this.classList.toggle("toc-button-active");
-    var tocbox = document.getElementsByClassName("toc-box");
+    var tocbox = document.getElementById("toc-box");
     if (tocbox.style.display == "none") {
       tocbox.style.display = "inline-block";
     } else {
