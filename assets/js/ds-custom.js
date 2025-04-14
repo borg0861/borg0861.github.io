@@ -30,6 +30,7 @@ for (iacc = 0; iacc < tocacc.length; iacc++) {
     this.classList.toggle("toc-button-active");
     var tocbox = document.getElementsByClassName("toc-box");
     if (tocbox.style.display === "inline-block") {
+      tocbox.style.display = "hidden";
     } else {
       tocbox.style.display = "inline-block";
     }
