@@ -29,10 +29,10 @@ for (iacc = 0; iacc < tocacc.length; iacc++) {
   tocacc[iacc].addEventListener("click", function() {
     this.classList.toggle("toc-button-active");
     var tocbox = document.getElementById("toc-box");
-    if (tocbox.style.display == "none") {
-      tocbox.style.display = "inline-block";
+    if (tocbox.classList.contains("toc-expanded")) {
+      tocbox.classList.remove("toc-expanded");
     } else {
-      tocbox.style.display = "none";
+      tocbox.classList.add("toc-expanded");
     }
   });
 }
