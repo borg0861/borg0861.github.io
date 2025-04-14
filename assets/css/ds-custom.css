@@ -366,5 +366,6 @@ table tr th {
     left: 0;
     width: 100%;
     display: none;
+    height: 80vh;
   }
 }
