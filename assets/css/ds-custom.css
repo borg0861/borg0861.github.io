@@ -292,12 +292,12 @@ table tr th {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: var(--honeycombBGLight);
+  background: var(--honeycombBG);
   background-size: var(--honeycombBGSize);
-  color: var(--primaryThemeColor);
+  color: var(--primaryContrastColor);
   z-index: 999;
   cursor: pointer;
-  padding: 18px;
+  padding: .25rem;
   text-align: left;
   outline: none;
   transition: 0.4s;
@@ -352,6 +352,7 @@ table tr th {
     top: 150px;
     right: 0;
     max-width: 500px;
+    height: 80vh;
     display: inline-block;
   }
 }
@@ -366,6 +367,6 @@ table tr th {
     left: 0;
     width: 100%;
     height: 80vh;
-    display: inline-block;
+    display: hidden;
   }
 }
