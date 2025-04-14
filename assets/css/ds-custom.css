@@ -352,6 +352,7 @@ table tr th {
     top: 150px;
     right: 0;
     max-width: 500px;
+    display: inline-block;
   }
 }
 
