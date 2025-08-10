@@ -1,0 +1,35 @@
+{
+    "longglass":{
+        "title":"Longglass"
+        ,"slug":"longglass"
+        ,"description":[{"content":"Designed for sharpshooters who prefer precision over proximity, the Longglass Kit equips the user with light armor and specialized optics to deliver devastating shots from extreme range. Ideal for those who strike first—and prefer to do so at range."}]
+        ,"is-playtest":true
+        ,"is-published":true
+        ,"is-change-new":"new"
+        ,"contributors":[
+            {
+                 "name":""
+                ,"link":""
+            }
+        ]
+        ,"section":[
+            {
+                 "title":"Equipment"
+                ,"slug":"equipment"
+                ,"description":[{"content":"You wear light armor and wield a sniper rifle."}]
+            }
+            ,{
+                "title":"Kit Bonuses"
+                ,"slug":"kit-bonuses"
+                ,"speed-bonus": false
+                ,"stamina-bonus": "+3 per echelon"
+                ,"stability-bonus": "+1"
+                ,"distance-bonus": "+15"
+                ,"disengage-bonus": "+1"
+                ,"ranged-bonus": "+0/+0/+4"
+                ,"melee-bonus": false
+                ,"ability-slugs":["horizon-lance"]
+            }
+        ]
+    }
+}

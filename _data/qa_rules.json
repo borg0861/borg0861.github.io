@@ -1,0 +1,264 @@
+{
+    "stamina":{
+         "title":"Stamina"
+        ,"slug":"stamina"
+        ,"description":[
+            {"content":"Your hero’s survivability is represented by your Stamina. Think of Stamina as a combination of a creature’s physical vitality, their overall energy for dodging and resisting incoming blows, <mark class=\"change-highlight\">bullets</mark>, and other violence. <mark class=\"new-highlight\">Stamina also includes any active defenses like shields or gravitic barriers.</mark> It’s not that every instance of damage deals a bleeding wound to you, but that each one chips away at your ability to fight effectively. An attack might make you sweat as you <mark class=\"change-highlight\">hunker behind cover to avoid a barrage of bullets, while another might be stopped by your shields, leaving you depleted and open to another attack.</mark> Eventually, though, this draining of energy leaves you open for bigger blows that can truly harm your body—or possibly kill you."}
+            ,{"content":"After any damage you take is reduced by damage immunity or other effects, your Stamina is reduced by an amount equal to the remaining damage. Some effects can also reduce your Stamina maximum, limiting the amount of Stamina you can regain."}
+        ]
+        ,"is-playtest":false
+        ,"is-published":true
+        ,"is-change-new":"change"
+        ,"contributors":[
+            {
+                 "name":""
+                ,"link":""
+            }
+        ]
+        ,"section":[
+            {
+                 "title":"Why Not Have Separate Shields and Barriers?"
+                ,"slug":"why-not-have-separate-shields-and-barriers"
+                ,"style":"editorial"
+                ,"description":[
+                    {"content":"Stamina is already balanced well by Draw Steel’s core mechanisms and represents everything we want it to represent. There are also already enough pools and different effects to track, and we don’t think that adding more would enhance the fantasy."}
+                    ,{"content":"If you want to think of shields or barriers as separate from your health in some mechanical way, you can use the following guidelines:"}
+                    ,{
+                        "element-type":"ul"
+                        ,"content":[
+                            "**Shield, Barrier, or Armor Depletion:** Shields, barriers, and armor absorb any damage you would take when your Stamina would be reduced but still remain above 0."
+                            ,"**Taking Health Damage:** You actually start taking physical damage when your Stamina would be reduced to 0 or less. In science fantasy, actually getting hit with a bullet, blaster bolt, or other high-tech weapon really hurts and will almost certainly start you down the road to death."
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+    ,"space-combat":{
+         "title":"Space Combat"
+        ,"slug":"space-combat"
+        ,"description":[
+            {"content":"We have added some rules about fighting in Zero-G as well as some rules about fighting in vacuum."}
+        ]
+        ,"is-playtest":false
+        ,"is-published":true
+        ,"is-change-new":"new"
+        ,"contributors":[
+            {
+                 "name":""
+                ,"link":""
+            }
+        ]
+        ,"section":[
+            {
+                 "title":"Zero-G Basics"
+                ,"slug":"zero-g-basics"
+                ,"description":[
+                    {"content":"Moving and Combat in zero-G varies widely depending on what kind of science fantasy you want to evoke."}
+                    ,{"content":"In many settings heroes can rely on jump-jets, maneuvering thrusters, or something similar to allow them to navigate and compensate for the inertial effects of firing weapons, etc. If your characters are in a setting like that, you don’t need to change the basics all that much. Instead, treat all characters as if they had the Fly and Hover movement keywords, and all forced movement as if it added the Vertical keyword to it. Easy."}
+                ]
+                ,"subsection":[
+                    {
+                        "title":"Advanced Zero-G Movement"
+                        ,"slug":"advanced-zero-g-movement"
+                        ,"description":[{"content":"If  you want a more nuanced look at zero-g, or if your heroes are without their maneuvering jets, then a character must be able to push off of an object or creature. This isn’t as simple as a regular move action. Use the following free triggered action instead."}]
+                        ,"ability-slugs":["push-off"]
+                    }
+                    ,{
+                        "style":"example"
+                        ,"description":[
+                            {"content":"**Example:** John wants to move across the room to position himself to attack. He uses Push Off on a wall, and uses 5 squares of movement. He has Stability 1, so he can move 4 squares. The wall has Stability ∞ so it does not move at all."}
+                            ,{"content":"**Example 2:** Jane would normally be able to slide 2 away from an enemy as the result of one of her abilities. She uses Push Off. Her stability is 0, so she moves 2 squares. Her enemy has Stability 1 so he moves 1 square in the opposite direction. They are now 3 squares apart. She is still able to avoid opportunity attacks as stated in the effects of Slide."}
+                        ]
+                    }
+                    ,{
+                        "title":"Advanced Combat in Zero-G"
+                        ,"slug":"advanced-combat-in-zero-g"
+                        ,"description":[
+                            {"content":"Melee and Ranged attacks must also account for the special dynamics of Zero-G. In an effort to simplify and abstract this, use these guidelines:"}
+                            ,{
+                                "element-type":"ul"
+                                ,"content":[
+                                    "**Ability Modifier:** Add the following to the effect of any ability that includes physical interaction with its target and doesn’t already include a Forced Movement effect: ***“You move 1 square away from the target or targets. The target or targets of this ability are subjected to Vertical Push 1 in a direction opposite the direction in which you moved. You must subtract your Stability from the distance you move.”***"
+                                    ,"**Forced Movement Modifier:** Abilities that inflict Forced Movement and include physical interaction with its target gain the following additional effect: ***“All Forced Movement effects of this ability are converted to Vertical Push or Vertical Pull, respectively. You move in a straight line a number of squares equal to the Forced Movement you inflict on the target or targets of this ability, but in a direction opposite the Forced Movement. Subtract your Stability from the distance you move.”***"
+                                ]
+                            }
+                        ]
+                    }
+                    ,{
+                        "style":"aside"
+                        ,"description":[{"content":"**Important Note:** Most firearms in most settings will use these rules due to the necessary force of launching a projectile. In limited circumstances (blasters or other energy weapons) the force of the energy directed to the target is not primarily physical and could ignore these rules."}]
+                    }
+                ]
+            }
+            ,{
+                "title":"What About Low-G or High-G?"
+                ,"slug":"what-about-low-g-or-high-g"
+                ,"description":[
+                    {"content":"That can get complicated fast. To simplify it use the following guidelines:"}
+                    ,{
+                        "element-type":"ul"
+                        ,"content":[
+                            "**Low-G:** Jump Distances are Doubled. Add 2 to Forced Movement distances."
+                            ,"**High-G:** Jump Distances are Halved. Add 2 to Stability for all Creatures and Objects."
+                        ]
+                    }
+                ]
+            }
+            ,{
+                "title":"Vacuum"
+                ,"slug":"vacuum"
+                ,"description":[
+                    {"content":"Vacuum has a large set of horrifying physical effects which are very different from those experienced when drowning or suffering simply from oxygen deprivation."}
+                    ,{"content":"For the purposes of this game, however, if a character would be exposed to the effects of vacuum, simply follow the core rules for Suffocating."}
+                ]
+            }
+        ]
+    }
+    ,"object-stamina":{
+         "title":"Object Stamina"
+        ,"slug":"object-stamina"
+        ,"description":[
+            {"content":"Mundane objects in the game have Stamina based on the material they’re made of. When an object’s Stamina is reduced to 0 <mark class=\"new-highlight\">in a single turn</mark> the object is destroyed. Objects have Damage Immunity: All to poison and psychic damage. Objects made of common materials have stamina as follows:"}
+            ,{
+                "element-type":"ul"
+                ,"content":[
+                    "A size 1 object or 1 square of a larger object made of glass has 1 Stamina."
+                    ,"A size 1 object or 1 square of a larger object made of wood has 3 Stamina."
+                    ,"A size 1 object or 1 square of a larger object made of stone has 6 Stamina."
+                    ,"A size 1 object or 1 square of a larger object made of metal has 9 Stamina."
+                ]
+            }
+            ,{"content":"The Director can decide that a well-made or poorly made object has more or less Stamina. <mark class=\"new-highlight\">Additionally, the Director may allow damage to accrue across multiple turns, rather than requiring damage to be dealt in a single turn.</mark>"}
+            ,{"content":"Destroying a supernatural object often (but not always) requires a specific quest, such as throwing a magic ring back into the volcano where it was forged."}
+        ]
+        ,"is-playtest":false
+        ,"is-published":true
+        ,"is-change-new":"change"
+        ,"contributors":[
+            {
+                 "name":""
+                ,"link":""
+            }
+        ]
+        ,"section":[
+            {
+                 "style":"aside"
+                ,"description":[
+                    {"content":"**Important Note:** These rules should not be interpreted as allowing characters to destroy solid 2m<sup>3</sup> blocks of steel by dealing only 9 damage."}
+                ]
+            }
+        ]
+    }
+    ,"cover":{
+         "title":"Cover"
+        ,"slug":"cover"
+        ,"description":[
+            {"content":"The ubiquity of firearms in science fantasy means the importance of cover cannot be overstated. As a result we have modified some of the rules regarding Cover to represent the important role that cover plays in science fantasy combat."}
+            ,{"content":"When you have line of effect to a creature or object but that target has at least half their form blocked by a solid obstruction such as a tree, wall, barricade, or overturned table, the target has cover."}
+        ]
+        ,"is-playtest":false
+        ,"is-published":true
+        ,"is-change-new":"change"
+        ,"contributors":[
+            {
+                 "name":""
+                ,"link":""
+            }
+        ]
+        ,"section":[
+            {
+                 "title":"Types of Cover"
+                ,"slug":"types-of-cover"
+
+                ,"description":[
+                    {"content":"The proportion of the target’s form determines which type of cover they have, and any effects of that cover  There are three levels of cover: light, medium, and full."}
+                ]
+                ,"subsection":[
+                    {
+                        "title":"Light Cover"
+                        ,"sllug":"light-cover"
+                        ,"description":[
+                            {"content":"When half of a target’s form is behind cover, that creature has Light Cover. You take a bane on abilities that deal damage against creatures or objects behind Light Cover."}
+                            ,{"content":"Being prone counts as Light Cover when you are targeted with a Ranged strike or ability."}
+                        ]
+                    }
+                    ,{
+                        "title":"Medium Cover"
+                        ,"sllug":"medium-cover"
+                        ,"description":[{"content":"When at least three quarters of a target’s form is behind cover, that creature has Medium Cover. You take a double bane on abilities that deal damage against creatures or objects behind Medium Cover."}]
+                    }
+                    ,{
+                        "title":"Full Cover"
+                        ,"slug":"full-cover"
+                        ,"description":[{"content":"When all of a target’s form is behind cover, that creature has Full Cover. You cannot normally target creatures or objects behind Full Cover."}]
+                    }
+                    ,{
+                        "style":"editorial"
+                        ,"description":[{"content":"**Note:** Full cover is included here because there are certain situations in which it is important to distinguish that a character cannot be targeted because they are in full cover and not for another reason."}]
+                    }
+                ]
+            }
+            ,{
+                "title":"Destroying Cover"
+                ,"slug":"destroying-cover"
+                ,"description":[{"content":"You can choose to target cover instead of a creature who is behind it. Additionally, cover hit by area abilities can be destroyed without impacting the damage dealt to other targets."}]
+            }
+        ]
+    }
+    ,"conditions":{
+         "title":"Conditions"
+        ,"slug":"conditions"
+        ,"description":[{"content":"With the fantasy we are attempting to invoke, there are a few additional conditions we added to make things easier to manage."}]
+        ,"is-playtest":false
+        ,"is-published":true
+        ,"is-change-new":"change"
+        ,"contributors":[
+            {
+                 "name":""
+                ,"link":""
+            }
+        ]
+        ,"section":[
+            {
+                 "title":"Lifted"
+                ,"slug":"lifted"
+                ,"is-change-new":"new"
+                ,"description":[
+                    {
+                        "style":"block-quote"
+                        ,"content":"You hover over the ground, unable to move."
+                    }
+                    ,{"content":"While you are Lifted, your speed is 0 and you cannot benefit from abilities or effects which allow you to move or shift, and you are treated as if your stability is 0. Your ability power rolls take a bane, abilities against you gain an edge, and you have a bane on Might and Agility tests."}
+                    ,{"content":"If you leave the space in which you were Lifted, whether by teleporting or as a result of forced movement, the condition ends as soon as that movement is resolved."}
+                ]
+            }
+            ,{
+                 "title":"Primed"
+                ,"slug":"primed"
+                ,"is-change-new":"new"
+                ,"description":[{"content":"While you are Primed, any ability with a Detonator keyword will deal additional damage equal to the highest characteristic of the creature using the Detonator ability to all creatures and objects in Burst 1. This damage is of the same type as the triggering ability. You are no longer Primed after taking this damage."}]
+            }
+            ,{
+                 "title":"Prone"
+                ,"slug":"prone"
+                ,"is-change-new":"change"
+                ,"description":[
+                    {"content":"While you are prone, you are flat on the ground, <mark class=\"new-highlight\">melee</mark> strikes you make take a bane, and melee abilities made against you gain an edge. You must crawl to move along the ground, which costs you 1 additional square of movement for every square you crawl. You can’t climb, jump, swim, or fly while prone. If you are climbing, flying, or jumping while you are knocked prone, you fall."}
+                    ,{"content":"While prone, you can stand up as a maneuver (see Maneuvers in Combat), unless the ability or effect that imposed the condition says otherwise. You can use a maneuver to make an adjacent prone creature stand up."}
+                ]
+            }
+            ,{
+                 "title":"Suppressed"
+                ,"slug":"suppressed"
+                ,"is-change-new":"new"
+                ,"description":[{"content":"While you are Suppressed, you have a Bane on all abilities or attacks with a Power Roll. Additionally, if you move, the creature or effect which inflicted this condition upon you can make a single Opportunity Attack against you using either their ranged or melee free strike. The condition ends once you suffer the effects of an Opportunity Attack as a result of this condition. If you gain the Suppressed condition from one creature while already suppressed by a different creature, the new condition replaces the old one."}]
+            }
+
+            ,{
+                 "style":"aside"
+                ,"description":[{"content":"**Reminder:** You cannot make an Opportunity Attack if you have a Bane on the attack roll. That means that if a Suppressed creature is in cover, they cannot suffer the Opportunity Attack of the Suppressed condition."}]
+            }
+        ]
+    }
+}

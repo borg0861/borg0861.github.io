@@ -1,0 +1,58 @@
+{% assign ability = site.data.qa_monster-abilities.[include.monster-ability-slug] %}
+{% capture monster-ability-slug %}{{ include.monster-ability-slug }}{% endcapture %}
+
+<div class="card-body {{ ability.action-type }}-color fancy-font p-1 text-center">
+  <p class="ability-title"><span class="fw-semibold">{{ ability.title }}</span>
+    <span class="ability-type">
+       ({% case ability.action-type %}{% when "action" %}Action{% when "free-maneuver" %}Free Maneuver{% when "free-triggered-action" %}Free Triggered Action{% when "maneuver" %}Maneuver{% when "triggered-action" %}Triggered Action{% when "no-action" %}No Action{% when "persistent" %}Persistent{% when "villain-action" %}Villain Action{% endcase %}) {% if ability.power-roll %} &#9670; 2d10 + {{ability.power-roll}} {% endif %}{% if ability.cost %} &#9670; {{ ability.cost }} Malice {% endif %} {% if ability.ability-type %}&#9670; {{ ability.ability-type }}{% endif %}
+    </span></p>
+    <small class="text-body-secondary fst-italic me-5 based-on">{% if ability.based-on %}<b>Based on:</b> {{ ability.based-on }}{% else %}New Ability{% endif %}</small>
+</div>
+{% if ability.range or ability.targets %}
+<table class="ability-table border-bottom">
+  <thead>
+  <tr>
+    {% if ability.range %}<th class="{{ ability.action-type }}-bg">Range</th>{% endif %}
+    {% if ability.target %}<th class="{{ ability.action-type }}-bg">Target</th>{% endif %}
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    {% if ability.range %}<td>{{ ability.range }}</td>{% endif %}
+    {% if ability.target %}<td>{{ ability.target }}</td>{% endif %}
+  </tr>
+</tbody>
+</table>
+{% endif %}
+<ul class="list-group p-0">
+  <li class="list-group-item text-center w-100 border-0 p-1">
+  {% for tag in ability.tags %}
+    <span class="badge {{ ability.action-type }}-bg">{{- tag -}}</span>
+  {% endfor %}
+  </li>
+  <li class="list-group-item w-100 border-0">
+  {% if ability.trigger %}<p class="card-text bg-body-tertiary border rounded ability-trigger"><b>Trigger:</b> {{ ability.trigger }}</p>{% endif %}
+  {% if ability.effect-is-before == true and ability.effect %}
+  <div class="card-text ability-effects">{{ ability.effect }}</div>
+  {% endif %}
+  {% if ability.power-roll %}
+    <table class="power-roll-table align-text-middle {{ ability.action-type }}">
+    <tr>
+        <th class="{{ ability.action-type }}-bg">&le; 11</th>
+        <td>{% if ability.tier-1-result %}{{ ability.tier-1-result }}{% endif %}</td>
+    </tr>
+    <tr>
+        <th class="{{ ability.action-type }}-bg">12 - 16</th>
+        <td>{% if ability.tier-2-result %}{{ ability.tier-2-result }}{% endif %}</td>
+    </tr>
+    <tr>
+        <th class="{{ ability.action-type }}-bg">&ge; 17</th>
+        <td>{% if ability.tier-3-result %}{{ ability.tier-3-result }}{% endif %}</td>
+    </tr>
+    </table>
+    {% endif %}
+  {% if ability.effect-is-before == false and ability.effect %}
+    <div class="card-text ability-effects">{{ ability.effect }}</div>
+    {% endif %}
+  </li>
+</ul>

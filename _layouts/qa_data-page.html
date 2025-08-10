@@ -1,0 +1,40 @@
+---
+layout: qa_base
+---
+{% include qa_nav.html %}
+<div class="container-flex vw-100 overflow-hidden">
+
+<main class="col-lg-8 mx-auto p-4 my-5">
+
+  <h1 class="page-title">{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}{% if page.is-change-new == "change" %}<span class="badge rounded-pill text-bg-success align-top status-pill">CHANGE</span>{% endif %}{% if page.is-change-new == "new" %}<span class="badge rounded-pill text-bg-primary align-top status-pill">NEW</span>{% endif %}</h1>
+
+  {% if page.is-playtest %}
+  <div class="alert alert-info" role="alert">
+  <h4>Playtest Ready</h4>
+  <p>This page is pending playtesting and final editing.</p>
+  </div>
+  {% endif %}
+
+  {% if page.inspiring-property %}
+  <div class="alert alert-warning handwritten-font" role="alert">
+      <p>This content was inspired by{% if page.inspiration %} {{page.inspiration}} from{% endif %} {{page.inspiring-property}}.</p>
+  </div>
+  {% endif %}
+
+  {{ content }}
+
+{% if page.contributors %}
+<div class="alert alert-info" role="alert">
+  <h4>Contributors</h4>
+  <p>The following individuals contributed to the development and testing of this content:</p>
+  <ul>
+  {% for contributor in page.contributors %}
+    <li>{{contributor}}</li>
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+</main>
+
+{% include qa_footer.html %}

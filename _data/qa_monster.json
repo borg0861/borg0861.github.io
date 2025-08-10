@@ -1,0 +1,319 @@
+{
+    "clawfish":{
+         "title":"Clawfish"
+        ,"slug":"clawfish"
+        ,"based-on":"Clawfish"
+        ,"level":1
+        ,"encounter-value":6
+        ,"organization":"Minion"
+        ,"role":"Brute"
+        ,"tags":["Angulotl","Animal"]
+        ,"stamina":5
+        ,"immunities":["Lightning 3","Poison 2"]
+        ,"speed":5
+        ,"movement-types":["Swim","Climb"]
+        ,"size":"1S"
+        ,"stability":0
+        ,"with-captain":"Edge on strikes"
+        ,"free-strike":2
+        ,"characteristics":{
+            "might":0
+            ,"agility":2
+            ,"reason":-3
+            ,"intuition":-2
+            ,"presence":1
+        }
+        ,"description":[{"content":""}]
+        ,"section":[
+            {
+                 "title":"Shocking"
+                ,"slug":"shocking"
+                ,"description":[{"content":"The clawfish deals 2 lightning damage to each wet enemy within 2 at the start of each of the clawfish’s turns."}]
+            }
+            ,{
+                 "title":"Abilities"
+                ,"slug":"abilities"
+                ,"ability-slugs":["hookclaw"]
+            }
+        ]
+    }
+    ,"angulotl-cleaver":{
+         "title":"Angulotl Cleaver"
+        ,"slug":"angulotl-cleaver"
+        ,"based-on":"Angulotl Cleaver"
+        ,"level":1
+        ,"encounter-value":6
+        ,"organization":"Minion"
+        ,"role":"Ambusher"
+        ,"tags":["Angulotl","Humanoid"]
+        ,"stamina":4
+        ,"immunities":["Poison 2"]
+        ,"speed":6
+        ,"movement-types":["Swim","Climb"]
+        ,"size":"1S"
+        ,"stability":0
+        ,"with-captain":"Strike damage +1"
+        ,"free-strike":2
+        ,"characteristics":{
+            "might":0
+            ,"agility":2
+            ,"reason":0
+            ,"intuition":1
+            ,"presence":0
+        }
+        ,"description":[{"content":""}]
+        ,"section":[
+            {
+                 "title":"Toxiferous"
+                ,"slug":"toxiferous"
+                ,"description":[{"content":"When an adjacent enemy grabs or uses a melee ability against this enemy, they take 2 poison damage."}]
+            }
+            ,{
+                 "title":"Abilities"
+                ,"slug":"abilities"
+                ,"ability-slugs":["hope-and-chop"]
+            }
+        ]
+    }
+    ,"angulotl-dart":{
+         "title":"Angulotl Dart"
+        ,"slug":"angulotl-dart"
+        ,"based-on":"Angulotl Dart"
+        ,"level":1
+        ,"encounter-value":6
+        ,"organization":"Minion"
+        ,"role":"Artillery"
+        ,"tags":["Angulotl","Humanoid"]
+        ,"stamina":3
+        ,"immunities":["Poison 2"]
+        ,"speed":5
+        ,"movement-types":["Swim","Climb"]
+        ,"size":"1S"
+        ,"stability":0
+        ,"with-captain":"Ranged distance +4"
+        ,"free-strike":2
+        ,"characteristics":{
+            "might":0
+            ,"agility":2
+            ,"reason":1
+            ,"intuition":0
+            ,"presence":0
+        }
+        ,"description":[{"content":""}]
+        ,"section":[
+            {
+                 "title":"Toxiferous"
+                ,"slug":"toxiferous"
+                ,"description":[{"content":"When an adjacent enemy grabs or uses a melee ability against this enemy, they take 2 poison damage."}]
+            }
+            ,{
+                 "title":"Abilities"
+                ,"slug":"abilities"
+                ,"ability-slugs":["poison-dart"]
+            }
+        ]
+    }
+    ,"angulotl-pollywog":{
+         "title":"Angulotl Pollywog"
+        ,"slug":"angulotl-pollywog"
+        ,"based-on":"Angulotl Pollywog"
+        ,"level":1
+        ,"encounter-value":6
+        ,"organization":"Minion"
+        ,"role":"Harrier"
+        ,"tags":["Angulotl","Humanoid"]
+        ,"stamina":4
+        ,"immunities":["Poison 2"]
+        ,"speed":6
+        ,"movement-types":["Swim","Climb"]
+        ,"size":"1S"
+        ,"stability":0
+        ,"with-captain":"Speed +2"
+        ,"free-strike":1
+        ,"characteristics":{
+            "might":0
+            ,"agility":2
+            ,"reason":-2
+            ,"intuition":-2
+            ,"presence":0
+        }
+        ,"description":[{"content":""}]
+        ,"section":[
+            {
+                 "title":"Quick Snack"
+                ,"slug":"quick-snack"
+                ,"description":[{"content":"An angulotl that can reach the pollywog can eat them as a maneuver, regaining 4 Stamina and becoming Wet (EoT)."}]
+            }
+            ,{
+                 "title":"Abilities"
+                ,"slug":"abilities"
+                ,"ability-slugs":["nip"]
+            }
+        ]
+    }
+    ,"angulotl-needler":{
+         "title":"Angulotl Needler"
+        ,"slug":"angulotl-needler"
+        ,"based-on":"Angulotl Needler"
+        ,"level":1
+        ,"encounter-value":3
+        ,"organization":"Band"
+        ,"role":"Artillery"
+        ,"tags":["Angulotl","Humanoid"]
+        ,"stamina":10
+        ,"immunities":["Poison 2"]
+        ,"speed":5
+        ,"movement-types":["Swim","Climb"]
+        ,"size":"1S"
+        ,"stability":0
+        ,"free-strike":2
+        ,"characteristics":{
+            "might":0
+            ,"agility":2
+            ,"reason":1
+            ,"intuition":0
+            ,"presence":-1
+        }
+        ,"description":[{"content":""}]
+        ,"section":[
+            {
+                 "title":"Toxiferous"
+                ,"slug":"toxiferous"
+                ,"description":[{"content":"When an adjacent enemy grabs or uses a melee ability against this enemy, they take 3 poison damage."}]
+            }
+            ,{
+                 "title":"Abilities"
+                ,"slug":"abilities"
+                ,"ability-slugs":["camoufroge","blowgun"]
+            }
+        ]
+    }
+    ,"angulotl-slink":{
+         "title":"Angulotl Slink"
+        ,"slug":"angulotl-slink"
+        ,"based-on":"Angulotl Slink"
+        ,"level":1
+        ,"encounter-value":3
+        ,"organization":"Band"
+        ,"role":"Ambusher"
+        ,"tags":["Angulotl","Humanoid"]
+        ,"stamina":15
+        ,"immunities":["Poison 2"]
+        ,"speed":7
+        ,"movement-types":["Swim","Climb"]
+        ,"size":"1S"
+        ,"stability":0
+        ,"free-strike":2
+        ,"characteristics":{
+            "might":1
+            ,"agility":2
+            ,"reason":0
+            ,"intuition":0
+            ,"presence":0
+        }
+        ,"description":[{"content":""}]
+        ,"section":[
+            {
+                 "title":"Adhesive"
+                ,"slug":"adhesive"
+                ,"description":[{"content":"The slink excretes residue into their square at the end of each of their turns. A non-angulotl creature or object that enters or leaves the square must use a maneuver to withstand the adhesive or be restrained (EoT)."}]
+            }
+            ,{
+                 "title":"Toxiferous"
+                ,"slug":"toxiferous"
+                ,"description":[{"content":"When an adjacent enemy grabs or uses a melee ability against this enemy, they take 3 poison damage."}]
+            }
+            ,{
+                 "title":"Abilities"
+                ,"slug":"abilities"
+                ,"ability-slugs":["hop-to-it","tonguelash"]
+            }
+        ]
+    }
+    ,"angulotl-wave":{
+         "title":"Angulotl Wave"
+        ,"slug":"angulotl-wave"
+        ,"based-on":"Angulotl Wave"
+        ,"level":1
+        ,"encounter-value":3
+        ,"organization":"Band"
+        ,"role":"Controller"
+        ,"tags":["Angulotl","Humanoid"]
+        ,"stamina":10
+        ,"immunities":["Poison 2"]
+        ,"speed":5
+        ,"movement-types":["Swim","Climb"]
+        ,"size":"1S"
+        ,"stability":0
+        ,"free-strike":1
+        ,"characteristics":{
+            "might":0
+            ,"agility":0
+            ,"reason":0
+            ,"intuition":2
+            ,"presence":2
+        }
+        ,"description":[{"content":""}]
+        ,"section":[
+            {
+                 "title":"Toxiferous"
+                ,"slug":"toxiferous"
+                ,"description":[{"content":"When an adjacent enemy grabs or uses a melee ability against this enemy, they take 2 poison damage."}]
+            }
+            ,{
+                 "title":"Abilities"
+                ,"slug":"abilities"
+                ,"ability-slugs":["refulgent-beams","noxious-bubble"]
+            }
+        ]
+    }
+    ,"angulotl-daybringer":{
+         "title":"Angulotl Daybringer"
+        ,"slug":"angulotl-daybringer"
+        ,"based-on":"Angulotl Daybringer"
+        ,"level":1
+        ,"encounter-value":3
+        ,"organization":"Leader"
+        ,"role":"Leader"
+        ,"tags":["Angulotl","Humanoid"]
+        ,"stamina":80
+        ,"immunities":["Poison 2"]
+        ,"speed":5
+        ,"movement-types":["Swim","Climb"]
+        ,"size":"1M"
+        ,"stability":1
+        ,"free-strike":4
+        ,"characteristics":{
+            "might":3
+            ,"agility":2
+            ,"reason":0
+            ,"intuition":2
+            ,"presence":0
+        }
+        ,"description":[{"content":""}]
+        ,"section":[
+            {
+                 "title":"Toxiferous"
+                ,"slug":"toxiferous"
+                ,"description":[{"content":"When an adjacent enemy grabs or uses a melee ability against this enemy, they take 3 poison damage."}]
+            }
+            ,{
+                 "title":"Moisturizing End Effect"
+                ,"slug":"moisturizing-end-effect"
+                ,"description":[{"content":"The daybringer either takes 5 damage or removes the wet effect from an adjacent creature and ends one save ends effect affecting them at the end of their turn."}]
+            }
+            ,{
+                 "title":"Abilities"
+                ,"slug":"abilities"
+                ,"ability-slugs":[
+                    "acid-grasp"
+                    ,"sun-lamp"
+                    ,"tongue-slap"
+                    ,"new-dawn"
+                    ,"plague-of-frogs"
+                    ,"it-is-day"
+                ]
+            }
+        ]
+    }
+}

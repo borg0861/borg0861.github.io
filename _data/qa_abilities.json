@@ -1,0 +1,874 @@
+{
+    "template":{
+        "title":"template"
+        ,"slug":"template"
+        ,"action-type":"main-action"
+        ,"ability-type":"Heroic Ability"
+        ,"cost":3
+        ,"description":[
+            {
+                 "element-type":""
+                ,"content":""
+            }
+        ]
+        ,"tags":[""]
+        ,"target":"1 Creature"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["M"]
+            ,"tier-1":""
+            ,"tier-2":""
+            ,"tier-3":""
+        }
+        ,"trigger":[
+            {
+                 "element-type":""
+                ,"content":""
+            }
+        ]
+        ,"effect":[
+            {
+                 "element-type":""
+                ,"content":""
+            }
+        ]
+        ,"effect-is-before":false
+        ,"spend":{
+            "cost":1
+            ,"effect":[{
+                 "element-type":""
+                ,"content":""
+            }]
+        }
+        ,"spend-is-before":false
+        ,"based-on":""
+        ,"contributors":[
+            {
+                 "name":""
+                ,"link":""
+            }
+        ]
+    }
+    ,"push-off":{
+        "title":"Push Off"
+        ,"slug":"push-off"
+        ,"action-type":"free-triggered"
+        ,"ability-type":"Zero-G Movement"
+        ,"description":[{"content":"You use an object’s mass to propel yourself."}]
+        ,"tags":["Movement","Zero-G"]
+        ,"target":"1 Creature or Object"
+        ,"range":"Melee 1"
+        ,"trigger":[{"content":"You would use movement while under the effects of zero-G."}]
+        ,"effect":[{"content":"You may choose to move a number of squares in a straight line up to your remaining movement. This number of squares is applied as a Vertical Push to the target of this action in a direction opposite the direction you move. You must subtract your Stability from your movement, and you must also subtract the target’s Stability from their forced movement, as normal."}]
+    }
+    ,"zero-loyalty-precedent":{
+        "title":"Zero Loyalty Precedent"
+        ,"slug":"zero-loyalty-precedent"
+        ,"action-type":"free-triggered"
+        ,"ability-type":"Altrik Free Triggered Action"
+        ,"description":[{"content":"You anticipated their betrayal."}]
+        ,"tags":["Altrik"]
+        ,"target":"1 Enemy"
+        ,"range":"Ranged 10"
+        ,"trigger":[{"content":"Combat begins."}]
+        ,"effect":[{"content":"Choose one enemy within range. Until the beginning of the second round of combat, that enemy cannot use or benefit from Villain Actions or Abilities fueled by Malice."}]
+    }
+    ,"reassign-liability":{
+        "title":"Reassign Liability"
+        ,"slug":"reassign-liability"
+        ,"based-on":"Protective Attack"
+        ,"action-type":"main-action"
+        ,"ability-type":"Altrik Signature Ability"
+        ,"description":[{"content":"You strike out, drawing an enemy's attention to an ally instead of yourself."}]
+        ,"tags":["Altrik","Melee","Ranged","Strike","Weapon"]
+        ,"target":"1 Enemy"
+        ,"range":"Melee 1, Ranged 5"
+        ,"power-roll":{
+             "characteristic":["A"]
+            ,"tier-1":"3 + <span class=\"characteristic\">A</span> Damage"
+            ,"tier-2":"5 + <span class=\"characteristic\">A</span> Damage"
+            ,"tier-3":"8 + <span class=\"characteristic\">A</span> Damage"
+        }
+        ,"effect":[{"content":"Select an ally within range. The target of this attack is Taunted (EoT) by the chosen ally."}]
+    }
+    ,"deferred-action":{
+        "title":"Deferred Action"
+        ,"slug":"deferred-action"
+        ,"action-type":"main-action"
+        ,"ability-type":"Bravaan Signature Ability"
+        ,"description":[{"content":"You consider the battlefield, preparing to strike."}]
+        ,"tags":["Bravaan"]
+        ,"target":"Self"
+        ,"range":"Self"
+        ,"effect":[{"content":"Gain additional <span class=\"heroic-resource-icon\"></span> for your class, as if you had just begun your turn."}]
+    }
+    ,"quarantine-protocol":{
+        "title":"Quarantine Protocol"
+        ,"slug":"quarantine-protocol"
+        ,"action-type":"triggered"
+        ,"ability-type":"Elydran Triggered action"
+        ,"description":[{"content":"Your environment suit seals off the source of contamination."}]
+        ,"tags":["Elydran"]
+        ,"target":"Self"
+        ,"range":"Self"
+        ,"trigger":[{"content":"You would take damage."}]
+        ,"effect":[{"content":"The damage is halved."}]
+    }
+    ,"junk-drone":{
+        "title":"Junk Drone"
+        ,"slug":"junk-drone"
+        ,"based-on":"Net and Stab"
+        ,"action-type":"main-action"
+        ,"ability-type":"Elydran Signature Ability"
+        ,"description":[{"content":"&quot;Is that... a coolant fan, a med-gel dispenser, and half a toaster?&quot;"}]
+        ,"tags":["Elydran","Melee","Ranged","Strike","Weapon"]
+        ,"target":"1 Creature"
+        ,"range":"Melee 2, Ranged 5"
+        ,"power-roll":{
+             "characteristic":["R"]
+            ,"tier-1":"2 + <span class=\"characteristic\">R</span> Damage; <span class=\"potency\">A < Weak</span> Slowed"
+            ,"tier-2":"4 + <span class=\"characteristic\">R</span> Damage; <span class=\"potency\">A < Average</span> Slowed"
+            ,"tier-3":"6 + <span class=\"characteristic\">R</span> Damage; <span class=\"potency\">A < Strong</span> Restrained"
+        }
+    }
+    ,"power-bypass":{
+        "title":"Power Bypass"
+        ,"slug":"power-bypass"
+        ,"action-type":"maneuver"
+        ,"ability-type":"Elydran Maneuver"
+        ,"based-on":"Coat the Blade"
+        ,"description":[{"content":"You channel power from your environment suit into your attacks."}]
+        ,"tags":["Elydran"]
+        ,"target":"Self"
+        ,"range":"Self"
+        ,"effect":[{"content":"You gain two surges. Whenever you use a surge before the end of the encounter, you can choose to have its damage be lightning damage."}]
+    }
+    ,"stack-weight":{
+        "title":"Stack Weight"
+        ,"slug":"stack-weight"
+        ,"action-type":"triggered"
+        ,"ability-type":"Karnyx Triggered action"
+        ,"description":[{"content":"You put your own chassis on the line."}]
+        ,"tags":["Karnyx"]
+        ,"target":"One Creature or Object"
+        ,"range":"Melee 1"
+        ,"trigger":[{"content":"The target takes damage from a Strike."}]
+        ,"effect":[{"content":"The damage is halved."}]
+    }
+    ,"self-repair-protocol":{
+        "title":"Self-Repair Protocol"
+        ,"slug":"self-repair-protocol"
+        ,"action-type":"maneuver"
+        ,"ability-type":"Karnyx Maneuver"
+        ,"description":[{"content":"You trigger a series of subroutines to rapidly speed repairs."}]
+        ,"tags":["Karnyx"]
+        ,"target":"Self"
+        ,"range":"Self"
+        ,"effect":[{"content":"This maneuver replaces the Catch Breath maneuver for you. You can spend up to two recoveries and regain Stamina in an amount equal to your recovery value multiplied by the number of recoveries you spent."}]
+    }
+    ,"horizon-lance":{
+        "title":"Horizon Lance"
+        ,"slug":"horizon-lance"
+        ,"based-on":"Patient Shot"
+        ,"action-type":"main-action"
+        ,"ability-type":"Longglass Kit Signature Ability"
+        ,"description":[{"content":"Your rifle's advanced optics make the longest shots impactful."}]
+        ,"tags":["Ranged","Strike","Weapon"]
+        ,"target":"1 Creature or Object"
+        ,"range":"Ranged 20"
+        ,"power-roll":{
+             "characteristic":["A","R"]
+            ,"tier-1":"3 + <span class=\"characteristic\">A</span> or <span class=\"characteristic\">R</span> Damage; <span class=\"potency\">A < Weak</span> Slowed"
+            ,"tier-2":"6 + <span class=\"characteristic\">A</span> or <span class=\"characteristic\">R</span> Damage; <span class=\"potency\">A < Average</span> Slowed"
+            ,"tier-3":"13 + <span class=\"characteristic\">A</span> or <span class=\"characteristic\">R</span> Damage; <span class=\"potency\">A < Strong</span> Restrained"
+        }
+        ,"effect":[
+            {"content":"Your effect is based on your distance from the target."}
+            ,{
+                 "element-type":"ul"
+                ,"content":[
+                     "If your target is further than 15 squares away, gain a Surge and an Edge on this <span class=\"power-roll-icon\"></span>."
+                    ,"If your target is between 10 and 14 squares away, gain a Surge."
+                    ,"If your target is 5 or fewer squares away, take a Bane on this <span class=\"power-roll-icon\"></span>."
+                ]
+            }
+        ]
+        ,"effect-is-before":true
+    }
+    ,"gravitic-pressure":{
+        "title":"Gravitic Pressure"
+        ,"slug":"gravitic-pressure"
+        ,"based-on":"Ray of Wrath"
+        ,"action-type":"free-strike"
+        ,"ability-type":"Voidcaller Free Strike"
+        ,"description":[{"content":"Dark energy twists your target, dealing damage"}]
+        ,"tags":["Gravitic","Ranged","Strike"]
+        ,"target":"1 Creature or Object"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"2 + <span class=\"characteristic\">I</span> Damage"
+            ,"tier-2":"4 + <span class=\"characteristic\">I</span> Damage"
+            ,"tier-3":"6 + <span class=\"characteristic\">I</span> Damage"
+        }
+    }
+    ,"voidcaller-barrier":{
+        "title":"Barrier"
+        ,"slug":"barrier"
+        ,"action-type":"maneuver"
+        ,"ability-type":"Voidcaller Class Maneuver"
+        ,"based-on":"Null Field"
+        ,"description":[{"content":"Dark energy swirls around you, reducing your vulnerability to damage."}]
+        ,"tags":["Gravitic"]
+        ,"target":"Self"
+        ,"range":"Self"
+        ,"effect":[
+            {"content":"Increase your Stability by 1. Once on each of your turns you can use a free maneuver to spend 1 Intensity and give your Barrier one of the following additional effects until the start of your next turn:"}
+            ,{
+                "element-type":"ul"
+                ,"content":[
+                     "<b>Reinforcement:</b> You gain 10 Temporary Stamina."
+                    ,"<b>Gravity Well:</b> Each target who starts their turn adjacent to you cannot shift."
+                    ,"<b>Weakness:</b> When you subject a target to a potency, the potency is increased by 1."
+                ]
+            }
+            ,{
+                "content":"This ability stays active even after encounters end. It ends if you are dying or if you willingly end it (no action required)."
+            }
+        ]
+    }
+    ,"backlash":{
+        "title":"Backlash"
+        ,"slug":"backlash"
+        ,"action-type":"triggered"
+        ,"ability-type":"Voidcaller Triggered action"
+        ,"description":[{"content":"You quickly erect a gravitic barrier between you and your attacker, reflecting some of the attack's force back at them."}]
+        ,"tags":["Gravitic"]
+        ,"target":"Self"
+        ,"range":"Self"
+        ,"trigger":[{"content":"You take damage."}]
+        ,"effect":[{"content":"You halve the damage."}]
+        ,"spend":{
+            "cost":1
+            ,"effect":[{"content":"Deal damage of the same type to the origin of the damage, equal to your <span class=\"characteristic\">I</span> x2."}]
+        }
+    }
+    ,"throw":{
+        "title":"Throw"
+        ,"slug":"throw"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Signature Ability"
+        ,"description":[{"content":"You use gravitic energy to hurl your foe away from you."}]
+        ,"tags":["Detonator","Gravitic","Melee","Ranged","Strike"]
+        ,"target":"1 Creature or Object"
+        ,"range":"Melee 1 or Ranged 5"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"2 + <span class=\"characteristic\">I</span> Damage; Push 3"
+            ,"tier-2":"3 + <span class=\"characteristic\">I</span> Damage; Push 5"
+            ,"tier-3":"5 + <span class=\"characteristic\">I</span> Damage; Push 7; Prone"
+        }
+        ,"spend":{
+            "cost":1
+            ,"effect":[{"content":"Choose an additional target in range and apply this ability's forced movement to that target."}]
+        }
+    }
+    ,"pull":{
+        "title":"Pull"
+        ,"slug":"pull"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Signature Ability"
+        ,"description":[{"content":"You reach out with dark energy to draw your foe ever closer."}]
+        ,"tags":["Gravitic","Primer","Ranged","Strike"]
+        ,"target":"1 Creature or Object"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"2 + <span class=\"characteristic\">I</span> Damage; Vertical Pull 3"
+            ,"tier-2":"3 + <span class=\"characteristic\">I</span> Damage; Vertical Pull 5"
+            ,"tier-3":"5 + <span class=\"characteristic\">I</span> Damage; Vertical Pull 7; Prone"
+        }
+        ,"spend":{
+            "cost":1
+            ,"effect":[{"content":"Choose an additional target in range and apply this ability's forced movement to that target."}]
+        }
+    }
+    ,"lift":{
+        "title":"Lift"
+        ,"slug":"lift"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Signature Ability"
+        ,"description":[{"content":"Dark energy surrounds your enemy, drawing them away from gravity's pull."}]
+        ,"tags":["Gravitic","Primer","Ranged","Strike"]
+        ,"target":"1 Creature or Object"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"2 + <span class=\"characteristic\">I</span> Damage; Stability reduced by 2 (EoT)"
+            ,"tier-2":"3 + <span class=\"characteristic\">I</span> Damage; Stability reduced by 3 (EoT)"
+            ,"tier-3":"5 + <span class=\"characteristic\">I</span> Damage; Stability reduced by 4 (EoT)"
+        }
+        ,"effect":[{"content":"If the effects of the <span class=\"power-roll-icon\"></span> result in <span class=\"potency\">Stability < Strong</span>, the target is also Lifted (EoT)."}]
+        ,"spend":{
+            "cost":1
+            ,"effect":[{"content":"Choose an additional target in range and apply this ability's Stability reduction and effect to that target."}]
+        }
+    }
+    ,"lash":{
+        "title":"Lash"
+        ,"slug":"lash"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Signature Ability"
+        ,"description":[{"content":"You use gravitic power to reach out and fling an enemy past you."}]
+        ,"tags":["Detonator","Gravitic","Melee","Strike"]
+        ,"target":"1 Creature or Object"
+        ,"range":"Melee 2"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"2 + <span class=\"characteristic\">I</span> Damage; Push 2"
+            ,"tier-2":"4 + <span class=\"characteristic\">I</span> Damage; Push 4"
+            ,"tier-3":"6 + <span class=\"characteristic\">I</span> Damage; Push 6"
+        }
+        ,"effect":[{"content":"Before the push is resolved, teleport the target to a square adjacent to you opposite the one they started in. If the target cannot be teleported, then they ignore the push."}]
+        ,"spend":{
+            "cost":1
+            ,"effect":[{"content":"You teleport to a square adjacent to the target on the opposite side of the one you started in and then apply the push."}]
+        }
+    }
+    ,"gravitic-fist":{
+        "title":"Gravitic Fist"
+        ,"slug":"gravitic-fist"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Signature Ability"
+        ,"description":[{"content":"You mold gravitic energy around your fist and strike!"}]
+        ,"tags":["Detonator","Gravitic","Melee","Strike"]
+        ,"target":"1 Creature or Object"
+        ,"range":"Melee 2"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"3 + <span class=\"characteristic\">I</span> Damage"
+            ,"tier-2":"6 + <span class=\"characteristic\">I</span> Damage"
+            ,"tier-3":"9 + <span class=\"characteristic\">I</span> Damage"
+        }
+        ,"effect":[{"content":"You gain a surge."}]
+        ,"spend":{
+            "cost":1
+            ,"effect":[{"content":"Push the target 5 squares."}]
+        }
+    }
+    ,"fight-me":{
+        "title":"Fight Me!"
+        ,"slug":"fight-me"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Signature Ability"
+        ,"description":[{"content":"You isolate an enemy, forcing them to face you."}]
+        ,"tags":["Gravitic","Melee","Primer","Strike"]
+        ,"target":"1 Creature"
+        ,"range":"Melee 1"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"2 + <span class=\"characteristic\">I</span> Damage; Taunted (EoT)"
+            ,"tier-2":"5 + <span class=\"characteristic\">I</span> Damage; Taunted (EoT)"
+            ,"tier-3":"7 + <span class=\"characteristic\">I</span> Damage; Taunted (EoT)"
+        }
+        ,"effect":[{"content":"Each enemy adjacent to the target is pushed away from the target up to a number of squares equal to your <span class=\"characteristic\">I</span> score."}]
+        ,"spend":{
+            "cost":1
+            ,"effect":[{"content":"The target is Taunted (Save Ends)."}]
+        }
+    }
+    ,"siphon":{
+        "title":"Siphon"
+        ,"slug":"siphon"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Signature Ability"
+        ,"description":[{"content":"You drain the energy from your target and revitalize yourself or an ally."}]
+        ,"tags":["Gravitic","Melee","Strike"]
+        ,"target":"1 Creature"
+        ,"range":"Melee 3"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"2 + <span class=\"characteristic\">I</span> Corruption Damage"
+            ,"tier-2":"3 + <span class=\"characteristic\">I</span> Corruption Damage"
+            ,"tier-3":"5 + <span class=\"characteristic\">I</span> Corruption Damage"
+        }
+        ,"effect":[{"content":"You or one ally within distance can spend a Recovery."}]
+        ,"spend":{
+            "cost":1
+            ,"effect":[{"content":"You or your chosen ally can spend additional Recoveries up to the number of Intensity spent."}]
+        }
+    }
+    ,"shared-barrier":{
+        "title":"Shared Barrier"
+        ,"slug":"shared-barrier"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Signature Ability"
+        ,"description":[{"content":"Gravitic energy tears at your foe and defends a nearby friend."}]
+        ,"tags":["Gravitic","Ranged","Strike"]
+        ,"target":"1 Creature"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"2 + <span class=\"characteristic\">I</span> Damage"
+            ,"tier-2":"4 + <span class=\"characteristic\">I</span> Damage"
+            ,"tier-3":"6 + <span class=\"characteristic\">I</span> Damage"
+        }
+        ,"effect":[{"content":"You or one ally within distance can impose a bane on any <span class=\"power-roll-icon\"></span> made against them by the target of this ability before the end of their next turn."}]
+        ,"spend":{
+            "cost":1
+            ,"effect":[{"content":"Impose a double-bane instead of a bane."}]
+        }
+    }
+    ,"salvo":{
+        "title":"Salvo"
+        ,"slug":"salvo"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Signature Ability"
+        ,"description":[{"content":"Bolts of dark energy seek targets at your command."}]
+        ,"tags":["Detonator","Gravitic","Ranged","Strike"]
+        ,"target":"Two Creatures or Objects"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"2 Damage"
+            ,"tier-2":"4 Damage"
+            ,"tier-3":"6 Damage"
+        }
+        ,"effect":[{"content":"You or one ally within distance can impose a bane on any <span class=\"power-roll-icon\"></span> made against them by the target of this ability before the end of their next turn."}]
+        ,"spend":{
+            "cost":99
+            ,"effect":[{"content":"For each Intensity spent, choose one additional target in range."}]
+        }
+    }
+    ,"antipathy":{
+        "title":"Antipathy"
+        ,"slug":"antipathy"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":3
+        ,"description":[{"content":"The air hardens around your foe, making them an easy target."}]
+        ,"tags":["Gravitic","Primer","Ranged","Strike"]
+        ,"target":"1 Creature"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"3 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">M < Weak</span>, Slowed (save ends)"
+            ,"tier-2":"5 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">M < Average</span>, Slowed (save ends)"
+            ,"tier-3":"8 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">M < Strong</span>, Lifted (save ends)"
+        }
+        ,"effect":[{"content":"You can vertical pull the target up to 2 squares."}]
+        ,"spend":{
+            "cost":99
+            ,"effect":[{"content":"For each Intensity you spend, you can vertical pull the target one square."}]
+        }
+    }
+    ,"warp":{
+        "title":"Warp"
+        ,"slug":"warp"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":3
+        ,"description":[{"content":"Dark energy surrounds your foe, weakening armor and flesh alike."}]
+        ,"tags":["Gravitic","Ranged","Strike"]
+        ,"target":"1 Creature or Object"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"3 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">R < Weak</span>, the target has Weakness 5 (save ends)"
+            ,"tier-2":"6 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">R < Average</span>, the target has Weakness 5 (save ends)"
+            ,"tier-3":"9 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">R < Strong</span>, the target has Weakness equal to 5 + your <span class=\"characteristic\">I</span> (save ends)"
+        }
+        ,"effect":[{"content":"The target takes damage before this ability imposes any weakness effect. The damage type and the weakness for this ability must be chosen from one of the following: acid, corruption, or fire."}]
+        ,"spend":{
+            "cost":99
+            ,"effect":[{"content":"For each Intensity spent, increase the value of the Weakness condition by 1."}]
+        }
+    }
+    ,"gravity-rift":{
+        "title":"Gravity Rift"
+        ,"slug":"gravity-rift"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":3
+        ,"description":[{"content":"You open a rift of dark energy to harry your foes."}]
+        ,"tags":["Area","Gravitic","Ranged"]
+        ,"target":"Each enemy in the area"
+        ,"range":"3 Cube within 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"3 Damage"
+            ,"tier-2":"6 Damage"
+            ,"tier-3":"9 Damage"
+        }
+        ,"spend":{
+            "cost":1
+            ,"effect":[{"content":"You or an ally within the area gains a surge."}]
+        }
+    }
+    ,"i-will-destroy-you":{
+        "title":"I Will Destroy You!"
+        ,"slug":"i-will-destroy-you"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":3
+        ,"description":[{"content":"You strike, and for the next few moments, your enemy can’t escape you."}]
+        ,"tags":["Detonator","Gravitic","Melee","Strike","Weapon"]
+        ,"target":"1 Creature or Object"
+        ,"range":"Melee 1"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"6 + <span class=\"characteristic\">I</span> Damage"
+            ,"tier-2":"8 + <span class=\"characteristic\">I</span> Damage"
+            ,"tier-3":"12 + <span class=\"characteristic\">I</span> Damage"
+        }
+        ,"effect":[{"content":"Until the start of your next turn, when the target moves, you can use a Free Triggered action to shift up to your Speed. You must end this shift adjacent to the target."}]
+        ,"spend":{
+            "cost":99
+            ,"effect":[{"content":"You can teleport up to 3 squares before using this ability."}]
+        }
+    }
+    ,"shockwave":{
+        "title":"Shockwave"
+        ,"slug":"shockwave"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":5
+        ,"description":[{"content":"You send pulses of gravitic energy before you in a wave."}]
+        ,"tags":["Detonator","Gravitic","Melee","Strike"]
+        ,"target":"Each enemy in the area"
+        ,"range":"5 x 1 line within 1"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"6 Damage; Vertical Slide 2"
+            ,"tier-2":"9 Damage; Vertical Slide 4"
+            ,"tier-3":"13 Damage; Vertical Slide 6"
+        }
+        ,"effect":[{"content":"Slide the  targets one at a time, starting with the target closest to you."}]
+        ,"spend":{
+            "cost":99
+            ,"effect":[{"content":"Lengthen the line by 1 square for each Intensity you spend."}]
+        }
+    }
+    ,"reave":{
+        "title":"Reave"
+        ,"slug":"reave"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":5
+        ,"description":[{"content":"Dark energy tears at the atomic bonds that hold your enemy together."}]
+        ,"tags":["Gravitic","Primer","Ranged","Strike"]
+        ,"target":"One Creature or Object"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"3 + <span class=\"characteristic\">I</span> Corruption Damage; <span class=\"potency\">M < Weak</span>, the target has Weakness 5 (save ends)"
+            ,"tier-2":"6 + <span class=\"characteristic\">I</span> Corruption Damage; <span class=\"potency\">M < Average</span>, the target has Weakness 5 (save ends)"
+            ,"tier-3":"9 + <span class=\"characteristic\">I</span> Corruption Damage; <span class=\"potency\">M < Strong</span>, the target has Weakness 5 + your <span class=\"characteristic\">I</span> (save ends)"
+        }
+        ,"effect":[{"content":"The target takes damage before this ability imposes any weakness effect."}]
+        ,"spend":{
+            "cost":99
+            ,"effect":[{"content":"Gain a Surge for each Intensity you spent."}]
+        }
+    }
+    ,"inertial-sink":{
+        "title":"Inertial Sink"
+        ,"slug":"inertial-sink"
+        ,"action-type":"maneuver"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":5
+        ,"description":[{"content":"Your gravitic energy surrounds the target and pushes everything else away from them."}]
+        ,"tags":["Gravitic","Ranged"]
+        ,"target":"Self or 1 Ally"
+        ,"range":"Ranged 10"
+        ,"effect":[{"content":"The target ignores difficult terrain and takes no damage from forced movement until the start of your next turn. Whenever the target moves into a square while under this effect, they can Push one adjacent creature up to 2 squares. If Pushing an ally, the target can ignore that ally’s Stability."}]
+        ,"spend":{
+            "cost":2
+            ,"effect":[{"content":"Choose  an additional target in range."}]
+        }
+    }
+    ,"density-augmentation":{
+        "title":"Density Augmentation"
+        ,"slug":"density-augmentation"
+        ,"action-type":"maneuver"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":5
+        ,"description":[{"content":"The target becomes firmly anchored to the ground, ready to send the pain."}]
+        ,"tags":["Gravitic","Ranged"]
+        ,"target":"Self or 1 Ally"
+        ,"range":"Ranged 10"
+        ,"effect":[{"content":"The target’s stability increases by 5 and they gain 10 temporary stamina and two surges."}]
+        ,"spend":{
+            "cost":2
+            ,"effect":[{"content":"Choose  an additional target in range."}]
+        }
+    }
+    ,"gravitic-jump":{
+        "title":"Gravitic Jump"
+        ,"slug":"gravitic-jump"
+        ,"action-type":"free-maneuver"
+        ,"ability-type":"Voidcaller Free Maneuver"
+        ,"description":[{"content":"You fuel your leaps with gravitic energy."}]
+        ,"tags":["Gravitic"]
+        ,"target":"Self"
+        ,"range":"Self"
+        ,"effect":[{"content":"Your gravitic power allows you to traverse the battlefield. You can long and high jump a distance equal to twice your <span class=\"characteristic\">I</span> without needing to make a test."}]
+        ,"spend":{
+            "cost":1
+            ,"effect":[{"content":"You gain the Fly keyword until the end of your turn."}]
+        }
+    }
+    ,"gentle-fall":{
+        "title":"Gentle Fall"
+        ,"slug":"gentle-fall"
+        ,"action-type":"free-triggered"
+        ,"ability-type":"Voidcaller Free Triggered action"
+        ,"description":[{"content":"Your gravitic power allows you to land gracefully."}]
+        ,"tags":["Gravitic"]
+        ,"target":"Self"
+        ,"range":"Self"
+        ,"trigger":[{"content":"You would fall more than 2 squares."}]
+        ,"effect":[{"content":"Neither you, nor anything on which you fall takes falling damage, regardless of the height from which you fell, and you land on your feet."}]
+        ,"spend":{
+            "cost":1
+            ,"effect":[{"content":"If you fall on a creature or object, it still takes damage and suffers all other effects normally."}]
+        }
+    }
+    ,"singularity":{
+        "title":"Singularity"
+        ,"slug":"singularity"
+        ,"action-type":"maneuver"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":5
+        ,"description":[{"content":"You create a vortex of dark energy, pulling in enemies and damaging them."}]
+        ,"tags":["Area","Gravitic","Primer","Ranged"]
+        ,"target":"Special"
+        ,"range":"3 Cube within 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"5 Damage; <span class=\"potency\">M < Weak</span>, Pull 2 toward the center of the area."
+            ,"tier-2":"8 Damage; <span class=\"potency\">M < Average</span>, Pull 3 toward the center of the area."
+            ,"tier-3":"11 Damage; <span class=\"potency\">M < Strong</span>, Pull 4 toward the center of the area."
+        }
+        ,"effect":[{"content":"The affected area becomes wrapped in tendrils of dark energy until the end of the encounter. Any ally can enter any square of the area without spending movement. At the end of each of your turns, you can make a <span class=\"power-roll-icon\"></span> against all enemies in the area."}]
+        ,"spend":{
+            "cost":2
+            ,"effect":[{"content":"Expand the area to a 4 cube."}]
+        }
+    }
+    ,"slam":{
+        "title":"Slam"
+        ,"slug":"slam"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":5
+        ,"description":[{"content":"You raise the target into the air, then smother them against the ground."}]
+        ,"tags":["Detonator","Gravitic","Ranged","Strike"]
+        ,"target":"1 Creature or Object"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"6 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">M < Weak</span>, Prone."
+            ,"tier-2":"10 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">M < Average</span>, Prone."
+            ,"tier-3":"14 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">M < Strong</span>, Prone and cannot stand (save ends)."
+        }
+        ,"effect":[{"content":"A target made Prone by this ability is force moved 2 squares vertically before being immediately force moved to the ground, taking damage as if they had fallen."}]
+        ,"spend":{
+            "cost":99
+            ,"effect":[{"content":"The target made prone by this ability is lifted an additional square for each Intensity spent."}]
+        }
+    }
+    ,"stasis":{
+        "title":"Stasis"
+        ,"slug":"stasis"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":5
+        ,"description":[{"content":"Your dark energy surrounds the enemy, completely incapacitating them."}]
+        ,"tags":["Gravitic","Primer","Ranged","Strike"]
+        ,"target":"1 Creature"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"5 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">A < Weak</span>, Restrained (save ends)."
+            ,"tier-2":"9 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">A < Average</span>, Restrained (save ends)."
+            ,"tier-3":"12 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">A < Strong</span>, Restrained (save ends)."
+        }
+        ,"spend":{
+            "cost":2
+            ,"effect":[{"content":"Increase your potency against the target of this ability until the condition ends."}]
+        }
+    }
+    ,"dominate":{
+        "title":"Dominate"
+        ,"slug":"dominate"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":5
+        ,"description":[{"content":"You enforce your will on the weak mind of your enemy."}]
+        ,"tags":["Gravitic","Ranged","Strike"]
+        ,"target":"1 Creature"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"4 + <span class=\"characteristic\">I</span> Psychic Damage; <span class=\"potency\">P < Weak</span>, before taking damage, the target makes a free strike against a target you choose."
+            ,"tier-2":"7 + <span class=\"characteristic\">I</span> Psychic Damage; <span class=\"potency\">P < Average</span>, before taking damage, the target uses an ability of your choice and you choose any targets for that ability."
+            ,"tier-3":"11 + <span class=\"characteristic\">I</span> Psychic Damage; <span class=\"potency\">P < Strong</span>, before taking damage, the target shifts up to their speed, uses an ability of your choice, and you choose any targets for that ability."
+        }
+        ,"effect":[{"content":"This ability has no effect on Constructs or other non-organic species."}]
+        ,"spend":{
+            "cost":2
+            ,"effect":[{"content":"Increase your Potency by 1 for this Main Action."}]
+        }
+    }
+    ,"storm":{
+        "title":"Storm"
+        ,"slug":"storm"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":5
+        ,"description":[{"content":"You warp an entire area of the battlefield with violent dark energy."}]
+        ,"tags":["Area","Gravitic","Ranged"]
+        ,"target":"Special"
+        ,"range":"3 Cube within 10"
+        ,"effect":[
+            {"content":"Until the start of your next turn, the area gains the following effects:"}
+            ,{
+                "element-type":"ul"
+                ,"content":[
+                     "You and each ally in the area can spend any number of Recoveries at the start of your turn once as a free maneuver."
+                    ,"The area is difficult terrain for enemies."
+                    ,"Any enemy who enters the area for the first time in a round or starts their turn there takes damage equal to your <span class=\"characteristic\">I</span>."
+                ]
+            }
+        ]
+        ,"spend":{
+            "cost":2
+            ,"effect":[{"content":"Expand the area of this ability to a 4 cube."}]
+        }
+    }
+    ,"entropic-wave":{
+        "title":"Entropic Wave"
+        ,"slug":"entropic-wave"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":5
+        ,"description":[{"content":"You harness entropic forces and inflict them on your foes."}]
+        ,"tags":["Area","Gravitic"]
+        ,"target":"Each enemy in the area"
+        ,"range":"3 Burst"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"4 Corruption Damage"
+            ,"tier-2":"7 Corruption Damage"
+            ,"tier-3":"11 Corruption Damage"
+        }
+        ,"effect":[{"content":"Each ally in the area deals corruption damage equal to your <span class=\"characteristic\">I</span> with their next strike made before the end of their next turn."}]
+        ,"spend":{
+            "cost":2
+            ,"effect":[{"content":"Expand the area of this ability to 4 burst."}]
+        }
+    }
+    ,"lance":{
+        "title":"Lance"
+        ,"slug":"lance"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":7
+        ,"description":[{"content":"A spear of gravitic force spears an opponent."}]
+        ,"tags":["Detonator","Gravitic","Ranged","Strike"]
+        ,"target":"1 Creature"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"7 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">P < Weak</span> Slowed (save ends)"
+            ,"tier-2":"11 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">P < Average</span> Prone and cannot stand (save ends)"
+            ,"tier-3":"16 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">P < Strong</span> Prone and cannot stand (save ends)"
+        }
+        ,"spend":{
+            "cost":2
+            ,"effect":[{"content":"ncrease your Potency by 1 for this action."}]
+        }
+    }
+    ,"warp-ammo":{
+        "title":"Warp Ammo"
+        ,"slug":"warp-ammo"
+        ,"action-type":"no-action"
+        ,"ability-type":"Voidcaller Ammo Power"
+        ,"description":[{"content":"You charge your weapon with gravitic power."}]
+        ,"tags":["Gravitic"]
+        ,"target":"Self"
+        ,"range":"Self"
+        ,"effect":[
+            {"content":"All weapon strikes you make <span class=\"characteristic\">I</span> gain the following additional effects:"}
+            ,{
+                "element-type":"ul"
+                ,"content":[
+                    "<span class=\"potency\">P < Weak</span> Primed"
+                    ,"<span class=\"potency\">P < Average</span> Primed"
+                    ,"<span class=\"potency\">P < Strong</span> Primed"
+                ]
+            }
+        ]
+    }
+    ,"dark-channel":{
+        "title":"Dark Channel"
+        ,"slug":"dark-channel"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":7
+        ,"description":[{"content":"A beam of dark energy connects a foe to a friend, draining life from one to heal the other."}]
+        ,"tags":["Gravitic","Primer","Ranged","Strike"]
+        ,"target":"1 Enemy"
+        ,"range":"Ranged 10"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"7 + <span class=\"characteristic\">I</span> Corruption Damage"
+            ,"tier-2":"11 + <span class=\"characteristic\">I</span> Corruption Damage"
+            ,"tier-3":"16 + <span class=\"characteristic\">I</span> Corruption Damage"
+        }
+        ,"effect":[{"content":"One ally within distance can spend any number of Recoveries (no action required)."}]
+        ,"spend":{
+            "cost":2
+            ,"effect":[{"content":"Choose an additional ally in range to spend Recoveries (no action required)."}]
+        }
+    }
+    ,"flare":{
+        "title":"Flare"
+        ,"slug":"flare"
+        ,"action-type":"main-action"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":7
+        ,"description":[{"content":"Gravitic energy erupts from you, hurting the enemies who dare surround you and giving your allies a chance to reposition."}]
+        ,"tags":["Area","Detonator","Gravitic","Strike"]
+        ,"target":"Each enemy in the area"
+        ,"range":"3 Burst"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1":"5 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">A < Weak</span> Weakened (save ends)"
+            ,"tier-2":"7 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">A < Average</span> Weakened (save ends)"
+            ,"tier-3":"10 + <span class=\"characteristic\">I</span> Damage; <span class=\"potency\">A < Strong</span> Weakened (save ends)"
+        }
+        ,"effect":[{"content":"Each ally in the area can shift up to 2 squares."}]
+        ,"spend":{
+            "cost":99
+            ,"effect":[{"content":"Targets are Pushed 1 square for each Intensity spent."}]
+        }
+    }
+    ,"annihiilation-field":{
+        "title":"Annihilation Field"
+        ,"slug":"annihilation-field"
+        ,"action-type":"maneuver"
+        ,"ability-type":"Voidcaller Heroic Ability"
+        ,"cost":7
+        ,"description":[{"content":"You superheat the air around you, forcing enemies to flee or be burned."}]
+        ,"tags":["Area","Detonator","Gravitic"]
+        ,"target":"Each enemy in the area"
+        ,"range":"2 Aura"
+        ,"effect":[{"content":"Until the end of the encounter or you are dying, at the end of each of your turns, each target takes fire damage equal to your <span class=\"characteristic\">I</span>. Targets take an extra 2d6 Fire damage if they are Primed or adjacent to one of your enemies."}]
+        ,"spend":{
+            "cost":1
+            ,"effect":[{"content":"Change the damage type from Fire to one of the following: Corruption, Cold, Psychic, or Sonic."}]
+        }
+    }
+}

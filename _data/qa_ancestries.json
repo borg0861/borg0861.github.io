@@ -1,0 +1,215 @@
+{
+    "altrik":{
+        "title":"Altrik"
+        ,"slug":"altrik"
+        ,"description":[
+             {"content":"The Altrik are a compact, pressure-adapted species. They evolved in the crushing depths of a high-gravity, low-atmosphere world, resulting in dense and efficient physiology. They have wide, armored craniums and layered sensory structures suited for dim, murky environments. Due to their native world’s unique atmospheric conditions, the Altrik rely on sealed environment suits with sophisticated life-support and filtration systems."}
+            ,{"content":"Culturally, the Altrik are defined by reverence for formal agreements. In their society, strict adherence to agreements is viewed as a moral absolute. This same level of devotion does not apply before an agreement is made. Traps, obfuscations, and conditional edge-cases are expected. Altrik sports often revolve around spotting and negotiating contractual tricks and pitfalls."}
+            ,{"content":"Because of this worldview, many formal Altrik negotiations begin by making an initial agreement that outlines the rules and limits of future interactions. These &quot;meta-contracts&quot; are commonplace and can include clauses governing limitations on bluffing, what constitutes bad faith, and even the duration of time given to each side before negotiations are terminated. This culture of layered legalism makes the Altrik formidable negotiators, both feared and admired, depending on which side of the table they are on."}
+        ]
+        ,"is-playtest": true
+        ,"is-published": true
+        ,"is-change-new": "new"
+        ,"inspiring-property":"Mass Effect"
+        ,"inspiration":"Volus"
+
+        ,"height":"1.1m - 1.4m"
+        ,"weight":"55kg - 75kg"
+        ,"life-expectancy":"90 - 120 Years"
+        ,"size":"1S"
+        ,"short-description":"Insert quick description here..."
+        ,"ancestry-points":3
+        ,"quickbuild":"Armored ExoSuit, Reassign Liability"
+        
+        ,"section":[
+            {
+                 "title":"Fiction"
+                ,"slug":"fiction"
+                ,"description":[
+                     {"content":"The negotiation dome was acoustically neutral and visually sterile&mdash;features less experienced negotiators mistook for signs of fairness. To Vell Korun, it was simply another calculated illusion, designed to ease minds that preferred the appearance of balance to the discomfort of truth."}
+                    ,{"content":"Across the faintly glowing holo-table, Kethra Solvane reclined in what she clearly hoped looked like nonchalance. However, to Vell&rsquo;s well-trained eye, the human&rsquo;s appearance told another story. Having relinquished her weapons before entering the dome, as was customary, she had still opted to remain in full military-grade armor. This revealed to Vell that this was an opponent who would never dream of showing up to a fight unarmed&mdash;even if it was only to be a battle of clauses. He would have to be on the lookout for her early attack."}
+                    ,{"content":"It didn&rsquo;t take him long to find it. Lines of pale blue contract text floated between them in complex lattices of legalese. A flick of Vell&rsquo;s hand highlighted a clause in Section 8-C."}
+                    ,{"content":"&quot;You&rsquo;ve embedded a bypass clause beneath the auxiliary licensing language,&quot; he said, voice tinny and mechanical through his modulator. &quot;Unchallenged, it would shift liability for third-party interference entirely onto our delegation.&quot;"}
+                    ,{"content":"Kethra didn&rsquo;t blink. &quot;Protective boilerplate. It prevents exploitation.&quot;"}        
+                    ,{"content":"&quot;It permits exploitation,&quot; Vell countered, gesturing rapidly in midair as he spoke, pulling out and enlarging key phrases and passages from the document to reveal a concealed substructure of cause-and-effect triggers. &quot;By you, and the parties you represent. A valiant attempt and cleverly done. Unfortunately, this same tactic was famously employed by the runner up on series ten of Contract Kings.&quot;"}
+                    ,{"content":"Kethra stared for a moment before responding, &quot;So, what, you&apos;re happy I tried to cheat you?&quot;"}
+                    ,{"content":"&quot;You offered an unbalanced agreement. I noticed.&quot; Vell&rsquo;s fingers tapped out a revision. &quot;Had I signed it, I would deserve what followed. I am disappointed that you used a seven year old construction without even bothering to change the phrasing.&quot;"}
+                    ,{"content":"Kethra rubbed her forehead in consternation. &quot;You want it removed?&quot;"}
+                    ,{"content":"&quot;I want it revised,&quot; he said. &quot;I propose dual-fault arbitration. Risk flags triggered by either party will open immediate renegotiation windows. Equal oversight.&quot;"}
+                    ,{"content":"She considered. &quot;No preassigned blame?&quot;"}
+                    ,{"content":"&quot;No,&quot; he said. &quot;We both enter aware.&quot;"}
+                    ,{"content":"After a pause, she nodded. &quot;Agreed.&quot;"}
+                    ,{"content":"The revised clause glowed green. Initial validation passed."}
+                    ,{"content":"&quot;You people really do live by this stuff,&quot; Kethra said, half-amused."}
+                    ,{"content":"&quot;Live or die, in this universe, both outcomes can be easily predicted based on the contractual terms under which one operates,&quot; Vell responded. &quot;Shall we continue? We have fourteen hundred additional clauses to review, and according to the agreed negotiation window, we only have five more hours.&quot;"}
+                ]
+            }
+            ,{
+                 "title":"Traits"
+                ,"slug":"traits"
+                ,"description":[{"content":"Altrik heroes have access to the following traits."}]
+                ,"subsection":[
+                    {
+                         "title":"Environment Suit"
+                        ,"slug":"environment-suit"
+                        ,"description":[{"content":"Your environment suit grants you immunity equal to your level to acid damage. Additionally, you are immune to vacuum and atmospheric or other airborne effects."}]
+                        ,"is-signature-trait":true
+                    }
+                    ,{
+                         "title":"Diminutive"
+                        ,"slug":"diminutive"
+                        ,"description":[{"content":"Your size is 1S."}]
+                        ,"is-signature-trait":true
+                    }
+                    ,{
+                         "title":"Purchased Traits"
+                        ,"slug":"purchased-traits"
+                        ,"description":[{"content":"You have 3 ancestry points to spend on the following traits. *(Quick Build: Armored ExoSuit, Reassign Liability)*"}]
+                        ,"subheading":[
+                            {
+                                "title":"Armored ExoSuit"
+                                ,"slug":"armored-exosuit"
+                                ,"description":[{"content":"Your Environment Suit has been reinforced with additional armor plating. Gain +3 Stamina per Echelon."}]
+                                ,"trait-cost":1
+                            }
+                            ,{
+                                "title":"Contractual Anchor"
+                                ,"slug":"contractual-anchor"
+                                ,"description":[{"content":"The Altrik reputation of adherence to the exact terms of an agreement helps you close deals. A tier 3 result which would cause an NPC's interest to rise by 1 during a negotiation test you make increases their interest by 2 instead of 1."}]
+                                ,"trait-cost":1
+                            }
+                            ,{
+                                "title":"Clause Parsing"
+                                ,"slug":"clause-parsing"
+                                ,"description":[{"content":"You take great pride in being pedantic. Gain an edge on any test relating to legalese, contracts, specific laws, or similar topics."}]
+                                ,"trait-cost":1
+                            }
+                            ,{
+                                "title":"Reassign Liability"
+                                ,"slug":"reassign-liability"
+                                ,"description":[{"content":"You gain the following ability:"}]
+                                ,"ability-slugs":["reassign-liability"]
+                                ,"trait-cost":2
+                            }
+                            ,{
+                                "title":"Zero Loyalty Precedent"
+                                ,"slug":"zero-loyalty-precedent"
+                                ,"description":[{"content":"You gain the following ability:"}]
+                                ,"ability-slugs":["zero-loyalty-precedent"]
+                                ,"trait-cost":2
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+    ,"bravaan":{
+        "title":"Bravaan"
+        ,"slug":"bravaan"
+        ,"description":[
+             {"content":"The Bravaan are towering, quadrupedal beings forged in the relentless gravity of a world shrouded by storms. Bravaan voices are deep and resounding, causing a bass rumble superior to theater-grade subwoofers. Their glacial pace is a matter of preference, rather than a physical limitation."}
+            ,{"content":"<i>Deliberate</i> is the best word to describe Bravaan culture, and the Bravaan approach to almost any problem. Bravaan are infamous for long pauses in conversation, hours-long debates over a single point, and days of meditation before making an important decision. Most Bravaan view haste as the enemy of wisdom&mdash;but this is not to say they are incapable of moving quickly when necessary. When Bravaan do act, it is with total conviction, titanic strength, and frightening, well-considered precision."}
+            ,{"content":"The Bravaan cultural rhythm reflects the cycles of their storm-pummeled homeworld: endure, observe, endure, then strike like lightning. In conflict, they are not mindless brutes; they are patient predators, philosophers of force. Bravaan will often watch a battlefield for long, painful moments before taking any action&mdash;but when they move almost nothing can stop them."}
+            ,{"content":"Bravaan do not cling to duty for its own sake, nor are they bound by honor, or other strict societal codes. They are driven instead by a deep-rooted belief that what is worth doing is worth doing in the right way, and in the right time&mdash;and not before. Their reputation as slow thinkers is both exaggerated and misunderstood by many in the galactic community. The truth is that they weigh every action with a thoroughness most species couldn&rsquo;t imagine."}
+        ]
+        ,"is-playtest": true
+        ,"is-published": false
+        ,"is-change-new": "new"
+        ,"inspiring-property":"Mass Effect"
+        ,"inspiration":"Elcor"
+
+        ,"height":"2.4m - 4.0m"
+        ,"weight":"900kg - 1,400kg"
+        ,"life-expectancy":"120 - 180 Years"
+        ,"size":"2"
+        ,"short-description":"Insert quick description here..."
+        ,"ancestry-points":2
+        ,"quickbuild":"Thick Skinned"
+        
+        ,"section":[
+            {
+                 "title":"Fiction"
+                ,"slug":"fiction"
+                ,"description":[
+                     {"content":"The air hung thick with burnt ozone. In the remains of the supply depot, enemy mechs still clanked, their heavy frames knocking down reinforced walls, and hunting survivors."}
+                    ,{"content":"Yelven crouched behind a fractured column, bleeding from a shrapnel wound in her shoulder. Her team was scattered, wounded, and overwhelmed. The evac dropship was eight minutes out. They wouldn&rsquo;t last three against this kind of assault."}
+                    ,{"content":"Across the courtyard stood Tolmak, the Bravaan. He had provided some cover for wounded allies, but had otherwise just watched as the enemy assault overwhelmed the depot&rsquo;s defenses."}
+                    ,{"content":"&quot;Do something!&quot; Yelven hissed into her comms, her voice fraying with pain and fear. &ldquo;We&rsquo;re dying out here!&rdquo;"}
+                    ,{"content":"The Bravaan&apos;s voice came back, steady as tectonic stone: &ldquo;The time isn&rsquo;t right.&rdquo;"}
+                    ,{"content":"&ldquo;To do what, Tolmak?&rdquo; she snarled. &ldquo;Stop us from getting killed?&rdquo;"}
+                    ,{"content":"The mountainous creature didn&rsquo;t respond for a long moment. &ldquo;Now,&rdquo; he finally rumbled. With a movement as swift as it was silent, Tolmak surged forward. One moment he was an unmoving monument, hidden behind a crumbling wall; the next, he was a force of nature. His bulk collided with one of the mechs, collapsing its cockpit and killing its pilot. The mech&rsquo;s inert frame spun away, crashing into a pillar which collapsed onto another mech, crushing it. In three strides, he tore a third mech apart with his bare hands, folding heavy metal like paper."}
+                    ,{"content":"Then, stillness again, as Tolmak watched from behind another large section of destroyed wall to see if more enemies would react."}
+                    ,{"content":"The battlefield was quiet."}
+                    ,{"content":"Yelven stared, breathing hard. In less than two seconds the massive Bravaan had taken down more mechs than the rest of the team had managed in several desperate minutes of fighting."}
+                    ,{"content":"&ldquo;Why not earlier?&rdquo; she asked, you could have saved them!"}
+                    ,{"content":"Tolmak replied, &ldquo;Because earlier was not the right time to act. Earlier I would have been killed too. Now more can be saved.&rdquo;"}
+                ]
+            }
+            ,{
+                 "title":"Traits"
+                ,"slug":"traits"
+                ,"description":[{"content":"Altrik heroes have access to the following traits."}]
+                ,"subsection":[
+                    {
+                         "title":"Enormous Build"
+                        ,"slug":"enormous-build"
+                        ,"description":[{"content":"Your size is 2."}]
+                        ,"is-signature-trait":true
+                    }
+                    ,{
+                         "title":"Unwieldy"
+                        ,"slug":"unwieldy"
+                        ,"description":[{"content":"Your massive size makes life difficult for you in many ways. You cannot fit into a space smaller than 1 square. Additionally changing a kit, or adapting a new item for your use requires a 25-point downtime project. You are not restricted in the kinds of kits or equipment you can use, but you cannot use new equipment or change kits without first completing the associated downtime project."}]
+                        ,"is-signature-trait":true
+                    }
+                    ,{
+                         "title":"Purchased Traits"
+                        ,"slug":"purchased-traits"
+                        ,"description":[{"content":"You have 2 ancestry points to spend on the following traits. *(Quick Build: Thick Skinned)*"}]
+                        ,"subheading":[
+                            {
+                                "title":"Unshakeable"
+                                ,"slug":"unshakeable"
+                                ,"description":[{"content":"You effectively leverage your weight and size. Your Stability increases by 1."}]
+                                ,"trait-cost":1
+                            }
+                            ,{
+                                "title":"Enduring Physiology"
+                                ,"slug":"enduring-physiology"
+                                ,"description":[{"content":"Your towering physique is made to withstand your enemies' attacks. Your Might counts as 1 higher for resisting potencies."}]
+                                ,"trait-cost":1
+                            }
+                            ,{
+                                "title":"Memory of Stone"
+                                ,"slug":"memory-of-stone"
+                                ,"description":[{"content":"Gain a Lore skill of your choice. You have an edge on Lore tests made during Combat."}]
+                                ,"trait-cost":1
+                            }
+                            ,{
+                                "title":"Thick Skinned"
+                                ,"slug":"thick-skinned"
+                                ,"description":[{"content":"Your skin is thick and well suited to absorbing damage. Gain +6 Stamina per Echelon."}]
+                                ,"trait-cost":2
+                            }
+                            ,{
+                                "title":"Deferred Action"
+                                ,"slug":"deferred-action"
+                                ,"description":[{"content":"You gain the following ability:"}]
+                                ,"ability-slugs":["deferred-action"]
+                                ,"trait-cost":2
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+
+
+
+
+
+
+
+}

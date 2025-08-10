@@ -1,0 +1,525 @@
+{
+    "voidcaller":{
+         "title":"Voidcaller"
+        ,"slug":"voidcaller"
+        ,"description":[
+             {
+                "content":"You are a Voidcaller, a master of gravitic energy manipulation. The hum of latent power resonates within you as you channel your abilities, lifting enemies into the air or flinging them aside with a gesture. The world around you becomes your canvas, painted with flashes of light and rippling distortions. Allies look on in awe, while enemies cower, knowing there is no escape from your reach."
+            }
+            ,{
+                "content":"This class is meant to allow you to live out the fantasy of a battlefield controller who manipulates the unseen powers of the universe to move enemies into the most advantageous positions for you and your allies and to deal damage across wide swaths of the battlefield."
+            }
+        ]
+        ,"is-playtest": true
+        ,"is-published": true
+        ,"is-change-new": "new"
+        ,"inspiring-property":"Mass Effect"
+        ,"inspiration":"Adept"
+        ,"contributors":[
+            {
+                 "name":"Brent L"
+                ,"link":"https://github.com/borg0861/"
+            }
+        ]
+        
+        ,"short-description": "Short description of the class"
+        ,"subclass-name": "Discipline"
+        ,"class-basics": {
+             "primary-class-characteristic": "Intuition"
+            ,"secondary-class-characteristic": false
+            ,"characteristic-spreads": [
+                 "2, 2, -1, -1"
+                ,"2, 1, 1, -1"
+                ,"2, 1, 0, 0"
+                ,"1, 1, 1, 0"
+            ]
+            ,"starting-stamina": 18
+            ,"stamina-gained": 9
+            ,"recoveries": 8
+            ,"skills": "Gravitics, plus choose any two skills from the exploration  or interpersonal skill groups. *(Quickbuild: Gravitics, Endurance, Intimidate)*"
+        }
+        ,"section":[
+            {
+                 "title": "Level 1"
+                ,"slug":"level-1"
+                ,"description":[
+                    {
+                        "content":"As a Level 1 Voidcaller, you gain the following features."
+                    }
+                ]
+                ,"subsection":[
+                    {
+                         "title": "Voidcaller Discipline & Mnemonics"
+                        ,"slug": "voidcaller-discipline-and-mnemonics"
+                        ,"description": [
+                            {
+                                "content":"Voidcallers train to control the world around them in powerful and terrifying ways. As you trained to control the forces of dark energy, you chose a Voidcaller Discipline and a couple of Mnemonics you use to channel gravitic power."
+                            }
+                            ,{
+                                "content":"Choose your Discipline from the following options. *(Quick Build: Savant)*"
+                            }
+                            ,{
+                                 "element-type":"ul"
+                                ,"content":[
+                                     "**Savant:** You exemplify the core tenets of a Voidcaller, exerting control of your surroundings with precision."
+                                    ,"**Stormbringer:** You bring the storm, raining destruction upon your enemies and healing your allies across vast swaths of the battlefield."
+                                    ,"**Ascendant:** You know how to focus your power on bringing down one powerful target, while enhancing your ability to help your team."
+                                ]
+                            }
+                            ,{
+                                "content":"Choose two Mnemonics from the following options. *(Quick Build: Break Their Defenses, Spread the Pain)*"
+                            }
+                            ,{
+                                 "element-type":"ul"
+                                ,"content":[
+                                     "[Break Their Defenses](#break-their-defenses)"
+                                    ,"[Cut Through Them](#cut-through-them)"
+                                    ,"[Disrupt Their Plans](#disrupt-their-plans)"
+                                    ,"[Fuel Their Terror](#fuel-their-terror)"
+                                    ,"[Feast on Their Misery](#feast-on-their-misery)"
+                                    ,"[Spread the Pain](#spread-the-pain)"
+                                    ,"[Twist the Odds](#twist-the-odds)"
+                                ]
+                            }
+                            ,{
+                                "content":"Your choice of Voidcaller Discipline & Mnemonics  determines many of the features you’ll gain from this class."
+                            }
+                        ]
+                    }
+                    ,{
+                         "title": "Intensity"
+                        ,"slug": "intensity"
+                        ,"description": [
+                            {
+                                "content":"The power you serve grants you a heroic resource called Intensity, fueling your abilities as you exercise control over the raw forces of the universe."
+                            }
+                        ]
+                        ,"subheading": [
+                            {
+                                 "title": "Intensity in Combat"
+                                ,"slug": "intensity-in-combat"
+                                ,"description": [
+                                    {
+                                        "content":"At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain Intensity equal to your Victories. At the start of each of your turns during combat, you gain 1d3 Intensity."
+                                    }
+                                    ,{
+                                        "content":"Additionally, you can gain more Intensity by attempting to focus your inborn gravitic abilities. When you roll to gain 1d3 Intensity at the start of your turn, you can focus to gain the following additional effects (no action required):"
+                                    }
+                                    ,{
+                                         "element-type":"ul"
+                                        ,"content": [
+                                             "If the roll is a 1, you gain 1 additional Intensity but have strained yourself by trying to reach beyond your normal limits. You take psychic damage equal to 1d6 + your level, which can’t be reduced in any way."
+                                            ,"If the roll is a 2, you gain 1 additional Intensity."
+                                            ,"If the roll is a 3, you gain 2 additional Intensity and can activate a Mnemonic Effect of your choice (see below)."
+                                        ]
+                                    }
+                                    ,{
+                                        "content":"You lose any remaining Intensity at the end of the encounter."
+                                    }
+                                ]
+                            }
+                            ,{
+                                 "title": "Intensity Outside of Combat"
+                                ,"slug": "intensity-outside-of-combat"
+                                ,"description": [
+                                    {
+                                        "content":"Though you can’t gain Intensity outside of combat, you can use your heroic abilities and effects that cost Intensity without spending it. Whenever you use an ability or effect outside of combat that costs Intensity, you can’t use that same ability or effect outside of combat again until you gain at least 1 Victory or finish a Respite."
+                                    }
+                                    ,{
+                                        "content":"If you use an ability outside of combat that lets you spend unlimited Intensity on its effect, you can use it as if you had spent an amount of Intensity on it equal to your Victories."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                    ,{
+                         "title": "Mnemonics"
+                        ,"slug": "mnemonics"
+                        ,"description": [
+                            {
+                                "content":"Your choice of Mnemonics  provides you with extra ways that you can earn Intensity during combat. These ways of gaining Intensity are triggered by events that happen during combat. There is a chance that you could have a single event trigger both of your Mnemonic effects."
+                            }
+                            ,{
+                                "content":"Additionally, whenever you activate a by focusing to gain Intensity, choose one of your Mnemonic Effects. That effect occurs immediately."
+                            }
+                        ]
+                        ,"subheading": [
+                            {
+                                 "title": "Break Their Defenses"
+                                ,"slug": "break-their-defenses"
+                                ,"description": [
+                                    {
+                                        "element-type":"ul"
+                                        ,"content":[
+                                             "**Intensity:** You gain 2 Intensity the first time in an encounter that you or a creature within 10 squares of you takes acid, cold, fire, lightning, poison, or sonic damage."
+                                            ,"**Mnemonic Effect:** Gravitic energy surges within 10 squares of you, wrapping around a number of creatures of your choice equal to your Intuition score. You can slide each creature up to a number of squares equal to your Intuition score. The energy then fades away."
+                                        ]
+                                    }
+                                ]
+                            }
+                            ,{
+                                 "title": "Cut Through Them"
+                                ,"slug": "cut-through-them"
+                                ,"description": [
+                                    {
+                                        "element-type":"ul"
+                                        ,"content":[
+                                             "**Intensity:** You gain 2 Intensity the first time in an encounter that you or a creature within 10 squares of you deals damage in an amount greater than or equal to 10 + your level."
+                                            ,"**Mnemonic Effect:** One enemy of your choice within 10 squares of you takes damage equal to three times your Intuition score."
+                                        ]
+                                    }
+                                ]
+                            }
+                            ,{
+                                 "title": "Disrupt Their Plans"
+                                ,"slug": "disrupt-their-plans"
+                                ,"description": [
+                                    {
+                                        "element-type":"ul"
+                                        ,"content":[
+                                             "**Intensity:** You gain 2 Intensity the first time in an encounter that an enemy within 10 squares of you is force moved."
+                                            ,"**Mnemonic Effect:** Choose a creature within 10 squares of you. You can slide that creature a number of squares up to 5 + your Voidcaller level."
+                                        ]
+                                    }
+                                ]
+                            }
+                            ,{
+                                 "title": "Fuel THeir Terror"
+                                ,"slug": "fuel-their-terror"
+                                ,"description": [
+                                    {
+                                        "element-type":"ul"
+                                        ,"content":[
+                                             "**Intensity:** You gain 2 Intensity the first time in an encounter that a creature within 10 squares of you who isn’t a minion dies or a solo creature becomes winded."
+                                            ,"**Mnemonic Effect:** You crush two enemies of your choice within 10 squares of you with gravitic energy. Each target takes corruption damage equal to twice your Intuition score."
+                                        ]
+                                    }
+                                ]
+                            }
+                            ,{
+                                 "title": "Feast on Their Misery"
+                                ,"slug": "feast-on-their-misery"
+                                ,"description": [
+                                    {
+                                        "element-type":"ul"
+                                        ,"content":[
+                                             "**Intensity:** You gain 2 Intensity the first time in an encounter that an enemy within 10 squares of you takes psychic or corruption damage."
+                                            ,"**Mnemonic Effect:** Three allies of your choice within 10 squares of you, which can include yourself, gain two surges."
+                                        ]
+                                    }
+                                ]
+                            }
+                            ,{
+                                 "title": "Spread the Pain"
+                                ,"slug": "spread-the-pain"
+                                ,"description": [
+                                    {
+                                        "element-type":"ul"
+                                        ,"content":[
+                                             "**Intensity:** **Intensity:** You gain 2 Intensity the first time in an encounter that a creature within 10 squares of you uses an ability with the Area keyword."
+                                            ,"**Mnemonic Effect:** **Mnemonic Effect:** Each enemy in a 3-cube area within 10 squares of you takes corruption damage equal to twice your Intuition score."
+                                        ]
+                                    }
+                                ]
+                            }
+                            ,{
+                                 "title": "Twist the Odds"
+                                ,"slug": "twist-the-odds"
+                                ,"description": [
+                                    {
+                                        "element-type":"ul"
+                                        ,"content":[
+                                             "**Intensity:** You gain 2 Intensity the first time in an encounter that an ally within 10 squares of you gets a tier 3 result or an enemy within 10 squares of you gets a tier 1 result."
+                                            ,"**Mnemonic Effect:** Choose a creature within your line of effect. That creature automatically gets a tier 1 or tier 3 result (your choice) on their next power roll made before the end of the encounter."
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                    ,{
+                         "title": "Gravitic Pressure"
+                        ,"slug": "gravitic-pressure"
+                        ,"ability-slugs": ["gravitic-pressure"]
+                        ,"description": [
+                            {
+                                "content":"You gain the following ability, which can be used as a ranged free strike."
+                            }
+                        ]
+                    }
+                    ,{
+                         "title": "Barrier"
+                        ,"slug": "barrier"
+                        ,"ability-slugs": ["voidcaller-barrier"]
+                        ,"description": [
+                            {
+                                "content":"You have learned to shield yourself from incoming damage and effects using your gravitic talents. You learn the following Maneuver."
+                            }
+                        ]
+                    }
+                    ,{
+                         "title": "Backlash"
+                        ,"slug": "backlash"
+                        ,"ability-slugs": ["backlash"]
+                        ,"description": [
+                            {
+                                "content":"Your instincts for danger let you predict attacks before they happen. You learn the following Triggered."
+                            }
+                        ]
+                    }
+                    ,{
+                         "title": "Discipline Features"
+                        ,"slug": "discipline-features"
+                        ,"build-subclass-table": true
+                        ,"description": "Your Voidcaller discipline grants you features as shown on the 1st-Level Discipline Features table."
+                        ,"subheading": [
+                            {
+                                 "title": "Control Freak"
+                                ,"slug": "control-freak"
+                                ,"subclass": "Savant"
+                                ,"description": [
+                                    {
+                                        "content":"Whenever you use an ability that deals damage and either applies statuses or force moves one or more targets, you can forgo dealing rolled damage to apply any statuses or forced movement for that action to one additional creature or object in Range 5. Any other effects of the ability function normally."
+                                    }
+                                ]
+                            }
+                            ,{
+                                 "title": "I Am the Storm"
+                                ,"slug": "i-am-the-storm"
+                                ,"subclass": "Stormbringer"
+                                ,"description": [
+                                    {
+                                        "content":"Whenever you use an ability that deals damage and either applies statuses or force moves one or more targets, you can forgo applying any statuses or forced movement to deal  damage equal to twice your Intuition to an additional target in Range 5. Any other effects of the ability function normally."
+                                    }
+                                ]
+                            }
+                            ,{
+                                 "title": "Focused"
+                                ,"slug": "focused"
+                                ,"subclass": "Ascendant"
+                                ,"description": [
+                                    {
+                                        "content":"Whenever you use an area ability that deals damage and either applies statuses or force moves more than one target, you can forgo targeting multiple enemies to deal double rolled damage to one valid target. Any statuses or forced movement apply only to the chosen target, and Potencies for those effects are increased by one. Any other effects of the ability function normally."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                    ,{
+                         "title": "Everyday Gravitics"
+                        ,"slug": "everyday-gravitics"
+                        ,"description": "Your gravitic abilities, though powerful in combat, are not limited to combat use. You can interact with objects using your gravitic talent at Melee 3 as if you were interacting with them normally."
+                    }
+                    ,{
+                         "title": "Special Training"
+                        ,"slug": "special-training"
+                        ,"description": "Through intensive practice, you create pathways in your mind that enhance your abilities. Choose one of the following special training options. You can change your Special Training along with your Barrier Enhancement (see Barrier Enhancement) by undergoing meditation as a respite activity. *(Quick Build: Power Boost)*"
+                        ,"subheading": [
+                            {
+                                 "title": "Commando"
+                                ,"slug": "commando"
+                                ,"description": "You can wear light armor and wield light weapons effectively, even though you don’t have a kit. While you wear light armor, you gain a +3 bonus to Stamina and that bonus increases by 3 at 4th, 7th, and 10th levels. While you wield a light weapon, you gain a +1 damage bonus with weapon abilities, including free strikes. You can use light armor treasures and light weapon treasures. If you have a kit, you can’t take this special training option."
+                            }
+                            ,{
+                                 "title": "Artillerist"
+                                ,"slug": "artillerist"
+                                ,"description": "You gain a +2 bonus to the distance of your ranged Gravitic abilities."
+                            }
+                            ,{
+                                 "title": "Fitness"
+                                ,"slug": "fitness"
+                                ,"description": "You gain a +6 bonus to Stamina, and this bonus increases by 6 at 4th, 7th, and 10th levels. Additionally, you gain a +1 bonus to stability."
+                            }
+                            ,{
+                                 "title": "Power Boost"
+                                ,"slug": "power-boost"
+                                ,"description": "Your damage-dealing Gravitic abilities gain a +1 rolled damage bonus."
+                            }
+                            ,{
+                                 "title": "Speed Boost"
+                                ,"slug": "speed-boost"
+                                ,"description": "You gain a +1 bonus to speed and to the distance you shift when you take the Disengage move action."
+                            }
+                        ]
+                    }
+                    ,{
+                         "title": "Barrier Enhancement"
+                        ,"slug": "barrier-enhancement"
+                        ,"description": "Due to the intensive training you’ve undergone, you create a dark energy field that protects you. Choose one of the following Barrier Enhancements. You can change your Barrier Enhancement along with your Special Training option (see Special Training) by undergoing meditation as a respite activity. *(Quick Build: Deflection)*"
+                        ,"subheading": [
+                            {
+                                 "title": "Resistance"
+                                ,"slug": "resistance"
+                                ,"description": "Your barrier dampens the effects of abilities that would inflict conditions. You gain a +1 bonus to saving throws."
+                            }
+                            ,{
+                                 "title": "Evasion"
+                                ,"slug": "evasion"
+                                ,"description": "Your barrier allows you to evade future attacks from one target. Whenever an adjacent creature deals damage to you, you can shift up to a number of squares equal to your Intuition score after the damage is dealt."
+                            }
+                            ,{
+                                 "title": "Sanctuary"
+                                ,"slug": "sanctuary"
+                                ,"description": "Your barrier hardens, protecting you from further harm from one enemy. After another creature damages you, that creature can’t target you with a strike until you harm them or one of their allies, or until the end of their next turn."
+                            }
+                            ,{
+                                 "title": "Deflection"
+                                ,"slug": "deflection"
+                                ,"description": "You store latent dark energy in abeyance to manipulate an attacker. Whenever a creature within a number of squares equal to your Intuition score deals damage to you, you can use a free triggered action to slide that creature up to a number of squares equal to your Intuition score."
+                            }
+                        ]
+                    }
+                    ,{
+                         "title": "Voidcaller Abilities"
+                        ,"slug": "voidcaller-abilities"
+                        ,"description": "You manifest a variety of gravitic powers to impact the environment, bolster your allies, and empower yourself."
+                        ,"subheading": [
+                            {
+                                "title": "Signature Abilities",
+                                "slug": "signature-abilities",
+                                "description": [
+                                    {
+                                        "content":"Select two signature abilities from the following options. Signature abilities can be used at will. *(Quick Build: Pull, Throw)*"
+                                    }
+                                ],
+                                "ability-slugs": ["throw","pull","lift","lash","gravitic-fist","fight-me","siphon","shared-barrier","salvo"]
+                            },
+                            {
+                                "title": "Heroic Abilities",
+                                "slug": "heroic-abilities",
+                                "subheading-2": [
+                                    {
+                                        "title": "3-Intensity Ability",
+                                        "slug": "3-inensity-ability",
+                                        "description": [
+                                            {
+                                                "content":"Choose one heroic ability from the following options, each of which costs 3 Intensity to use. *(Quick Build: Warp)*"
+                                            }
+                                        ],
+                                        "ability-slugs": ["antipathy","warp","gravity-rift","i-will-destroy-you"]
+                                    },
+                                    {
+                                        "title": "5-Intensity Ability",
+                                        "slug": "5-inensity-ability",
+                                        "description": [
+                                            {
+                                                "content":"Choose one heroic ability from the following options, each of which costs 5 Intensity to use. *(Quick Build: Shockwave)*"
+                                            }
+                                        ],
+                                        "ability-slugs": ["shockwave","reave","inertial-sink","density-augmentation"]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+            ,{
+                 "title": "Level 2"
+                ,"slug":"level-2"
+                ,"description":[
+                    {
+                        "content":"As a 2nd-level Voidcaller, you gain the following features."
+                    }
+                ]
+                ,"subsection":[
+                    {
+                         "title": "Perk"
+                        ,"slug": "level-2-perk"
+                        ,"description": [
+                            {
+                                "content":"You gain an interpersonal, lore, or supernatural perk of your choice. See Perks for more information."
+                            }
+                        ]
+                    }
+                    ,{
+                         "title": "Gravitic Levitation"
+                        ,"slug": "gravitic-levitation"
+                        ,"description": [
+                            {
+                                "content":"Your gravitic ability allows you to briefly fly and hover."
+                            }
+                        ]
+                        ,"ability-slugs":["gentle-fall","gravitic-jump"]
+                    }
+                    ,{
+                         "title": "2nd Level Discipline Ability"
+                        ,"slug": "level-2-discipline-ability"
+                        ,"build-subclass-table": true
+                        ,"description": [
+                            {
+                                "content":"Your Voidcaller Discipline grants your choice of one of two abilities."
+                            }
+                        ]
+                        ,"subheading": [
+                            {
+                                 "title": "2nd Level Ascendant Ability"
+                                ,"slug": "level-2-ascendant-ability"
+                                ,"subclass": "Ascendant"
+                                ,"description": [
+                                    {
+                                        "content":"Choose one of the two following abilities."
+                                    }
+                                ]
+                                ,"ability-slugs": ["dominate","stasis"]
+                            }
+                            ,{
+                                 "title": "2nd Level Savant Ability"
+                                ,"slug": "level-2-savant-ability"
+                                ,"subclass": "Savant"
+                                ,"description": [
+                                    {
+                                        "content":"Choose one of the two following abilities."
+                                    }
+                                ]
+                                ,"ability-slugs": ["singularity","slam"]
+                            }
+                            ,{
+                                 "title": "2nd Level Stormbringer Ability"
+                                ,"slug": "level-2-stormbringer-ability"
+                                ,"subclass": "Stormbringer"
+                                ,"description": [
+                                    {
+                                        "content":"Choose one of the two following abilities."
+                                    }
+                                ]
+                                ,"ability-slugs": ["entropic-wave","storm"]
+                            }
+                        ]
+                    }
+                ]
+            }
+            ,{
+                 "title": "Level 3"
+                ,"slug":"level-3"
+                ,"description":[
+                    {
+                        "content":"As a 3rd-level Voidcaller, you gain the following features."
+                    }
+                ]
+                ,"subsection":[
+                    {
+                         "title": "Warp Ammo"
+                        ,"slug": "warp-ammo"
+                        ,"description": [
+                            {
+                                "content":"You gain the ability to imbue each shot with gravitic energy."
+                            }
+                        ]
+                        ,"ability-slugs":["warp-ammo"]
+                    }
+                    ,{
+                        "title": "7-Intensity Ability"
+                        ,"slug": "7-intensity-ability"
+                        ,"description": [
+                            {
+                                "content":"Choose one heroic ability from the following options, each of which costs 7 Intensity to use."
+                            }
+                        ]
+                        ,"ability-slugs":["annihilation-field","dark-channel","flare","lance"]
+                    }
+                ]
+            }
+        ]
+    }
+}

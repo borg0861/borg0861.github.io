@@ -1,0 +1,212 @@
+---
+layout: qa_data-page
+---
+
+<!--PAGE DESCRIPTION BLOCK-->
+{% if page.description %}
+    {% for d in page.description %}
+        {% if d.element-type %}<{{d.element-type}}>{% else %}<p>{% endif %}
+            {% if d.element-type == "ul" or d.element-type == "ol" or d.element-type == "dl" %}
+                {% for li in d.content %}
+                    <li>{{ li | markdownify }}</li>
+                {% endfor %}
+            {% else %}
+            {{d.content | markdownify}}
+            {% endif %}
+        {% if d.element-type %}</{{d.element-type}}>{% else %}</p>{% endif %}
+    {% endfor %}
+{% endif %}
+<!--SECTION ABILITY BLOCK-->
+{% if page.ability-slugs %}
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+    {% for a in page.ability-slugs %}
+        {% capture ability %}{{a}}{% endcapture %}
+        {% include qa_ability.html ability-slug=ability %}
+    {% endfor %}
+    </div>
+{% endif %}
+
+<!--SECTION BLOCK-->
+{% if page.section %}
+{% for section in page.section %}
+    {% if section.style == "aside" %}
+    <div class="alert alert-dark" role="alert">
+    {% elsif section.style == "block-quote" %}
+    <blockquote class="blockquote">
+    {% elsif section.style == "editorial" %}
+    <div class="alert alert-warning handwritten-font" role="alert">
+    {% elsif section.style == "example" %}
+    <div class="alert alert-secondary" role="alert">
+    {% else %}
+    <div>
+    {% endif %}
+    <h2 id="{{section.slug}}">{{section.title}}{% if section.is-change-new == "change" %}<span class="badge rounded-pill text-bg-success align-top status-pill">CHANGE</span>{% endif %}{% if section.is-change-new == "new" %}<span class="badge rounded-pill text-bg-primary align-top status-pill">NEW</span>{% endif %}</h2>
+    <!--SECTION DESCRIPTION BLOCK-->
+    {% if section.description %}
+        {% for d in section.description %}
+            {% if d.element-type %}<{{d.element-type}}>{% else %}<p>{% endif %}
+                {% if d.element-type == "ul" or d.element-type == "ol" or d.element-type == "dl" %}
+                    {% for li in d.content %}
+                        <li>{{ li | markdownify }}</li>
+                    {% endfor %}
+                {% else %}
+                {{d.content | markdownify}}
+                {% endif %}
+            {% if d.element-type %}</{{d.element-type}}>{% else %}</p>{% endif %}
+        {% endfor %}
+    {% endif %}
+    <!--SECTION ABILITY BLOCK-->
+    {% if section.ability-slugs %}
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+        {% for a in section.ability-slugs %}
+            {% capture ability %}{{a}}{% endcapture %}
+            {% include qa_ability.html ability-slug=ability %}
+        {% endfor %}
+        </div>
+    {% endif %}
+    <!--SUBSECTION BLOCK-->
+    {% if section.subsection %}
+    {% for subsection in section.subsection %}
+        {% if subsection.style == "aside" %}
+        <div class="alert alert-dark" role="alert">
+        {% elsif subsection.style == "block-quote" %}
+        <blockquote class="blockquote">
+        {% elsif subsection.style == "editorial" %}
+        <div class="alert alert-warning handwritten-font" role="alert">
+        {% elsif subsection.style == "example" %}
+        <div class="alert alert-secondary" role="alert">
+        {% else %}
+        <div>
+        {% endif %}
+        <h3 id="{{subsection.slug}}">{{subsection.title}}{% if subsection.is-change-new == "change" %}<span class="badge rounded-pill text-bg-success align-top status-pill">CHANGE</span>{% endif %}{% if subsection.is-change-new == "new" %}<span class="badge rounded-pill text-bg-primary align-top status-pill">NEW</span>{% endif %}</h3>
+        <!--SUBSECTION DESCRIPTION BLOCK-->
+        {% if subsection.description %}
+            {% for d in subsection.description %}
+                {% if d.element-type %}<{{d.element-type}}>{% else %}<p>{% endif %}
+                    {% if d.element-type == "ul" or d.element-type == "ol" or d.element-type == "dl" %}
+                        {% for li in d.content %}
+                            <li>{{ li | markdownify }}</li>
+                        {% endfor %}
+                    {% else %}
+                    {{ d.content | markdownify }}
+                    {% endif %}
+                {% if d.element-type %}</{{d.element-type}}>{% else %}</p>{% endif %}
+            {% endfor %}
+        {% endif %}
+        <!--SUBSECTION ABILITY BLOCK-->
+        {% if subsection.ability-slugs %}
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+            {% for a in subsection.ability-slugs %}
+                {% capture ability %}{{a}}{% endcapture %}
+                {% include qa_ability.html ability-slug=ability %}
+            {% endfor %}
+            </div>
+        {% endif %}
+        <!--SUBHEADING BLOCK-->
+        {% if subsection.subheading %}
+        {% for subheading in subsection.subheading %}
+            {% if subheading.style == "aside" %}
+            <div class="alert alert-dark" role="alert">
+            {% elsif subheading.style == "block-quote" %}
+            <blockquote class="blockquote">
+            {% elsif subheading.style == "editorial" %}
+            <div class="alert alert-warning handwritten-font" role="alert">
+            {% elsif subheading.style == "example" %}
+            <div class="alert alert-secondary" role="alert">
+            {% else %}
+            <div>
+            {% endif %}
+            <h4 id="{{subheading.slug}}">{{subheading.title}}{% if subheading.is-change-new == "change" %}<span class="badge rounded-pill text-bg-success align-top status-pill">CHANGE</span>{% endif %}{% if subheading.is-change-new == "new" %}<span class="badge rounded-pill text-bg-primary align-top status-pill">NEW</span>{% endif %}</h4>
+            <!--SUBHEADING DESCRIPTION BLOCK-->
+            {% if subheading.description %}
+                {% for d in subheading.description %}
+                    {% if d.element-type %}<{{d.element-type}}>{% else %}<p>{% endif %}
+                        {% if d.element-type == "ul" or d.element-type == "ol" or d.element-type == "dl" %}
+                            {% for li in d.content %}
+                                <li>{{ li | markdownify }}</li>
+                            {% endfor %}
+                        {% else %}
+                        {{ d.content | markdownify }}
+                        {% endif %}
+                    {% if d.element-type %}</{{d.element-type}}>{% else %}</p>{% endif %}
+                {% endfor %}
+            {% endif %}
+            <!--SUBHEADING ABILITY BLOCK-->
+            {% if subheading.ability-slugs %}
+                <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+                {% for a in subheading.ability-slugs %}
+                    {% capture ability %}{{a}}{% endcapture %}
+                    {% include qa_ability.html ability-slug=ability %}
+                {% endfor %}
+                </div>
+            {% endif %}
+            <!--SUBHEADING-2 BLOCK-->
+            {% if subheading.subheading-2 %}
+            {% for subheading-2 in subheading.subdeading-2 %}
+                {% if subheading-2.style == "aside" %}
+                <div class="alert alert-dark" role="alert">
+                {% elsif subheading-2.style == "block-quote" %}
+                <blockquote class="blockquote">
+                {% elsif subheading-2.style == "editorial" %}
+                <div class="alert alert-warning handwritten-font" role="alert">
+                {% elsif subheading-2.style == "example" %}
+                <div class="alert alert-secondary" role="alert">
+                {% else %}
+                <div>
+                {% endif %}
+                <h5 id="{{subheading-2.slug}}">{{subheading-2.title}}{% if subheading-2.is-change-new == "change" %}<span class="badge rounded-pill text-bg-success align-top status-pill">CHANGE</span>{% endif %}{% if subheading-2.is-change-new == "new" %}<span class="badge rounded-pill text-bg-primary align-top status-pill">NEW</span>{% endif %}</h5>
+                <!--SUBHEADING-2 DESCRIPTION BLOCK-->
+                {% if subheading-2.description %}
+                    {% for d in subheading-2.description %}
+                        {% if d.element-type %}<{{d.element-type}}>{% else %}<p>{% endif %}
+                            {% if d.element-type == "ul" or d.element-type == "ol" or d.element-type == "dl" %}
+                                {% for li in d.content %}
+                                <li>{{ li | markdownify }}</li>
+                                {% endfor %}
+                            {% else %}
+                            {{ d.content | markdownify }}
+                            {% endif %}
+                        {% if d.element-type %}</{{d.element-type}}>{% else %}</p>{% endif %}
+                    {% endfor %}
+                {% endif %}
+                <!--SUBHEADING-2 ABILITY BLOCK-->
+                {% if subheading-2.ability-slugs %}
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+                    {% for a in subheading-2.ability-slugs %}
+                        {% capture ability %}{{a}}{% endcapture %}
+                        {% include qa_ability.html ability-slug=ability %}
+                    {% endfor %}
+                    </div>
+                {% endif %}
+                {% if section.style == "block-quote" %}
+                </blockquote>
+                {% else %}
+                </div>
+                {% endif %}
+            {% endfor %}
+            {% endif %}
+            <!--END SUBHEADING-2 BLOCK-->
+        {% if section.style == "block-quote" %}
+        </blockquote>
+        {% else %}
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+        <!--END SUBHEADING BLOCK-->
+    {% if section.style == "block-quote" %}
+    </blockquote>
+    {% else %}
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    <!--END subsection BLOCK-->
+{% if section.style == "block-quote" %}
+</blockquote>
+{% else %}
+</div>
+{% endif %}
+{% endfor %}
+{% endif %}
+<!--END SECTION BLOCK-->

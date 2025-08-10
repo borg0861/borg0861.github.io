@@ -1,0 +1,78 @@
+{
+    "angulotl":{
+        "title":"Angulotl"
+        ,"slug":"angulotl"
+        ,"description":[{"content":"Found in freshwater swamps, rivers, and rainforests, angulotls (anggwaLAHtulls) are diminutive, brightly colored amphibious humanoids. Rather than defending their settlements and breeding grounds against hostile creatures, these poisonous frog folk prefer to establish their homes in places that are nigh-impossible for other humanoids to find, such as underwater caves and other enclosed spaces only accessible by water. They are happy to hide and watch a gaggle of noisy adventurers stumble past the entrance to an angulotl clutch without realizing it. Though angulotls prefer to avoid combat, when they’re threatened or pressed, they turn deadly."}]
+        ,"is-playtest": false
+        ,"is-published": true
+        ,"is-change-new": "new"
+        ,"inspiring-property":"Draw Steel"
+        ,"inspiration":"Angulotl"
+        ,"contributors":[
+            {
+                 "name":""
+                ,"link":""
+            }
+        ]
+        ,"section":[
+            {
+                "title":"Languages"
+                ,"slug":"languages"
+                ,"description":[{"content":"Most Angulotl speak Filliaric."}]
+            },
+            {
+                "title":"Species Traits"
+                ,"slug":"species-traits"
+                ,"description":[{"content":"Angullotl have the following traits."}]
+                ,"subsection":[
+                    {
+                         "title":"Deadly Toxins"
+                        ,"slug":"deadly-toxins"
+                        ,"description":[{"content":"Angulotls are poisonous creatures, which suits their preference to avoid aggression—they don’t need to be! The contact toxin secreted by their skin gives them an edge in close combat; they also distill this toxin into more potent forms for coating blades and tipping darts."}]
+                    }
+                    ,{
+                         "title":"Indicator Species"
+                        ,"slug":"indicator-species"
+                        ,"description":[{"content":"Angulotl physiology is delicately balanced, and it doesn’t take much to upset it. While toxins don’t kill them, they are still affected by pollutants in their waters. Ongoing contamination of their environment can corrupt angulotls, making them aggressive, confused, and angry. Most pollution-corrupted angulotls eventually attack any creature who crosses their path—even other angulotls! Runoff from magical experimentation seems to affect them the most … and sometimes gives them strange abilities."}]
+                    }
+                    ,{
+                         "title":"Moisure Dependent"
+                        ,"slug":"moisture-dependent"
+                        ,"description":[{"content":"Angulotls breathe through their skin, but they need to stay damp or they suffocate. They often avoid travel in very dry areas, and they prefer not to stray far from a source of freshwater … unless it’s raining."}]
+                    }
+                    ,{
+                         "title":"Clawfish"
+                        ,"slug":"clawfish"
+                        ,"description":[{"content":"Angulotl physiology is delicately balanced, and it doesn’t take much to upset it. While toxins don’t kill them, they are still affected by pollutants in their waters. Ongoing contamination of their environment can corrupt angulotls, making them aggressive, confused, and angry. Most pollution-corrupted angulotls eventually attack any creature who crosses their path—even other angulotls! Runoff from magical experimentation seems to affect them the most … and sometimes gives them strange abilities."}]
+                    }
+                    ,{
+                         "title":"Wet"
+                        ,"slug":"wet"
+                        ,"description":[{"content":"Angulotls make use of a unique condition called wet. While wet, angulotls don’t provoke opportunity attacks by moving. Meanwhile, wet non-angulotls that end their turn with 0 speed remaining slip and fall prone. Several angulotl abilities inflict wet, but a creature can also become wet by entering a body of water."}]
+                    }
+                ]
+            }
+            ,{
+                "title":"Malice Abilities"
+                ,"slug":"malice-abilities"
+                ,"description":[{"content":"Angulotl have access to the following Malice abilities."}]
+                ,"ability-slugs":["leapfrog","resonating-croak","rainfall"]
+            }
+            ,{
+                "title":"Monsters"
+                ,"slug":"monsters"
+                ,"description":[{"content":"The following monsters belong to the Angulotl species."}]
+                ,"monster-slugs":[
+                    "clawfish"
+                    ,"angulotl-cleaver"
+                    ,"angulotl-dart"
+                    ,"angulotl-pollywog"
+                    ,"angulotl-needler"
+                    ,"angulotl-slink"
+                    ,"angulotl-wave"
+                    ,"angulotl-daybringer"
+                ]
+            }
+        ]
+    }
+}

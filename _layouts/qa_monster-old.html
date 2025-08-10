@@ -1,0 +1,158 @@
+---
+layout: qa_page
+---
+{% if page.inspiring-property %}
+<div class="alert alert-warning handwritten-font" role="alert">
+    <p>{{page.species-name-plural}} were inspired by {{page.inspiration}} from {{page.inspiring-property}}. Most, if not all, of the traits used for {{page.species-name-plural}} should be compatible for {{page.inspiration}} enemies, so feel free to just use the mechanisms we built for {{page.species-name-plural}} if you are planning to run a {{page.inspiring-property}} themed game.</p>
+</div>
+{% endif %}
+
+{{page.species-description}}
+
+{% for st in page.species-traits %}
+
+<h3>{{st.trait-name}}</h3>
+
+{{st.trait-description}}
+
+{% endfor %}
+
+<h3>{{page.species-name}} Malice Features</h3>
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+
+{% for mf in page.malice-features %}
+
+{% if mf.feature-ability-slug %}
+    {% capture ability %}{{mf.feature-ability-slug}}{% endcapture %}
+    {% include qa_ability.html ability-slug=ability %}
+{% else %}
+<div class="col">
+    <div class="card malice-features">
+        <div class="card-header text-bg-dark fancy-font">
+            <h4 class="ability-title">{{mf.feature-name}}</h4>
+            <span class="ability-type">
+            &#10095;&emsp; {{mf.feature-cost}} Malice
+            </span>
+            {% if mf.feature-cost %}<div class="ability-card-cost"><span class="ability-points">{{ mf.feature-cost }}</span><br><span class="ability-cost">Malice</span></div>{% endif %}
+        </div>
+        <div class="card-body">
+            {{mf.feature-description}} 
+            {% if mf.feature-resistance-roll.characteristic %}
+            <b>{{mf.feature-resistance-roll.characteristic}} test</b>.</p>
+            <table class="power-roll-table align-text-middle">
+                <tr>
+                    <th class="text-bg-dark">&le; 11</th>
+                    <td>{{mf.feature-resistance-roll.tier-1}}</td>
+                </tr>
+                <tr>
+                    <th class="text-bg-dark">12 - 16</th>
+                    <td>{{mf.feature-resistance-roll.tier-2}}</td>
+                </tr>
+                <tr>
+                    <th class="text-bg-dark">&ge; 17</th>
+                    <td>{{mf.feature-resistance-roll.tier-3}}</td>
+                </tr>
+            </table>
+            {{mf.feature-resistance-roll.effect}}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endif %}
+
+{% endfor %}
+</div>
+
+
+<h2>{{page.species-name}} Enemy Listing</h2>
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4 mb-3">
+{% for m in page.monster-list %}
+
+<div class="col">
+    <div class="card {% if m.monster-role %}{{m.monster-role}}{% else %}{{m.monster-organization}}{% endif %} monster-card">
+        <div class="card-header {% if m.monster-role %}{{m.monster-role}}{% else %}{{m.monster-organization}}{% endif %}-bg fancy-font">
+            <h4 class="ability-title">{{m.monster-name}}</h4>
+            <span class="ability-type">
+                 &#10095;&emsp; Level {{m.monster-level}}&nbsp;{{m.monster-organization}}&nbsp;{{m.monster-role}}
+            </span>
+        </div>
+        <div class="card-body p-0">
+            <ul class="list-group list-group-flush {% if m.monster-role %}{{m.monster-role}}{% else %}{{m.monster-organization}}{% endif %}">
+            <li class="list-group-item {% if m.monster-role %}{{m.monster-role}}{% else %}{{m.monster-organization}}{% endif %} align-text-middle">
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item w-100 p-0 border-0">
+                        {% for type in m.monster-types %}
+                            <span class="badge {% if m.monster-role %}{{m.monster-role}}{% else %}{{m.monster-organization}}{% endif %}-bg">{{- type -}}</span>
+                        {% endfor %}
+                    </li>
+                    <li class="list-group-item w-100 p-0 border-0 text-sm-end">
+                        EV {{m.monster-ev}}{% if m.monster-organization == "Minion" %}<span> for eight minions</span>{% endif %}
+                    </li>
+                </ul>
+            </li>
+            <li class="list-group-item {{m.monster-role}}">
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item w-100 p-0 border-0"><b class="fancy-font">Stamina:</b> {{m.stamina}}</li>
+                    <li class="list-group-item w-100 p-0 border-0 text-sm-end">
+                        {% if m.immunities %}
+                        <b class="fancy-font">Immunities: </b>
+                            {% for immunity in m.immunities %}
+                            <span>{{immunity}}{% if forloop.last == false %}, {% endif %}</span>
+                            {% endfor %}
+                        {% endif %}
+                    </li>
+                </ul>
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item w-100 p-0 border-0"><b class="fancy-font">Speed: </b>{{m.speed}}
+                        {% for st in m.speed-types %}
+                            {{st}}{% if forloop.last == false %}, {% endif %}
+                        {% endfor %}
+                    </li>
+                    <li class="list-group-item w-100 p-0 border-0 text-sm-end">
+                        <b class="fancy-font">Size: </b>{{m.size}} / <b class="fancy-font">Stability: </b>{{m.stability}}
+                    </li>
+                </ul>
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item w-100 p-0 border-0">
+                        {% if m.with-captain %}
+                        <b class="fancy-font">With Captain: </b>{{m.with-captain}}
+                        {% endif %}
+                    </li>
+                    <li class="list-group-item w-100 p-0 border-0 text-sm-end"><b class="fancy-font">Free Strike: </b>{{m.free-strike}}</li>
+                </ul>
+            </li>
+            <li class="list-group-item {{m.monster-role}} p-0">
+                <ul class="list-group list-group-horizontal p-0">
+                    <li class="list-group-item text-center w-100 px-2 border-0"><b class="fancy-font">Might</b><br>{{m.might-score}}</li>
+                    <li class="list-group-item text-center w-100 px-2 border-0 border-start"><b class="fancy-font">Agility</b><br>{{m.agility-score}}</li>
+                    <li class="list-group-item text-center w-100 px-2 border-0 border-start"><b class="fancy-font">Reason</b><br>{{m.reason-score}}</li>
+                    <li class="list-group-item text-center w-100 px-2 border-0 border-start"><b class="fancy-font">Intuition</b><br>{{m.intuition-score}}</li>
+                    <li class="list-group-item text-center w-100 px-2 border-0 border-start"><b class="fancy-font">Presence</b><br>{{m.presence-score}}</li>
+                </ul>
+            </li>
+            {% for trait in m.monster-traits %}
+            <li class="list-group-item {{m.monster-role}}">
+                    <h5 class="fancy-font fw-bolder">{{ trait.trait-name }}</h5>
+                    {{ trait.trait-description }}
+            </li>
+            {% endfor %}
+            {% for monster-ability in m.monster-abilities %}
+            <li class="list-group-item {{m.monster-role}} p-0">
+                    {% capture monster-ability-slug %}{{monster-ability}}{% endcapture %}
+                    {% include qa_monster-ability.html monster-ability-slug=monster-ability %}
+            </li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="card-footer {{m.monster-role}}">
+            <small class="text-body-secondary float-start fst-italic me-5 based-on">{% if m.monster-based-on %}<b>Based on: </b>{{ m.monster-based-on }}{% else %}New Monster{% endif %}</small>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+
+</div>

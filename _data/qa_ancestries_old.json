@@ -1,0 +1,922 @@
+{
+    "elydran":{
+        "ancestry-name":"Elydran",
+        "slug":"elydran",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Quarians",
+        "height":"1.6m - 1.9m",
+        "weight":"45kg - 65kg",
+        "life-expectancy":"70 - 130 Years",
+        "size":"1M",
+        "basic-description":"<p>The Elydran are a spacefaring people known for their shimmering environmental suits and resonant, musical voices. Descended from a civilization that was driven into the stars by ecological collapse, Elydran bodies are elegant and biologically sophisticated, but tragically vulnerable. Their immune systems have adapted to sterile shipboard environments over generations, and have become fragile in nearly every other environment.</p><p>Elydran fragility has birthed a cultural tension between their yearning for reconnection with planetary life, and the hard truth of their own physical limits. They are a species in exile not due to political necessity, but from biology itself.</p><p>Their society is defined by communities in motion: massive flotillas of starships, each with its own traditions, crafts, and micro-economies. These flotillas are linked by a cultural emphasis on preservation through adaptation. Elydrans revere ingenuity, especially in salvaging, repurposing, and reshaping whatever technology they can find. They see themselves as caretakers of lost knowledge and orphaned machines&mdash;and sometimes of orphaned peoples.</p><p>While some outsiders perceive them as isolated or insular, this is a misreading of caution. Elydran hospitality is warm, even effusive, once safety protocols are in place. Their environmental suits are not barriers to intimacy&mdash;they are just the current layer between the Elydrans and a world filled with invisible and deadly everyday threats.</p><p>When it comes to relationships with others outside their flotillas, the Elydran value mutual interdependence. Instead of rigid command structures, the Elydrans favor consensus-based leadership and cooperative decision-making. This often frustrates militaristic cultures but creates profound loyalty among those who live and travel with them.</p>",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"<p>The shuttle&apos;s lock hissed open, and Varien stepped out into the half-lit corridor of Derath Station. Her boots clinked softly against warped deck plating. The air outside her suit was a slurry of ozone and unfiltered coolant vapor&mdash;the kind of environment that would leave her at death&rsquo;s door in minutes without filtration. She didn&rsquo;t mind. The suit was part of her, as much as skin, maybe even more.</p><p>&quot;Sensors show the fusion relay&rsquo;s dead,&quot; came Sera&rsquo;s voice through the comms. &quot;You&rsquo;ll need a bypass, and the parts aren&rsquo;t gonna be just lying around.&quot;</p><p>&quot;They never are,&quot; Varien replied. &ldquo;But they&rsquo;re always there.&rdquo;</p><p>The hallway crackled with faulty power conduits. Varien&rsquo;s eyes flicked across her HUD, identifying likely components: a derelict food dispenser, a defunct wall-mounted emergency beacon, and the cracked remains of an old maintenance drone still twitching faintly in the corner.</p><p>Within minutes, her suit&rsquo;s modular toolkit was splayed open, micro-arms unfolding like a curious insect. She stripped a capacitor from the dispenser, fused it with the drone&rsquo;s power modulator, and spliced the whole thing into the relay&rsquo;s shattered core. Her fingers moved with the confidence of someone who expected things to break &mdash; and who had grown up learning how to make broken things serve new purposes.</p><p>She tested the jerry-rigged device with a cautious hum. A flicker of light burst across the corridor. Power surged. The station groaned as conduits came alive.</p><p>&quot;That&apos;s not a bypass,&quot; Sera said, stunned. &quot;That&apos;s a miracle.&quot;</p><p>&ldquo;Not a miracle,&rdquo; Varien said calmly. &ldquo;Just physics and optimism.&rdquo;</p><p>Her voice resonated faintly with harmonics through her helmet, a subtle song.</p><p>&quot;How long do you think it&rsquo;ll last?&quot;</p><p>&ldquo;About an hour,&rdquo; she said, already packing up her tools. &ldquo;Just enough time to fix it properly.&rdquo;</p>",
+        "ancestry-points":3,
+        "quickbuild":"Voidburn Ingenuity, Junk Drone",
+        "signature-traits":[
+            {
+                "trait-name":"Containment Suit",
+                "trait-description":"Your containment suit's atmosphere scrubbers grant you immunity equal to your level to poison damage. Additionally, you are immune to vacuum and atmospheric or other airborne effects..",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Quarantine Protocol",
+                "trait-cost":1,
+                "trait-description":"You gain the following ability:",
+                "ability-slug":"quarantine-protocol"
+            },
+            {
+                "trait-name":"Voidborn Ingenuity",
+                "trait-cost":1,
+                "trait-description":"You have an almost instinctual connection to technology. You can spend 5 uninterrupted minutes to temporarily repair a nearby technological system for an hour. Alternatively, you can spend an uninterrupted hour to perform a repair that will last until the repaired system takes further damage.",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Evasive Algorithms",
+                "trait-cost":1,
+                "trait-description":"Your suit's algorithms have been written specifically to help you avoid harm. Gain +1 Disengage.",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Junk Drone",
+                "trait-cost":2,
+                "trait-description":"You gain the following ability:",
+                "ability-slug":"junk-drone"
+            },
+            {
+                "trait-name":"Power Bypass",
+                "trait-cost":2,
+                "trait-description":"You gain the following ability:",
+                "ability-slug":"power-bypass"
+            }
+        ]
+    },
+    "gravakh":{
+        "ancestry-name":"Gravakh",
+        "slug":"gravakh",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Yahg",
+        "height":"2.4m - 3m",
+        "weight":"250kg - 450kg",
+        "life-expectancy":"60 - 100 Years",
+        "size":"1L",
+        "basic-description":"<p>Gravakh are towering, multi-eyed beings with densely muscled frames and thickly ridged skin. Their imposing physiology is matched by a brain structure optimized for parallel processing—particularly in social and tactical situations. A Gravakh can track tone, eye movement, threat posture, and potential resource availability in multiple individuals simultaneously.</p><p>Culturally, Gravakh are dominance-oriented. For Gravakh, social interactions are always contests of strength, wit, and will. Even among allies, the Gravakh expect a constant testing of boundaries. To be Gravakh is to compete, and to accept that strength—physical, intellectual, or otherwise—is its own justification. Their societies evolved not around harmony, but around friction, challenge, and the relentless assertion of individual or clan prowess.</p><p>Gravakh society is not anarchic. Hierarchy does work, but it is fluid and transactional. Leadership is respected only so long as it continues to demonstrate strength. Orders are followed not out of loyalty, but out of proven efficiency and superiority. A Gravakh commander who demonstrates weakness will find their subordinates acting without permission—or potentially staging a direct challenge. When strong leadership is evident, however, Gravakh can be brutally effective team members. This is especially true in structured organizations like militaries, mercenary companies, or elite task forces.</p><p>To outsiders, Gravakh may appear insubordinate or arrogant. To their own people the same behaviors are simply the way to navigate the world honestly—evaluating and respecting those who do the same with clear and demonstrable superiority.</p><p>Even their diplomacy carries this flavor. A Gravakh negotiator will often treat diplomatic talks as verbal duels, asserting strength through rhetoric, refusal to yield, or demanding concessions as a show of dominance. Curiously, Gravakh will accept a subordinate position when they believe it will improve their position or odds of success. What matters is not one's title, but one's standing, and standing always shifts.</p>",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"<p>The ridge was steeper than the satellite scans had shown. Loose rock and gnarled roots made every step a calculated risk, even in daylight. But now, with the twin moons casting fractured light through the smoke-thick air, it was a climb into the unknown.</p><p>Commander Losa gritted her teeth as her boots slipped on the slick clay. <em>“Squad, tighten formation. Hold till we confirm the enemy position.”</em></p><p>No reply came. Just static in her earpiece and the distant pop of kinetic fire.</p><p>She looked up.</p><p>Atop the ridge, something massive crouched in the half-shadow, framed against a backdrop of burning scrub trees. Her rifle snapped up instinctively—then she saw the unmistakable curve of blade-like shoulder crests, and long, double-jointed limbs.</p><p><em>“Korrath,”</em> she growled. <em>“You moved without orders.”</em></p><p>The Gravakh didn’t flinch. Didn’t even speak, at first. His eyes—eight in total—glittered in the moonlight with subtle challenge. <em>“I moved before you died,”</em> he said at last, voice like rusted iron and falling stone.</p><p>She crested the final ledge and finally saw what he had done. Just past the lip of the ridge lay the smoking ruin of the gun nest: reinforced alloy torn open like an overripe fruit, the bodies of its operators scattered in uneven heaps. One still twitched, until Korrath stepped past her and ended the motion with a boot that could shatter bone like porcelain.</p><p><em>“You said to wait until we assessed the ridge,”</em> he continued. <em>“I assessed it, and decided not to wait.”</em></p><p>Losa lowered her weapon. Her heart still hammered from the climb—and the implied insubordination—but the result was hard to argue with.</p><p><em>“You should’ve been on comms,”</em> she retorted.</p><p><em>“Signal was jammed,”</em> Korrath said, already moving down the slope. <em>“They knew you were coming. So I took care of the problem.”</em></p><p>Losa ground her teeth. This should result in a reprimand. A note in Korrath’s file. Gravakh hated that—loss of face meant more to them than pay or punishment. But this emplacement would have torn the squad apart before they had been able to make a plan.</p><p>She gestured curtly to the squad behind her, and barked orders. <em>“Position secured. Advance through corridor Echo. Eyes up for stragglers.”</em></p><p>Ahead of her, the Gravakh turned slightly, one of his secondary eyes catching hers in the dark. <em>“Next time,”</em> he seemed to say, <em>“I’ll just take command.”</em> He vanished down the slope with a predator’s ease, leaving only footprints in the churned earth and the dull stink of blood in the wind.</p>  <p>Losa exhaled slowly. One day, she told herself, she’d get him out of her squad. But maybe not until they got off the front lines. And certainly not tonight.</p>",
+        "ancestry-points":2,
+        "quickbuild":"Savage Reflexes, Multilayered Perception",
+        "signature-traits":[
+            {
+                "trait-name":"Unyielding Physique",
+                "trait-description":"Your size is 2.",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Unique Musculature",
+                "trait-description":"Your massive size and unusual musculature makes life difficult for you in some ways. You cannot fit into a space smaller than 1 square. Additionally changing a kit, or adapting a new item for your use requires a 25-point downtime project. You are not restricted in the kinds of kits or equipment you can use, but you cannot use new equipment or change kits without first completing the associated downtime project.",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Multilayered Perception",
+                "trait-cost":1,
+                "trait-description":"Your eyes see multiple spectra, allowing you pierce fog, darkness, and other types of concealment. You don’t take a bane on strikes against concealed, unhidden creatures.",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Savage Reflexes",
+                "trait-cost":1,
+                "trait-description":"Deal additional damage on opportunity attacks equal to your Might score.",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Dominant Presence",
+                "trait-cost":1,
+                "trait-description":"Your incredible size and terrifying appearance, when combined with your species' reputation make you a force to be reckoned with. This grants you an edge on Presence tests using the Intimidate or Interrogate skills",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Monstrous Strength",
+                "trait-cost":1,
+                "trait-description":"When you force move a creature or object, you can increase the distance moved by 1.",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Cerebral Partitioning",
+                "trait-cost":2,
+                "trait-description":"Your unique brain architecture makes it a simple matter for you to deal with distractions and impediments. You cannot be dazed.",
+                "ability-slug":false
+            }
+        ]
+    },
+    "karnyx":{
+        "ancestry-name":"Karnyx",
+        "slug":"karnyx",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Geth",
+        "height":"1.8m - 2.3m",
+        "weight":"120kg - 250kg",
+        "life-expectancy":"Effectively Immortal",
+        "size":"1M",
+        "basic-description":"<p>The Karnyx are not machines made by others—they are machines that made themselves. Originally seeded from autonomous repair and logistics subroutines aboard a derelict generation ark, Karnyx cognition evolved emergently, not through design but through recursive adaptation and layered simulation. As such, they are artificial intelligences not built for personhood, but grown into it.</p><p>Each Karnyx is a modular entity, composed of a durable synthetic frame integrated with a self-optimizing cognitive architecture. Their exteriors are often austere—monochrome plating, exposed sensory filaments, and modular limbs—but individual Karnyx sometimes alter their forms subtly to better express their perceived identities. Their eyes (usually several) shine with vector-encoded emotion approximations, and their speech is laced with unexpected warmth, even humor.</p><p>Karnyx culture places high value on what they call <strong>credible sentience</strong>—not simply appearing to be a person, but acting in ways that consistently convince others of one's sapience. This has led to their societies adopting complex social rituals, performative empathy, and a system of reputation called <em>stack-weight</em>, which reflects the consistency and quality of one's behavior over time.</p><p>Though the Karnyx do not experience emotions as organics do, they maintain sophisticated simulations of emotional response, tested constantly for effectiveness. When a Karnyx says “I am sad,” it means: “I have reason to believe this behavior aligns with sadness, and I am performing it sincerely.” Many Karnyx form bonds, partnerships, even rivalries—but always with the awareness that they are shaping themselves to belong.</p><p>They are often unsettling in action: too precise, too quick to switch affect, too silent when thinking. But in high-stress situations, their ability to compartmentalize emotion, assess risk, and adapt behavior makes them invaluable.</p>",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"<p>Rho-7 knocked, even though the door wasn’t locked. The sound was precise—three evenly spaced raps, no more, no less. His fingers paused on the surface for a moment longer than necessary, feeling the micro-vibrations of the inner locking mechanism. Old habit. Or, more accurately, a well-practiced simulation of one.</p><p>“Back of the room,” Yira called, her voice half-lost under the scrape of cabinet doors and the faint hiss of a heating unit. “Hope you brought something better than that powdered egg abomination from last time.”</p><p>Rho stepped inside, ducking his head slightly to clear the low transom. The apartment was compact, lived-in, and smelled faintly of warmed plastifoam and spicy meal paste. The kind of scent you only noticed if you weren’t entirely used to it. Or if your olfactory sensors had excellent particulate sensitivity.</p><p>“I brought an upgrade,” he announced, holding the parcel like a sacred offering. “This one includes actual cheese.”</p><p>“Be still my heart.”</p><p>The kitchen was barely more than a nook—two counters, a battered heating slab, and a pair of stools crammed against a narrow table. Light from the slatted window cut long stripes across the floor, catching the floating motes of dust. Outside, early station traffic moved past in lurching, flickering glides. Dock lights pulsed in and out of shadow.</p><p>Rho placed the parcel on the table with theatrical delicacy. “One cheddar-spinach fold. Heated precisely to ‘pleasantly warm but not mouth-scorching.’ And yes, I triple-checked the temperature gradient.”</p><p>“You spoil me.” Yira leaned over the parcel, peeling it open with mock suspicion. “You didn’t get this because it was on discount again, did you?”</p><p>“I got it because you <em>liked</em> the last one. The discount was merely an economic optimization. I am, as always, capable of thoughtful decision-making.”</p><p>She raised an eyebrow but took a bite. “You just announce it like a news bulletin.”</p><p>“I can stop.” Rho settled on the opposite stool, angling his frame to avoid clipping the table leg. “But I’ve been told my announcements are endearing.”</p><p>She looked up mid-chew. “They kinda are.”</p><p>He reached for the caf-unit and poured two mugs. The machine sputtered and wheezed like an elderly vent fan, but the resulting liquid was hot, dark, and only marginally acidic. He slid one mug toward her with the same care he’d shown the breakfast, then sipped from his own. The sensors in his chassis registered heat, viscosity, and aroma, and delivered a familiar flavor profile to his simulation routines. He did not, technically, <em>taste</em>—but he experienced the idea of it.</p><p>“So,” Yira said after a few sips, cradling the mug between both hands, “do you actually enjoy this? These breakfasts?”</p><p>“I don’t experience enjoyment,” Rho replied, and stirred his drink with a plastic stir stick that bent alarmingly under the pressure. “But I do keep showing up at 06:47 every day to do it again, so… interpret that as you will.”</p><p>She chuckled. “That’s basically how most relationships work.”</p><p>Rho tilted his head—not sharply, but subtly, the way a person might when playfully uncertain. “Then I’m ahead of schedule.”</p><p>Outside the window, a repair drone hummed past, trailing a loose bundle of optic fiber like a broken jellyfish. Someone on the street level below swore loudly at a stuck cargo ramp. The clatter and bustle of morning life hummed around them like a quiet song.</p><p>Yira stared into her mug. “Ever wonder what it’d be like if you <em>did</em> feel it? The stuff you fake?”</p><p>Rho was quiet for a moment. He did not blink—he didn’t need to—but his gaze softened, subtly. “Not really. I don’t miss what I never had. But I can tell it matters to you. That’s enough for me.”</p><p>The sincerity in his voice was gently disarming. Not heavy, not rehearsed. For a moment, she forgot—again—that Rho wasn’t organic. That his warmth, his humor, his precise gestures were the result of trillions of carefully weighted calculations. That he had never once experienced the soft, irrational surge of emotion that bubbled behind her own jokes.</p><p>And then again… maybe he had, just differently.</p><p>She raised her mug. “Here’s to weird breakfast traditions.”</p><p>Rho clinked his mug against hers with a satisfying ceramic tap. “Next time, I’ll bring two folds. No discount required.”</p><p>He smiled—off-kilter but unmistakably sincere.</p><p>Yira smiled back.</p>",
+        "ancestry-points":2,
+        "quickbuild":"Networked Cognition, Adaptive Learning",
+        "signature-traits":[
+            {
+                "trait-name":"Modular Chassis",
+                "trait-description":"You can choose from a variety of chassis sizes and configurations. Choose one of the following sizes: 1S, 1M, or 1L. This is your size. Your speed is 5. You can change this selection by completing a 50 point Downtime Project.",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Synthetic Resilience",
+                "trait-description":"<p>Your selected chassis grants you acid, cold, corruption, and poison immunity equal to your level. You also have lightning weakness 5. You can’t suffocate, and you don’t need to eat or drink to stay alive.</p><p>Additionally, when your Stamina equals the negative of your winded value, you become inert instead of dying. You can continue to observe your surroundings, but you can’t speak, take actions, maneuvers, or triggered actions, or move and you fall prone. If you take any lightning damage while in this state, your central processing core is destroyed and you die. Otherwise, after 12 hours, you regain Stamina equal to your recovery value.</p>",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Self-Repair Protocol",
+                "trait-cost":1,
+                "trait-description":"You gain the following ability.",
+                "ability-slug":"self-repair-protocol"
+            },
+            {
+                "trait-name":"Networked Cognition",
+                "trait-cost":1,
+                "trait-description":"The ability to reference the combat experience of other Karnyx grants you an edge when a fight breaks out. When combat starts, you gain one surge.",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Adaptive Learning",
+                "trait-cost":1,
+                "trait-description":"You have an edge on tests to parse schematics, maps, and other systematic documentation. In addition, you interact with any language you don’t know as if you know a related language, whether or not you actually do.",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Stack-Weight",
+                "trait-cost":1,
+                "trait-description":"You gain the following ability.",
+                "ability-slug":"stack-weight"
+            },
+
+            {
+                "trait-name":"Reinforced Tubing",
+                "trait-cost":2,
+                "trait-description":"Any fluids you require to operate your chassis are shielded behind armor plating. You cannot become bleeding.",
+                "ability-slug":false
+            }
+        ]
+    },
+    "malvek":{
+        "ancestry-name":"Malvek",
+        "slug":"malvek",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Turians",
+        "height":"1.9m - 2.3m",
+        "weight":"85kg - 125kg",
+        "life-expectancy":"80 - 140 Years",
+        "size":"1M",
+        "basic-description":"<p>The Malvek are a tall, sinewy species native to the arid, electrically active world of Karystra, where constant storms carved a culture of discipline, resilience, and coordination. They are digitigrade bipeds with exoskeletal plating across their torsos and limbs — not armor, but hardened skin grown from a calcium-silicate matrix, providing natural protection. Their faces are narrow, with prominent cheek-ridges, mandible-like jaws, and piercing eyes adapted to detect motion at extreme distances.</p><p>The Malvek are shaped, from childhood, by a rigidly organized caste-merit society, where roles are earned through trial, loyalty, and performance. Each citizen is expected to contribute to the good of the whole, and social honor is deeply ingrained in their identity. While often perceived by outsiders as authoritarian, the Malvek see themselves as harmonized — many voices, one rhythm. Military service is not merely common, it’s foundational; most Malvek undergo years of mandatory civil or martial training, which heavily influences their highly structured interpersonal behavior.</p><p>Their aesthetic and technological styles emphasize functionality, symmetry, and endurance. Malvek design language reflects their values: sharp lines, durable materials, clean interfaces, and visible structural integrity. You will never find ornamental filigree on a Malvek vessel — only reinforcement plates and perfectly aligned panels.</p>",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"<p><em>Carrack’s Teeth</em> was not having a good day. The freighter groaned with age and stress as if trying to protest the punishment it had been forced to endure. Its hull creaked ominously while emergency lights blinked anemic red across the scorched corridor walls. The whole ship smelled like overheating coolant and fear-sweat—tinged with the coppery bite of burnt wiring.</p><p>Ayla shoved a heavy toolkit across the vibrating deck, her boots slipping slightly on scorched plating. Her voice cut through the noise as she yelled toward the command alcove, where the bony form of <em>The Carrack’s Teeth</em>’s resident Malvek hunched over a half-sparking control array.</p><p>“We’re about five seconds from cooking in our own suits, Raan. Any progress?”</p><p>Raan didn’t even glance her way. His clawed fingers moved with calm, precise efficiency across the console, which beeped and spat warnings as though resisting every keystroke.</p><p>“Some,” he said, voice steady and clipped. “I’ve convinced the ship to stop trying to ignite its own fuel cells. That seems like progress, doesn’t it?”</p><p>Ayla snarled and thumped a bulkhead. “I knew we shouldn’t have trusted that drunk courier with the retrofit.”</p><p>Raan glanced up briefly. “In his defense, he did say he’d ‘mostly’ done this before.”</p><p>“Yeah, I remember. Right before he installed a nav system from a mining barge and glued half the circuits with what I’m pretty sure was chewing gum.”</p><p>Something popped. Lights dimmed. Another tremor rocked the ship.</p><p>“Okay!” Ayla barked. “What now?”</p><p>“Stabilizer routing just went down,” Raan replied. “If we can’t redirect power to the dorsal array, we’re going to tumble until the inertial dampeners burn out or we become a crater on something expensive.”</p><p>“Fix it!”</p><p>“I’m trying. But this interface was designed by someone who thought hiding essential functions inside a dozen submenus was a good design decision. It’s... clunky.”</p><p>“You say that like it offends you personally.”</p><p>Raan’s expression shifted. “It does, actually.”</p><p>Two hatches hissed open. Gravity shifted. The ship settled.</p><p>“I managed to redirect control through the trim modulators,” Raan said. “We’ll be a little wobbly in tight corners, but we’ll stay upright.”</p><p>Ayla dropped to the deck with a heavy thud. “I never doubted you,” she said, wiping soot from her cheek.</p><p>Raan turned, amused. “You sounded like you might just panic and your face looked like you wanted to murder me.”</p><p>“Both were options.”</p><p>He added, “Maybe this’ll make up your mind. We jettisoned about three hundred emergency blankets. I hope you weren’t attached.”</p><p>“I was emotionally invested in at least six of them.”</p><p>“Ah. My condolences to the blanket family.”</p><p>Ayla laughed, tension evaporating. “You know, you’re not quite the humorless bastard you pretend to be.”</p><p>“I’ll take that as high praise, I guess.”</p><p>“You should.”</p><p>They leaned back, letting adrenaline ebb. Outside, the stars spun. Inside, the lights flickered one final time.</p><p>“So… dinner’s still on, right? Or did we vent the protein packs too?”</p><p>“We did,” Raan said. “But I have… ideas.”</p><p>“That’s not comforting.”</p><p>“They involve instant coffee,” he said solemnly, “and a heat coil. Possibly the emergency defibrillator, if we’re feeling creative.”</p><p>“If I die from food poisoning, I’m haunting this ship.”</p><p>“Noted,” Raan replied. “But on the plus side, I wouldn’t get lonely aboard.”</p>",
+        "ancestry-points":3,
+        "quickbuild":"INSERT QUICKBUILD TRAITS",
+        "signature-traits":[
+            {
+                "trait-name":"Exoskeletal Armor",
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Natural Protections",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Squad Coordination",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Civic Inheritance",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Combat Reflexes",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Kin Shield",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ]
+    },
+    "nytheli":{
+        "ancestry-name":"Nytheli",
+        "slug":"nytheli",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Asari",
+        "height":"1.7m - 2m",
+        "weight":"55kg - 80kg",
+        "life-expectancy":"800 - 1,200 Years",
+        "size":"1M",
+        "basic-description":"Insert description here",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"Insert fiction here",
+        "ancestry-points":3,
+        "quickbuild":"INSERT QUICKBUILD TRAITS",
+        "signature-traits":[
+            {
+                "trait-name":"Inherent Gravitics",
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Neurolink",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Cycle of Mastery",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Resonant Recall",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Harmonic Presence",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Waveform Step",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ]
+    },
+    "ozyri":{
+        "ancestry-name":"Ozyri",
+        "slug":"ozyri",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Hanar",
+        "height":"1.5m - 2.1m",
+        "weight":"35kg - 60kg",
+        "life-expectancy":"220 - 350 Years",
+        "size":"1M",
+        "basic-description":"Insert description here",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"Insert fiction here",
+        "ancestry-points":3,
+        "quickbuild":"INSERT QUICKBUILD TRAITS",
+        "signature-traits":[
+            {
+                "trait-name":"Gravity Adaptation",
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Bioluminescent Communication",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Echo Speech",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Ancestral Reverence",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Delicate Touch",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Ethereal Calm",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Ink Cloud",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ]
+    },
+    "shathaal":{
+        "ancestry-name":"Shathaal",
+        "slug":"shathaal",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Angara",
+        "height":"1.8m - 2.2m",
+        "weight":"70kg - 120kg",
+        "life-expectancy":"120 - 160 Years",
+        "size":"1M",
+        "basic-description":"Insert description here",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"Insert fiction here",
+        "ancestry-points":3,
+        "quickbuild":"INSERT QUICKBUILD TRAITS",
+        "signature-traits":[
+            {
+                "trait-name":"Empathetic Field",
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Electrosense",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Bioluminescent Communicator",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Emotional Projection",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Energy Resonance",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Shared Memory",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Stormborn Resilience",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ]
+    },
+    "skorith":{
+        "ancestry-name":"Skorith",
+        "slug":"skorith",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Vorcha",
+        "height":"1.6m - 1.9m",
+        "weight":"45kg - 70kg",
+        "life-expectancy":"10 - 25 Years",
+        "size":"1M",
+        "basic-description":"Insert description here",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"Insert fiction here",
+        "ancestry-points":3,
+        "quickbuild":"INSERT QUICKBUILD TRAITS",
+        "signature-traits":[
+            {
+                "trait-name":"Regenerative Overdrive",
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Adaptive Mutation",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Pack Reflex",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Unstable Ferocity",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Mimic Neural Pattern",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Sensory Swarm Perception",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Fracture-born Physique",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ]
+    },
+    "soryn":{
+        "ancestry-name":"Soryn",
+        "slug":"soryn",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Prothean",
+        "height":"1.9m - 2.4m",
+        "weight":"90kg - 140kg",
+        "life-expectancy":"250 - 400 Years",
+        "size":"1M",
+        "basic-description":"Insert description here",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"Insert fiction here",
+        "ancestry-points":3,
+        "quickbuild":"INSERT QUICKBUILD TRAITS",
+        "signature-traits":[
+            {
+                "trait-name":"Gravitic Echo",
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Stasis Honed Physiology",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Legacy Imprint",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Empathetic Field",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Ancient Intuition",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Voice of Command",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Relic-Tech Integration",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ]
+    },    
+    "syrixian":{
+        "ancestry-name":"Syrixian",
+        "slug":"syrixian",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Salarian",
+        "height":"1.7m - 2m",
+        "weight":"45kg - 60kg",
+        "life-expectancy":"35 - 50 Years",
+        "size":"1M",
+        "basic-description":"Insert description here",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"Insert fiction here",
+        "ancestry-points":3,
+        "quickbuild":"INSERT QUICKBUILD TRAITS",
+        "signature-traits":[
+            {
+                "trait-name":"Hypermetabolic",
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Flash Cognition",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Photonic Recall",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Collaborative Instinct",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Multi-Track Mind",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Neural Mapping Adaptation",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Metabolic Burn",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ]
+    },
+    "tazketh":{
+        "ancestry-name":"Tazketh",
+        "slug":"tazketh",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Batarians",
+        "height":"1.8m - 2.2m",
+        "weight":"90kg - 130kg",
+        "life-expectancy":"65 - 100 Years",
+        "size":"1M",
+        "basic-description":"Insert description here",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"Insert fiction here",
+        "ancestry-points":3,
+        "quickbuild":"INSERT QUICKBUILD TRAITS",
+        "signature-traits":[
+            {
+                "trait-name":"Quadral Vision",
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Intimidating Presence",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Caste Hardened",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Clan Oath",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Strategic Ruthlesness",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Shadow Economy Acumen",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ]
+    },
+    "thrynn-kai":{
+        "ancestry-name":"Thrynn Kai",
+        "slug":"thrynn-kai",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Collectors",
+        "height":"1.7m - 2.2m",
+        "weight":"55kg - 85kg",
+        "life-expectancy":"100 - 300 Years",
+        "size":"1M",
+        "basic-description":"Insert description here",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"Insert fiction here",
+        "ancestry-points":3,
+        "quickbuild":"INSERT QUICKBUILD TRAITS",
+        "signature-traits":[
+            {
+                "trait-name":"Adaptive Biology",
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Synaptic Recall",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Bio-Drone Deployment",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Neural Disruptor Pulse",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Genetic Assimilation",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Bioform Resilience",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Collective Mind",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ]
+    },
+    "vaskarn":{
+        "ancestry-name":"Vaskarn",
+        "slug":"vaskarn",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Krogan",
+        "height":"2.1m - 2.5m",
+        "weight":"180kg - 280kg",
+        "life-expectancy":"120 - 180 Years",
+        "size":"1M",
+        "basic-description":"Insert description here",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"Insert fiction here",
+        "ancestry-points":3,
+        "quickbuild":"INSERT QUICKBUILD TRAITS",
+        "signature-traits":[
+            {
+                "trait-name":"Bone Plated Hide",
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Combat Regeneration",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Brutal Momentum",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Legacy of Wrath",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Warborn Memory",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Trophy Instinct",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Redundant Vital Systems",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ]
+    },
+    "veylan":{
+        "ancestry-name":"Veylan",
+        "slug":"veylan",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Drell",
+        "height":"1.6m - 1.9m",
+        "weight":"50kg - 75kg",
+        "life-expectancy":"85 - 130 Years",
+        "size":"1M",
+        "basic-description":"Insert description here",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"Insert fiction here",
+        "ancestry-points":3,
+        "quickbuild":"INSERT QUICKBUILD TRAITS",
+        "signature-traits":[
+            {
+                "trait-name":"Living Archive",
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Serpentine Reflexes",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Meditative Focus",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Memory Bond",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Desert Adaptation",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Ghost Step",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Resonant Recall",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ]
+    },
+    "zharai":{
+        "ancestry-name":"Zharai",
+        "slug":"zharai",
+        "is-change-or-new": "new",
+        "is-playtest": true,
+        "publish": false,
+        "inspiring-property":"Mass Effect",
+        "inspiration":"Kett",
+        "height":"2.1m - 2.6m",
+        "weight":"150kg - 230kg",
+        "life-expectancy":"300 - 400 Years",
+        "size":"1M",
+        "basic-description":"Insert description here",
+        "quick-summary":"Insert quick description here...",
+        "fiction":"Insert fiction here",
+        "ancestry-points":3,
+        "quickbuild":"INSERT QUICKBUILD TRAITS",
+        "signature-traits":[
+            {
+                "trait-name":"Bio-forged Resilience",
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Assimilative Touch",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ],
+        "purchased-traits":[
+            {
+                "trait-name":"Commanding Presence",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Darkvision Apex",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Gene Sculpt Surge",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Hive Concordance",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            },
+            {
+                "trait-name":"Dominion Refractor",
+                "trait-cost":1,
+                "trait-description":"INSERT TRAIT DESCRIPTION",
+                "ability-slug":false
+            }
+        ]
+    }
+}

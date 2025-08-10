@@ -1,0 +1,72 @@
+---
+layout: qa_page
+---
+
+{% if page.is-playtest %}
+<div class="alert alert-info" role="alert">
+<h4>Playtest Ready</h4>
+<p>This page is pending playtesting and final editing.</p>
+</div>
+{% endif %}
+
+<ul class="list-group list-group-horizontal mb-3">
+  <li class="list-group-item"><b>Height:</b> {{page.height}}</li>
+  <li class="list-group-item"><b>Weight:</b> {{page.weight}}</li>
+  <li class="list-group-item"><b>Life Expectancy:</b> {{page.life-expectancy}}</li>
+</ul>
+
+{% if page.inspiring-property %}
+<div class="alert alert-warning handwritten-font" role="alert">
+    <p>The {{page.ancestry-name}} were inspired by the {{page.inspiration}} from {{page.inspiring-property}}. Most, if not all, of the traits used for the {{page.ancestry-name}} should be compatible for {{page.inspiration}} characters, so feel free to just use the mechanisms we built for the {{page.ancestry-name}} if you are planning to run a {{page.inspiring-property}} themed game.</p>
+</div>
+{% endif %}
+
+<h2>{{page.ancestry-name}} Description</h2>
+
+{{page.basic-description}}
+
+<h2>On {{page.ancestry-name}}</h2>
+
+{{page.fiction}}
+
+<h2>{{page.ancestry-name}} Traits</h2>
+
+<p>{{page.ancestry-name}} heroes have access to the following traits.</p>
+
+{% for st in page.signature-traits %}
+
+<h3>Signature Trait: {{st.trait-name}}</h3>
+
+{{st.trait-description}}
+
+{% if st.ability-slug %}
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+    <div class="col">
+    {% capture ability %}{{st.ability-slug}}{% endcapture %}
+    {% include qa_ability.html ability-slug=ability %}
+    </div>
+</div>
+{% endif %}
+
+{% endfor %}
+
+<h3>Purchased {{page.ancestry-name}} Traits</h3>
+
+<p>You have {{page.ancestry-points}} ancestry points to spend on the following traits. (Quick Build: {{page.quickbuild}}).</p>
+
+{% for pt in page.purchased-traits %}
+
+<h4>{{pt.trait-name}} (Costs {{pt.trait-cost}} Point{% if pt.trait-cost > 1 %}s{% endif %})</h4>
+
+{{pt.trait-description}}
+
+{% if pt.ability-slug %}
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+    <div class="col">
+    {% capture ability %}{{pt.ability-slug}}{% endcapture %}
+    {% include qa_ability.html ability-slug=ability %}
+    </div>
+</div>
+{% endif %}
+
+{% endfor %}

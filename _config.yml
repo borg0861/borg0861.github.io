@@ -33,6 +33,34 @@ github_username:  borg0861
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-datapage-generator
+
+#page_gen-dirs: true
+page_gen:
+  - data: 'qa_ancestries'
+    template: 'qa-page-template'
+    name: 'slug'
+    title: 'title'
+    dir: 'quantum-arc/ancestries'
+    filter: 'is-published'
+  - data: 'qa_rules'
+    template: 'qa-page-template'
+    name: 'slug'
+    title: 'title'
+    dir: 'quantum-arc/rules'
+    filter: 'is-published'
+#  - data: 'qa_monsters'
+#    template: 'qa_monster'
+#    name: 'slug'
+#    title: 'species-name'
+#    dir: 'quantum-arc/monsters'
+#    filter: 'publish'
+#  - data: 'qa_kits'
+#    template: 'qa_kit'
+#    name: 'slug'
+#    title: 'kit-name'
+#    dir: 'quantum-arc/kits'
+#    filter: 'publish'
 
 # Exclude from processing.
 # The following items will not be processed, by default.

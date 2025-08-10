@@ -1,0 +1,40 @@
+---
+layout: qa_page
+---
+
+{% if page.is-playtest %}
+<div class="alert alert-info" role="alert">
+<h4>Playtest Ready</h4>
+<p>This kit is pending playtesting and final editing.</p>
+</div>
+{% endif %}
+
+{% if page.inspiring-property %}
+<div class="alert alert-warning handwritten-font" role="alert">
+    <p>The {{page.kit-name}} kit was inspired by {{page.inspiration}} from {{page.inspiring-property}}.</p>
+</div>
+{% endif %}
+
+{{ page.description }}
+
+<h2>Equipment</h2>
+{{ page.equipment-description }}
+
+<h2>Kit Bonuses</h2>
+<ul>
+  {% if page.disengage-bonus %}<li><b>Disengage Bonus:</b> {{ page.disengage-bonus }}</li>{% endif %}
+  {% if page.distance-bonus %}<li><b>Distance Bonus:</b> {{ page.distance-bonus }}</li>{% endif %}
+  {% if page.stability-bonus %}<li><b>Stability Bonus:</b> {{ page.stability-bonus }}</li>{% endif %}
+  {% if page.stamina-bonus %}<li><b>Stamina Bonus:</b> {{ page.stamina-bonus }}</li>{% endif %}
+  {% if page.melee-bonus %}<li><b>Melee Damage Bonus:</b> {{ page.melee-bonus }}</li>{% endif %}
+  {% if page.ranged-bonus %}<li><b>Ranged Damage Bonus:</b> {{ page.ranged-bonus }}</li>{% endif %}
+</ul>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+  <div class="col">
+    {% for a in page.abilities %}
+        {% capture ability %}{{a}}{% endcapture %}
+        {% include qa_ability.html ability-slug=ability %}
+    {% endfor %}
+  </div>
+</div>

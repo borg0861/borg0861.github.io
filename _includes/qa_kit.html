@@ -1,0 +1,40 @@
+{% assign kit = site.data.qa_kits.[include.kit-slug] %}
+{% capture kit-slug %}{{ include.kit-slug }}{% endcapture %}
+<h3>{{ kit.kit-name }}{% if kit.is-change-or-new == "change" %}<span class="badge rounded-pill text-bg-success align-top status-pill">CHANGE</span>{% endif %}{% if kit.is-change-or-new == "new" %}<span class="badge rounded-pill text-bg-primary align-top status-pill">NEW</span>{% endif %}</h3>
+
+{% if kit.is-playtest %}
+<div class="alert alert-info" role="alert">
+  <h5>Playtest Ready</h5>
+  <p>This kit is pending playtesting and final editing.</p>
+</div>
+{% endif %}
+
+{% if page.inspiring-property %}
+<div class="alert alert-warning handwritten-font" role="alert">
+    <p>The {{kit.kit-name}} kit was inspired by {{kit.inspiration}} from {{kit.inspiring-property}}.</p>
+</div>
+{% endif %}
+
+{{ kit.description }}
+
+<h4>Equipment</h4>
+{{ kit.equipment-description }}
+
+<h4>Kit Bonuses</h4>
+<ul>
+  {% if kit.disengage-bonus %}<li><b>Disengage Bonus:</b> {{ kit.disengage-bonus }}</li>{% endif %}
+  {% if kit.distance-bonus %}<li><b>Distance Bonus:</b> {{ kit.distance-bonus }}</li>{% endif %}
+  {% if kit.stability-bonus %}<li><b>Stability Bonus:</b> {{ kit.stability-bonus }}</li>{% endif %}
+  {% if kit.stamina-bonus %}<li><b>Stamina Bonus:</b> {{ kit.stamina-bonus }}</li>{% endif %}
+  {% if kit.melee-bonus %}<li><b>Melee Damage Bonus:</b> {{ kit.melee-bonus }}</li>{% endif %}
+  {% if kit.ranged-bonus %}<li><b>Ranged Damage Bonus:</b> {{ kit.ranged-bonus }}</li>{% endif %}
+</ul>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+  <div class="col">
+    {% for a in kit.abilities %}
+        {% capture ability %}{{a}}{% endcapture %}
+        {% include qa_ability.html ability-slug=ability %}
+    {% endfor %}
+  </div>
+</div>

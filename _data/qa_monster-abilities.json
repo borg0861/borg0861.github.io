@@ -1,0 +1,278 @@
+{
+    "hookclaw":{
+        "title":"Hookclaw"
+        ,"slug":"hookclaw"
+        ,"based-on":"Hookclaw"
+        ,"action-type":"main-action"
+        ,"ability-type":"Signature Ability"
+        ,"tags":["Melee","Strike","Weapon"]
+        ,"target":"1 Creature or Object"
+        ,"range":"Melee 1"
+        ,"power-roll":{
+             "bonus":2
+            ,"tier-1":"2 Damage"
+            ,"tier-2":"4 Damage"
+            ,"tier-3":"5 Damage; Grabbed"
+        }
+        ,"effect":[{"content":"A grabbed target takes 2 lightning damage at the start of each of their turns."}]
+    }
+    ,"hop-and-chop":{
+        "title":"Hop & Chop"
+        ,"slug":"hop-and-chop"
+        ,"based-on": "Hop & Chop"
+        ,"action-type": "main-action"
+        ,"ability-type": "Signature Ability"
+        ,"tags": ["Melee", "Strike", "Weapon"]
+        ,"target": "1 Creature or Object"
+        ,"range": "Melee 1"
+        ,"power-roll":{
+            "bonus":2
+            ,"tier-1": "2 Damage"
+            ,"tier-2": "4 Damage"
+            ,"tier-3": "5 Damage"
+        }
+        ,"effect":[{"content":"Jump 4 squares before or after attacking."}]
+    }
+    ,"poison-dart":{
+        "title": "Poison Dart"
+        ,"slug":"poison-dart"
+        ,"based-on":"Poison Dart"
+        ,"action-type": "main-action"
+        ,"ability-type": "Signature Ability"
+        ,"tags": ["Ranged", "Strike", "Weapon"]
+        ,"target": "1 Creature or Object"
+        ,"range": "Ranged 8"
+        ,"power-roll":{ 
+            "bonus":2
+            ,"tier-1": "2 Damage"
+            ,"tier-2": "4 Damage"
+            ,"tier-3": "7 Damage"
+        }
+        ,"effect":[{"content":"This ability has an edge on targets that don’t have full Stamina."}]
+    }
+    ,"nip":{
+        "title": "Nip"
+        ,"slug":"nip"
+        ,"based-on":"Nip"
+        ,"action-type": "main-action"
+        ,"ability-type": "Signature Ability"
+        ,"tags": ["Melee", "Strike", "Weapon"]
+        ,"target": "1 Creature or Object"
+        ,"range": "Melee 1"
+        ,"power-roll":{
+            "bonus":2
+            ,"tier-1": "1 Damage"
+            ,"tier-2": "2 Damage; Shift 1"
+            ,"tier-3": "3 Damage; Shift 3"
+        }
+    }
+    ,"blowgun":{
+        "title":"Blowgun"
+        ,"slug":"blowgun"
+        ,"based-on":"Blowgun"
+        ,"action-type": "main-action"
+        ,"ability-type": "Signature Ability"
+        ,"tags": ["Ranged", "Strike", "Weapon"]
+        ,"target": "1 Creature or Object"
+        ,"range": "Ranged 15"
+        ,"power-roll":{
+            "bonus":2
+            ,"tier-1": "4 Poison Damage"
+            ,"tier-2": "6 Poison Damage"
+            ,"tier-3": "7 Poison Damage"
+        }
+        ,"spend":{
+            "cost":2
+            ,"effect":[{"content":"<span class=\"potency\">M < 2</span> Weakened (save ends). The target takes 2 poison damage at the start of each of their turns while they are weakened by this ability."}]
+        }
+    }
+    ,"camoufroge":{
+        "title":"Camoufroge"
+        ,"slug":"camofroge"
+        ,"based-on": "Camoufroge"
+        ,"action-type": "maneuver"
+        ,"ability-tpe":"Maneuver"
+        ,"target": "Self (while Hiding)"
+        ,"range": "Self"
+        ,"malice-cost": 1
+        ,"effect":[{"content":"The needler isn’t revealed after using their next action."}]
+    }
+    ,"tonguelash":{
+        "title":"Tonguelash"
+        ,"slug":"tongulash"
+        ,"based-on": "Tonguelash"
+        ,"action-type": "main-action"
+        ,"ability-type": "Signature Ability"
+        ,"tags": ["Strike", "Melee", "Weapon"]
+        ,"target": "1 Creature or Object"
+        ,"range": "Melee 6"
+        ,"power-roll":{
+            "bonus":2
+            ,"tier-1": "4 Damage; Pull 2"
+            ,"tier-2": "6 Damage; Pull 4"
+            ,"tier-3": "7 Damage; Pull 6"
+        }
+        ,"effect":[{"content":"The target is wet (Save Ends). Allies targeted by this ability take no damage and are pulled 6, ignoring stability."}]
+    }
+    ,"hop-to-it":{
+        "title":"Hop To It"
+        ,"slug":"hop-to-it"
+        ,"based-on": "Hop To It"
+        ,"action-type":"free-maneuver"
+        ,"ability-type":"Free Maneuver"
+        ,"target": "Self"
+        ,"range": "Self"
+        ,"malice-cost": 1
+        ,"effect":[{"content":"The slink jumps 3 squares. If the slink lands in cover or concealment, they can immediately Hide."}]
+    }
+    ,"refulgent-beams":{
+        "title":"Refulgent Beams"
+        ,"slug":"refulgent-beams"
+        ,"based-on": "Refulgent Beams"
+        ,"action-type": "main-action"
+        ,"ability-type": "Signature Ability"
+        ,"tags": ["Magic", "Ranged", "Strike"]
+        ,"target": "2 Creatures or Objects"
+        ,"range": "Ranged 8"
+        ,"power-roll":{
+            "bonus":2
+            ,"tier-1": "3 Holy Damage"
+            ,"tier-2": "4 Holy Damage; <span class=\"potency\">R < 1</span> Illuminated (Save Ends)"
+            ,"tier-3": "5 Holy Damage; <span class=\"potency\">R < 2</span> Illuminated (Save Ends)"
+        }
+        ,"effect":[{"content":"Illuminated creatures and objects can’t Hide or turn invisible, and strikes made against them have an edge until the condition ends."}]
+    }
+    ,"noxious-bubble":{
+        "title":"Noxious Bubble"
+        ,"slug":"noxious-bubble"
+        ,"based-on": "Noxious Bubble"
+        ,"action-type": "main-action"
+        ,"ability-type":"Malice Ability"
+        ,"tags": ["Area", "Magic", "Ranged"]
+        ,"target": "Special"
+        ,"range": "3 Cube of unoccupied space within 10"
+        ,"malice-cost": 3
+        ,"power-roll":{
+            "characteristic":["M"]
+            ,"tier-1": "5 Poison Damage; Wet and Weakened (Save Ends)"
+            ,"tier-2": "4 Poison Damage; Wet"
+            ,"tier-3": "Wet (EoT)"
+        }
+        ,"effect":"A bubble of toxic gas fills the area that lasts until the end of the encounter. If a creature or object touches the bubble, it bursts and each enemy within 3 makes a <span class=\"characteristic\">M</span> test."
+        ,"effect-is-before": true
+    }
+    ,"acid-grasp":{
+        "title":"Acid Grasp"
+        ,"slug":"acid-grasp"
+        ,"based-on": "Acid Grasp"
+        ,"action-type": "main-action"
+        ,"ability-type": "Signature Ability"
+        ,"tags": ["Melee", "Strike", "Weapon"]
+        ,"target": "2 Creatures or Objects"
+        ,"range": "Melee 1"
+        ,"power-roll":{
+            "bonus":"3"
+            ,"tier-1": "7 Acid Damage; <span class=\"potency\">A < 1</span> Dazed (Save Ends)"
+            ,"tier-2": "10 Acid Damage; <span class=\"potency\">A < 2</span> Dazed (Save Ends)"
+            ,"tier-3": "13 Acid Damage; <span class=\"potency\">A < 3</span> Dazed (Save Ends)"
+        }
+        ,"effect":[{"content":"The next time the target strikes the daybringer, they immediately take 4 acid damage.</p><p><b>Spend 1 Malice:</b> The daybringer jumps 3 squares before or after using this ability."}]
+    }
+    ,"sun-lamp":{
+        "title": "Sun Lamp"
+        ,"slug":"sun-lamp"
+        ,"based-on": "Sun Lamp"
+        ,"action-type": "maneuver"
+        ,"ability-type":"Maneuver"
+        ,"target": "Self"
+        ,"range": "Self"
+        ,"effect":[{"content":"The Daybringer expands their throat to resemble the sun until the start of their next turn. Each non-minion angulotl who starts their turn within 10 of the daybringer gains 5 temporary Stamina and has their Speed increased by 3 until the end of their turn."}]
+    }
+    ,"tongue-slap":{
+        "title": "Tongue Slap"
+        ,"slug":"tongue-slap"
+        ,"based-on": "Tongue Slap"
+        ,"action-type": "triggered-action"
+        ,"ability-type":"Triggered Action"
+        ,"target": "1 Creature"
+        ,"range": "Melee 5"
+        ,"trigger":[{"content":"The target targets the daybringer or an ally with a strike that isn’t a critical hit."}]
+        ,"effect": [{"content":"The daybringer reduces the power roll result by 1 tier."}]
+        ,"spend":{
+            "cost":2
+            ,"effect":[{"content":"Pull 4."}]
+        }
+    }
+    ,"new-dawn":{
+        "title": "New Dawn"
+        ,"slug":"new-dawn"
+        ,"based-on": "New Dawn"
+        ,"action-type": "villain-action"
+        ,"ability-type": "Villain Action 1"
+        ,"target": "Special"
+        ,"range": "Ranged 10"
+        ,"effect": [{"content":"Ten <b>angulotl pollywogs</b> escape the daybringer’s back and waddle into unoccupied squares within distance."}]
+    }
+    ,"plague-of-frogs":{
+        "title": "Plague of Frogs"
+        ,"slug":"plauge-of-frogs"
+        ,"based-on": "Plague of Frogs"
+        ,"action-type": "villain-action"
+        ,"ability-type": "Villain Action 2"
+        ,"target": "Self and all allies in range"
+        ,"range": "Self and Burst 8"
+        ,"effect": [{"content":"Each target jumps 4 and makes a free strike."}]
+    }
+    ,"it-is-day":{
+        "title": "It is Day"
+        ,"slug":"it-is-day"
+        ,"based-on": "It is Day"
+        ,"action-type": "villain-action"
+        ,"ability-type": "Villain Action 3"
+        ,"target": "Special"
+        ,"range": "Special"
+        ,"effect":[{"content":"The encounter map dries up and becomes illuminated. Each wet enemy has the wet condition end and takes 6 acid damage. All angulotls have a double edge on their next attack."}]
+    }
+    ,"leapfrog":{
+        "title":"Leapfrog"
+        ,"slug":"leapfrog"
+        ,"based-on":"Leapfrog"
+        ,"action-type":"malice-ability"
+        ,"ability-type":"Malice Ability"
+        ,"cost":3
+        ,"target":"Special"
+        ,"range":"Special"
+        ,"effect":[{"content":"Until the end of the round, when an angulotl moves through an ally’s space, that ally can jump 3 squares as a free triggered action."}]
+    }
+    ,"resonating-croak":{
+        "title":"Resonating Croak"
+        ,"slug":"resonating-croak"
+        ,"based-on":"Resonating Croak"
+        ,"action-type":"malice-ability"
+        ,"ability-type":"Malice Ability"
+        ,"cost":5
+        ,"description":[{"content":"Each angulotl puffs out their throat and starts loudly droning."}]
+        ,"target":"Special"
+        ,"range":"Special"
+        ,"power-roll":{
+             "characteristic":["I"]
+            ,"tier-1": "5 Sonic Damage; Slowed (EoT)"
+            ,"tier-2": "4 Sonic Damage"
+            ,"tier-3": "No Effect"
+        }
+        ,"effect":[{"content":"Each non-Angulotl adjacent to one or more Angulotl, makes the following ability Power Roll and suffers effects based on their result."}]
+        ,"effect-is-before":true
+    }
+    ,"rainfall":{
+        "title":"Rainfall"
+        ,"slug":"rainfall"
+        ,"based-on":"Rainfall"
+        ,"action-type":"malice-ability"
+        ,"ability-type":"Malice Ability"
+        ,"description":[{"content":"The Angulotl call clouds to cover the battlefield in rain."}]
+        ,"cost":7
+        ,"target":"Special"
+        ,"range":"Special"
+        ,"effect":[{"content":"All creatures and objects that are exposed to the sky are wet for the rest of the encounter."}]
+    }
+}
