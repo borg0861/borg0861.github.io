@@ -1,0 +1,502 @@
+---
+layout: none
+---
+
+/*GENERAL STYLES*/
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+:root {
+    --theme-color: #132b40;
+    --mostly-transparent: rgba(0,0,0,0.5);
+    --transparent: rgba(0,0,0,0);
+    --header-theme-gradient: linear-gradient(to right, #1d3c5a , #080e13 85%);
+    --body-theme-gradient: linear-gradient(to right, #396795 , #080e13 );
+
+
+    --primary-theme-font: "Smooch Sans", sans-serif;
+
+    /*ABILITY COLORS*/
+    --ds-free-strike-color: #7d7d7d;
+    --ds-main-action-color:#397d46;
+    --ds-free-maneuver-color: #397d76;
+    --ds-free-triggered-color: #7d3966;
+    --ds-maneuver-color: #395b7d;
+    --ds-triggered-color: #7d3939;
+    --ds-no-action-color: #353d6f;
+    --ds-persistent-color: #56397d;
+    --ds-villain-action-color: #641451;
+
+    /*MONSTER ROLE COLORS*/
+    --ds-ambusher-color: #f7d957;
+    --ds-artillery-color: #ccc0d9;
+    --ds-brute-color: #8db3e2;
+    --ds-controller-color: #ff7d7d;
+    --ds-defender-color: #c4bc96;
+    --ds-harrier-color: #e5b8b7;
+    --ds-hexer-color: #d6e3bc;
+    --ds-mount-color: #b6dde8;
+    --ds-support-color: #fbd4b4;
+    --ds-leader-color: #d9d9d9;
+    --ds-solo-color: #d9d9d9;
+
+    
+}
+
+html {
+    scroll-padding-top: 4rem;
+}
+
+.theme-bg {
+    background-color: var(--theme-color);
+}
+
+.theme-text {
+    color: var(--theme-color);
+}
+
+.fancy-font {
+    font-family: var(--primary-theme-font);
+    font-size: calc(1em * 1.25);
+}
+
+.handwritten-font {
+    font-family: "Caveat", cursive;
+    font-size: calc(1em * 1.25);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--primary-theme-font);
+}
+
+.handwritten-font :is(h1,h2,h3,h4,h5,b) {
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+.ds-drop-shadow {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));   
+}
+
+.ds-gradient-header {
+    background: var(--body-theme-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.status-pill {
+    font-size: 0.6rem;
+}
+
+mark {
+    margin: 0 -0.4em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    background: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  .editorial-highlight {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 225, 0, 0.1),
+      rgba(255, 225, 0, 0.7) 4%,
+      rgba(255, 225, 0, 0.3)
+    );
+    font-family: "Caveat", cursive;
+    font-size: calc(1em * 1.1);
+  }
+  .new-highlight {
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 170, 255, 0.1),
+      rgba(0, 170, 255, 0.7) 4%,
+      rgba(0, 170, 255, 0.3)
+    );
+  }
+  .change-highlight {
+    background-image: linear-gradient(
+      to right,
+      rgba(170, 255, 0, 0.1),
+      rgba(170, 225, 0, 0.7) 4%,
+      rgba(170, 225, 0, 0.3)
+    );
+  }
+/*SPECIFIC ELEMENT STYLES*/
+
+thead {
+    background: var(--body-theme-gradient);
+    color: #fff;
+}
+
+.ds-disclaimer {
+    font-size: 0.8rem;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+}
+
+/*HOME PAGE STYLES*/
+#main-navigation {
+    background: var(--header-theme-gradient);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 3px 5px 3px rgba(0,0,0,0.4);
+}
+
+
+#QAVideo {
+    height: calc(100vh - 63px);
+    width: 100vw;
+}
+
+.inset-shadow {
+    min-height: 2rem;
+    min-width: 100%;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
+    position: absolute;
+    bottom: 0;
+}
+
+.QA-shadow-logo {
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.5)) drop-shadow(0 -5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.site-title {
+    color: #fff;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5)) drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.5));
+    font-size: 4rem;
+}
+
+.site-tagline {
+    color: #fff;
+    filter: drop-shadow(0 2px 2px rgba(0 , 0, 0, 0.5)) drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.5));
+    font-size: 1.5rem;
+}
+
+.header-button-shadow {
+    filter: drop-shadow(0 2px 2px rgba(0 , 0, 0, 0.5)) drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.5));
+}
+
+
+/*ABILITY CARD STYLES*/
+.ability-card p {
+    margin-bottom: 0;
+}
+
+
+.ability-title {
+    line-height: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.ability-type {
+    line-height: 0.5rem;
+    font-size: 1rem;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+
+.ability-flavor-text {
+    width: 100%;
+    font-style: italic;
+    padding: 0 1em;
+    font-size: 0.8rem;
+}
+
+.ability-table {
+    width: 100%;
+}
+
+.ability-table thead {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.ability-table td {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.ability-trigger {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: -0.5rem;
+    font-size: 0.8rem;
+    width: calc(100% + 1rem);
+}
+.ability-trigger b, .ability-trigger strong {
+    font-family: var(--primary-theme-font);
+    font-size: 1.1rem;
+    line-height: 0.8rem;
+}
+
+.power-roll {
+    padding: 0;
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: var(--primary-theme-font);
+}
+
+.power-roll-table {
+    width: 100%
+}
+.power-roll-table th {
+    color: white;
+    font-family: var(--primary-theme-font);
+    font-size: 0.8rem;
+    text-align: center;
+}
+.power-roll-table tr {
+    border-collapse: collapse;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: inherit;
+}
+.power-roll-table td {
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+.ability-effects {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+.ability-effects b, .ability-effects strong {
+    font-family: var(--primary-theme-font);
+    font-size: 1.1rem;
+    line-height: 0.8rem;
+}
+
+.based-on {
+    font-size: 0.8rem;
+}
+
+.action-type-quickref {
+    margin: none;
+    padding: 0.5rem 1.25rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 1rem;
+    font-family: var(--primary-theme-font);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.ability-card-cost {
+    margin: none;
+    padding: 1rem 1.25rem 0 1.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: var(--primary-theme-font);
+    font-weight: bold;
+    text-align: center;
+}
+
+.ability-card-cost .ability-points {
+    font-size: 3rem;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.ability-card-cost .ability-cost {
+    font-size: 1rem;
+    line-height: 0;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -0.7rem;
+}
+
+
+
+.free-strike-action {
+    border-color: var(--ds-free-strike-color);
+}
+.free-strike-action-bg {
+    background-color: var(--ds-free-strike-color);
+}
+.free-strike-action-color {
+    color: var(--ds-free-strike-color);
+}
+
+.main-action {
+    border-color: var(--ds-main-action-color);
+}
+.main-action-bg {
+    background-color: var(--ds-main-action-color);
+}
+.main-action-color {
+    color: var(--ds-main-action-color);
+}
+
+.free-maneuver {
+    border-color: var(--ds-free-maneuver-color);
+}
+.free-maneuver-bg {
+    background-color: var(--ds-free-maneuver-color);
+}
+.free-maneuver-color {
+    color: var(--ds-free-maneuver-color);
+}
+
+.free-triggered {
+    border-color: var(--ds-free-triggered-color);
+}
+.free-triggered-bg {
+    background-color: var(--ds-free-triggered-color);
+}
+.free-triggered-color {
+    color: var(--ds-free-triggered-color);
+}
+
+.maneuver {
+    border-color: var(--ds-maneuver-color);
+}
+.maneuver-bg {
+    background-color: var(--ds-maneuver-color);
+}
+.maneuver-color {
+    color: var(--ds-maneuver-color);
+}
+
+.triggered {
+    border-color: var(--ds-triggered-color);
+}
+.triggered-bg {
+    background-color: var(--ds-triggered-color);
+}
+.triggered-color {
+    color: var(--ds-triggered-color);
+}
+
+.no-action {
+    border-color: var(--ds-no-action-color);
+}
+.no-action-bg {
+    background-color: var(--ds-no-action-color);
+}
+.no-action-color {
+    color: var(--ds-no-action-color);
+}
+
+.persistent {
+    border-color: var(--ds-persistent-color);
+}
+.persistent-bg {
+    background-color: var(--ds-persistent-color);
+}
+.persistent-color {
+    color: var(--ds-persistent-color);
+}
+
+.villain-action {
+    border-color: var(--ds-villain-action-color);
+}
+.villain-action-bg {
+    background-color: var(--ds-villain-action-color);
+}
+.villain-action-color {
+    color: var(--ds-villain-action-color);
+}
+
+
+/*MONSTER CARD STYLES*/
+
+
+
+
+
+
+
+
+
+.Ambusher {
+    border-color: var(--ds-ambusher-color);
+}
+.Ambusher-bg {
+    background-color: var(--ds-ambusher-color);
+}
+
+.Artillery {
+    border-color: var(--ds-artillery-color);
+}
+.Artillery-bg {
+    background-color: var(--ds-artillery-color);
+}
+
+.Brute {
+    border-color: var(--ds-brute-color);
+}
+.Brute-bg {
+    background-color: var(--ds-brute-color);
+}
+
+.Controller {
+    border-color: var(--ds-controller-color);
+}
+.Controller-bg {
+    background-color: var(--ds-controller-color);
+}
+
+.Defender {
+    border-color: var(--ds-defender-color);
+}
+.Defender-bg {
+    background-color: var(--ds-defender-color);
+}
+
+.Harrier {
+    border-color: var(--ds-harrier-color);
+}
+.Harrier-bg {
+    background-color: var(--ds-harrier-color);
+}
+
+.Hexer {
+    border-color: var(--ds-hexer-color);
+}
+.Hexer-bg {
+    background-color: var(--ds-hexer-color);
+}
+
+.Mount {
+    border-color: var(--ds-mount-color);
+}
+.Mount-bg {
+    background-color: var(--ds-mount-color);
+}
+
+.Support {
+    border-color: var(--ds-support-color);
+}
+.Support-bg {
+    background-color: var(--ds-support-color);
+}
+
+.Leader {
+    border-color: var(--ds-leader-color);
+}
+.Leader-bg {
+    background-color: var(--ds-leader-color);
+}
+
+.Solo {
+    border-color: var(--ds-solo-color);
+}
+.Solo-bg {
+    background-color: var(--ds-solo-color);
+}
