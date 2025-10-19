@@ -35,7 +35,7 @@ plugins:
   - jekyll-feed
   - jekyll-datapage-generator
 
-#page_gen-dirs: true
+page_gen-dirs: true
 page_gen:
   - data: 'qa_ancestries'
     template: 'qa-page-template'
